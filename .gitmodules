@@ -1,0 +1,6 @@
+[submodule "src/cev_lidar_odometry_ros2"]
+	path = src/cev_lidar_odometry_ros2
+	url = https://github.com/cornellev/cev_lidar_odometry_ros2.git
+[submodule "src/icp"]
+	path = src/icp
+	url = https://github.com/cornellev/icp.git
