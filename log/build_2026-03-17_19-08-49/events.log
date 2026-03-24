@@ -1,0 +1,1587 @@
+[0.000000] (-) TimerEvent: {}
+[0.010166] (-) JobUnselected: {'identifier': 'CevIcp'}
+[0.011407] (lidar_odometry) JobQueued: {'identifier': 'lidar_odometry', 'dependencies': OrderedDict()}
+[0.011790] (lidar_odometry) JobStarted: {'identifier': 'lidar_odometry'}
+[0.082604] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'cmake'}
+[0.085451] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '/home/cev/SLAMv2/src/cev_lidar_odometry_ros2', '-DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/lidar_odometry'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 49934 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.111.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ce9a8531-9a6f-4a27-947a-29a95ac2932c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 49934 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.101006] (-) TimerEvent: {}
+[0.203674] (-) TimerEvent: {}
+[0.305851] (-) TimerEvent: {}
+[0.406923] (-) TimerEvent: {}
+[0.507853] (-) TimerEvent: {}
+[0.609036] (-) TimerEvent: {}
+[0.710135] (-) TimerEvent: {}
+[0.789240] (lidar_odometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.810542] (-) TimerEvent: {}
+[0.911595] (-) TimerEvent: {}
+[1.012449] (-) TimerEvent: {}
+[1.113177] (-) TimerEvent: {}
+[1.213945] (-) TimerEvent: {}
+[1.311970] (lidar_odometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.314101] (-) TimerEvent: {}
+[1.360068] (lidar_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.414338] (-) TimerEvent: {}
+[1.515200] (-) TimerEvent: {}
+[1.615980] (-) TimerEvent: {}
+[1.707868] (lidar_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.716161] (-) TimerEvent: {}
+[1.732718] (lidar_odometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.734683] (lidar_odometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.738074] (lidar_odometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.753769] (lidar_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.816457] (-) TimerEvent: {}
+[1.917365] (-) TimerEvent: {}
+[2.018208] (-) TimerEvent: {}
+[2.120439] (-) TimerEvent: {}
+[2.153369] (lidar_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.184121] (lidar_odometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.185351] (lidar_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.187497] (lidar_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.220616] (-) TimerEvent: {}
+[2.291202] (lidar_odometry) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.320815] (-) TimerEvent: {}
+[2.421837] (-) TimerEvent: {}
+[2.523592] (-) TimerEvent: {}
+[2.624419] (-) TimerEvent: {}
+[2.725508] (-) TimerEvent: {}
+[2.826611] (-) TimerEvent: {}
+[2.928462] (-) TimerEvent: {}
+[3.029322] (-) TimerEvent: {}
+[3.130255] (-) TimerEvent: {}
+[3.231139] (-) TimerEvent: {}
+[3.249867] (lidar_odometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.331313] (-) TimerEvent: {}
+[3.432030] (-) TimerEvent: {}
+[3.532734] (-) TimerEvent: {}
+[3.633517] (-) TimerEvent: {}
+[3.734281] (-) TimerEvent: {}
+[3.835179] (-) TimerEvent: {}
+[3.936101] (-) TimerEvent: {}
+[4.037664] (-) TimerEvent: {}
+[4.138530] (-) TimerEvent: {}
+[4.240243] (-) TimerEvent: {}
+[4.341066] (-) TimerEvent: {}
+[4.441920] (-) TimerEvent: {}
+[4.543834] (-) TimerEvent: {}
+[4.630380] (lidar_odometry) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.644007] (-) TimerEvent: {}
+[4.744811] (-) TimerEvent: {}
+[4.845632] (-) TimerEvent: {}
+[4.947492] (-) TimerEvent: {}
+[5.049482] (-) TimerEvent: {}
+[5.078819] (lidar_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.138870] (lidar_odometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.149696] (-) TimerEvent: {}
+[5.224713] (lidar_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.249908] (-) TimerEvent: {}
+[5.350712] (-) TimerEvent: {}
+[5.353236] (lidar_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.450899] (-) TimerEvent: {}
+[5.481238] (lidar_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.551091] (-) TimerEvent: {}
+[5.651895] (-) TimerEvent: {}
+[5.752827] (-) TimerEvent: {}
+[5.853752] (-) TimerEvent: {}
+[5.923740] (lidar_odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.953984] (-) TimerEvent: {}
+[5.964409] (lidar_odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.054175] (-) TimerEvent: {}
+[6.155593] (-) TimerEvent: {}
+[6.256387] (-) TimerEvent: {}
+[6.357205] (-) TimerEvent: {}
+[6.458138] (-) TimerEvent: {}
+[6.559829] (-) TimerEvent: {}
+[6.582968] (lidar_odometry) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.660004] (-) TimerEvent: {}
+[6.760837] (-) TimerEvent: {}
+[6.816805] (lidar_odometry) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.861073] (-) TimerEvent: {}
+[6.961865] (-) TimerEvent: {}
+[7.062698] (-) TimerEvent: {}
+[7.163519] (-) TimerEvent: {}
+[7.188571] (lidar_odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.263710] (-) TimerEvent: {}
+[7.277533] (lidar_odometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.363934] (-) TimerEvent: {}
+[7.465243] (-) TimerEvent: {}
+[7.567183] (-) TimerEvent: {}
+[7.658235] (lidar_odometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.660662] (lidar_odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.667354] (-) TimerEvent: {}
+[7.768142] (-) TimerEvent: {}
+[7.872624] (-) TimerEvent: {}
+[7.974933] (-) TimerEvent: {}
+[8.061086] (lidar_odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.065428] (lidar_odometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.075119] (-) TimerEvent: {}
+[8.175905] (-) TimerEvent: {}
+[8.276769] (-) TimerEvent: {}
+[8.377555] (-) TimerEvent: {}
+[8.440552] (lidar_odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[8.477778] (-) TimerEvent: {}
+[8.578583] (-) TimerEvent: {}
+[8.655133] (lidar_odometry) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[8.678783] (-) TimerEvent: {}
+[8.774904] (lidar_odometry) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[8.778939] (-) TimerEvent: {}
+[8.879636] (-) TimerEvent: {}
+[8.899590] (lidar_odometry) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[8.979818] (-) TimerEvent: {}
+[9.080516] (-) TimerEvent: {}
+[9.181289] (-) TimerEvent: {}
+[9.282095] (-) TimerEvent: {}
+[9.383111] (-) TimerEvent: {}
+[9.483826] (-) TimerEvent: {}
+[9.529375] (lidar_odometry) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[9.575951] (lidar_odometry) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.584044] (-) TimerEvent: {}
+[9.684918] (-) TimerEvent: {}
+[9.785713] (-) TimerEvent: {}
+[9.886792] (-) TimerEvent: {}
+[9.988950] (-) TimerEvent: {}
+[10.090665] (-) TimerEvent: {}
+[10.191391] (-) TimerEvent: {}
+[10.292066] (-) TimerEvent: {}
+[10.360945] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.361697] (lidar_odometry) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/include>;$<BUILD_INTERFACE:/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include>\n'}
+[10.362254] (lidar_odometry) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.392225] (-) TimerEvent: {}
+[10.396513] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.463831] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.492416] (-) TimerEvent: {}
+[10.500659] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.592688] (-) TimerEvent: {}
+[10.693727] (-) TimerEvent: {}
+[10.773519] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.774087] (lidar_odometry) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.793872] (-) TimerEvent: {}
+[10.808200] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.816742] (lidar_odometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.894066] (-) TimerEvent: {}
+[10.922416] (lidar_odometry) StdoutLine: {'line': b'-- Generating done\n'}
+[10.979735] (lidar_odometry) StdoutLine: {'line': b'-- Build files have been written to: /home/cev/SLAMv2/build/lidar_odometry\n'}
+[10.994379] (-) TimerEvent: {}
+[11.024161] (lidar_odometry) CommandEnded: {'returncode': 0}
+[11.025916] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'build'}
+[11.028290] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/lidar_odometry', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 49934 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.111.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ce9a8531-9a6f-4a27-947a-29a95ac2932c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 49934 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.094674] (-) TimerEvent: {}
+[11.195493] (-) TimerEvent: {}
+[11.304658] (-) TimerEvent: {}
+[11.309730] (lidar_odometry) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/algo/quickselect.cpp.o\x1b[0m\n'}
+[11.318285] (lidar_odometry) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/icp.cpp.o\x1b[0m\n'}
+[11.331320] (lidar_odometry) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/algo/kdtree.cpp.o\x1b[0m\n'}
+[11.349973] (lidar_odometry) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o\x1b[0m\n'}
+[11.404845] (-) TimerEvent: {}
+[11.439991] (lidar_odometry) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/driver.cpp.o\x1b[0m\n'}
+[11.468492] (lidar_odometry) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/geo.cpp.o\x1b[0m\n'}
+[11.505099] (-) TimerEvent: {}
+[11.606088] (-) TimerEvent: {}
+[11.706927] (-) TimerEvent: {}
+[11.807676] (-) TimerEvent: {}
+[11.908454] (-) TimerEvent: {}
+[12.009151] (-) TimerEvent: {}
+[12.109892] (-) TimerEvent: {}
+[12.210752] (-) TimerEvent: {}
+[12.312263] (-) TimerEvent: {}
+[12.413453] (-) TimerEvent: {}
+[12.514392] (-) TimerEvent: {}
+[12.615411] (-) TimerEvent: {}
+[12.716521] (-) TimerEvent: {}
+[12.817495] (-) TimerEvent: {}
+[12.918790] (-) TimerEvent: {}
+[13.019607] (-) TimerEvent: {}
+[13.120621] (-) TimerEvent: {}
+[13.221661] (-) TimerEvent: {}
+[13.324007] (-) TimerEvent: {}
+[13.426682] (-) TimerEvent: {}
+[13.528881] (-) TimerEvent: {}
+[13.631697] (-) TimerEvent: {}
+[13.734053] (-) TimerEvent: {}
+[13.836997] (-) TimerEvent: {}
+[13.939591] (-) TimerEvent: {}
+[14.041851] (-) TimerEvent: {}
+[14.144352] (-) TimerEvent: {}
+[14.246708] (-) TimerEvent: {}
+[14.349003] (-) TimerEvent: {}
+[14.452487] (-) TimerEvent: {}
+[14.553446] (-) TimerEvent: {}
+[14.656027] (-) TimerEvent: {}
+[14.758532] (-) TimerEvent: {}
+[14.861070] (-) TimerEvent: {}
+[14.963426] (-) TimerEvent: {}
+[15.067311] (-) TimerEvent: {}
+[15.170600] (-) TimerEvent: {}
+[15.277705] (-) TimerEvent: {}
+[15.381819] (-) TimerEvent: {}
+[15.482883] (-) TimerEvent: {}
+[15.583829] (-) TimerEvent: {}
+[15.686404] (-) TimerEvent: {}
+[15.789932] (-) TimerEvent: {}
+[15.892084] (-) TimerEvent: {}
+[15.994866] (-) TimerEvent: {}
+[16.096984] (-) TimerEvent: {}
+[16.198708] (-) TimerEvent: {}
+[16.301865] (-) TimerEvent: {}
+[16.404953] (-) TimerEvent: {}
+[16.511680] (-) TimerEvent: {}
+[16.613714] (-) TimerEvent: {}
+[16.716504] (-) TimerEvent: {}
+[16.818838] (-) TimerEvent: {}
+[16.922058] (-) TimerEvent: {}
+[17.025919] (-) TimerEvent: {}
+[17.128948] (-) TimerEvent: {}
+[17.231549] (-) TimerEvent: {}
+[17.337597] (-) TimerEvent: {}
+[17.438598] (-) TimerEvent: {}
+[17.539510] (-) TimerEvent: {}
+[17.640477] (-) TimerEvent: {}
+[17.662402] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[17.664893] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[17.666738] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/geo.cpp:7\x1b[m\x1b[K:\n'}
+[17.667670] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.668499] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.669523] (lidar_odometry) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[17.670408] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.671324] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[17.672156] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[17.672991] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/geo.cpp:7\x1b[m\x1b[K:\n'}
+[17.673856] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[17.674774] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[17.675621] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.686739] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[17.687731] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[17.688606] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/geo.cpp:7\x1b[m\x1b[K:\n'}
+[17.689442] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.690286] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.691177] (lidar_odometry) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[17.691996] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.692816] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[17.710598] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[17.711602] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/geo.cpp:7\x1b[m\x1b[K:\n'}
+[17.712437] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[17.713264] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[17.714744] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.741034] (-) TimerEvent: {}
+[17.842245] (-) TimerEvent: {}
+[17.943503] (-) TimerEvent: {}
+[18.044553] (-) TimerEvent: {}
+[18.145615] (-) TimerEvent: {}
+[18.246686] (-) TimerEvent: {}
+[18.349427] (-) TimerEvent: {}
+[18.450732] (-) TimerEvent: {}
+[18.551990] (-) TimerEvent: {}
+[18.595371] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[18.597200] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[18.598112] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[18.599212] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/icp.cpp:8\x1b[m\x1b[K:\n'}
+[18.600060] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.601005] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.602118] (lidar_odometry) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[18.603107] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.604044] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[18.604941] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[18.605911] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[18.620136] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/icp.cpp:8\x1b[m\x1b[K:\n'}
+[18.621197] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[18.622259] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[18.623306] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.624194] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[18.627065] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[18.629818] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[18.630945] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/icp.cpp:8\x1b[m\x1b[K:\n'}
+[18.631946] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.632941] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.633938] (lidar_odometry) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[18.635037] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.635972] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[18.636882] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[18.637754] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[18.650894] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/icp.cpp:8\x1b[m\x1b[K:\n'}
+[18.651720] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[18.652536] (-) TimerEvent: {}
+[18.653287] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[18.654124] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.752868] (-) TimerEvent: {}
+[18.853785] (-) TimerEvent: {}
+[18.954740] (-) TimerEvent: {}
+[18.966826] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[18.968342] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[18.969867] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[18.971465] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/driver.h:5\x1b[m\x1b[K,\n'}
+[18.972808] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/driver.cpp:1\x1b[m\x1b[K:\n'}
+[18.974374] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.975899] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.977340] (lidar_odometry) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[18.978783] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.980796] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[18.994736] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[18.995810] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[18.996573] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/driver.h:5\x1b[m\x1b[K,\n'}
+[18.997429] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/driver.cpp:1\x1b[m\x1b[K:\n'}
+[18.998330] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[18.999281] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[19.000083] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.004125] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[19.005742] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[19.007275] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[19.008703] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/driver.h:5\x1b[m\x1b[K,\n'}
+[19.010192] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/driver.cpp:1\x1b[m\x1b[K:\n'}
+[19.011689] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.014188] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.015243] (lidar_odometry) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[19.016167] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.016996] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[19.026764] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/geo.h:11\x1b[m\x1b[K,\n'}
+[19.027746] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/icp.h:17\x1b[m\x1b[K,\n'}
+[19.028616] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include/icp/driver.h:5\x1b[m\x1b[K,\n'}
+[19.029588] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/driver.cpp:1\x1b[m\x1b[K:\n'}
+[19.030441] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[19.035517] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[19.036398] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.054979] (-) TimerEvent: {}
+[19.155977] (-) TimerEvent: {}
+[19.258593] (-) TimerEvent: {}
+[19.361089] (-) TimerEvent: {}
+[19.464397] (-) TimerEvent: {}
+[19.565744] (-) TimerEvent: {}
+[19.666877] (-) TimerEvent: {}
+[19.768625] (-) TimerEvent: {}
+[19.869853] (-) TimerEvent: {}
+[19.971230] (-) TimerEvent: {}
+[20.072282] (-) TimerEvent: {}
+[20.173504] (-) TimerEvent: {}
+[20.274867] (-) TimerEvent: {}
+[20.375936] (-) TimerEvent: {}
+[20.478226] (-) TimerEvent: {}
+[20.579310] (-) TimerEvent: {}
+[20.680310] (-) TimerEvent: {}
+[20.781286] (-) TimerEvent: {}
+[20.882307] (-) TimerEvent: {}
+[20.983416] (-) TimerEvent: {}
+[21.084414] (-) TimerEvent: {}
+[21.185435] (-) TimerEvent: {}
+[21.286371] (-) TimerEvent: {}
+[21.387388] (-) TimerEvent: {}
+[21.488406] (-) TimerEvent: {}
+[21.589529] (-) TimerEvent: {}
+[21.690712] (-) TimerEvent: {}
+[21.792126] (-) TimerEvent: {}
+[21.893242] (-) TimerEvent: {}
+[21.994348] (-) TimerEvent: {}
+[22.095508] (-) TimerEvent: {}
+[22.196669] (-) TimerEvent: {}
+[22.297912] (-) TimerEvent: {}
+[22.399003] (-) TimerEvent: {}
+[22.500136] (-) TimerEvent: {}
+[22.601226] (-) TimerEvent: {}
+[22.702256] (-) TimerEvent: {}
+[22.803247] (-) TimerEvent: {}
+[22.904213] (-) TimerEvent: {}
+[23.005236] (-) TimerEvent: {}
+[23.106307] (-) TimerEvent: {}
+[23.207420] (-) TimerEvent: {}
+[23.308519] (-) TimerEvent: {}
+[23.409925] (-) TimerEvent: {}
+[23.511478] (-) TimerEvent: {}
+[23.612591] (-) TimerEvent: {}
+[23.713732] (-) TimerEvent: {}
+[23.724276] (lidar_odometry) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/impl/vanilla.cpp.o\x1b[0m\n'}
+[23.814024] (-) TimerEvent: {}
+[23.915102] (-) TimerEvent: {}
+[24.016263] (-) TimerEvent: {}
+[24.117747] (-) TimerEvent: {}
+[24.218767] (-) TimerEvent: {}
+[24.319905] (-) TimerEvent: {}
+[24.421263] (-) TimerEvent: {}
+[24.522738] (-) TimerEvent: {}
+[24.623822] (-) TimerEvent: {}
+[24.724834] (-) TimerEvent: {}
+[24.826022] (-) TimerEvent: {}
+[24.927253] (-) TimerEvent: {}
+[25.028547] (-) TimerEvent: {}
+[25.129803] (-) TimerEvent: {}
+[25.230904] (-) TimerEvent: {}
+[25.333766] (-) TimerEvent: {}
+[25.436837] (-) TimerEvent: {}
+[25.539550] (-) TimerEvent: {}
+[25.642332] (-) TimerEvent: {}
+[25.744938] (-) TimerEvent: {}
+[25.848139] (-) TimerEvent: {}
+[25.950586] (-) TimerEvent: {}
+[26.053080] (-) TimerEvent: {}
+[26.155611] (-) TimerEvent: {}
+[26.262003] (-) TimerEvent: {}
+[26.364440] (-) TimerEvent: {}
+[26.466923] (-) TimerEvent: {}
+[26.569283] (-) TimerEvent: {}
+[26.671739] (-) TimerEvent: {}
+[26.774245] (-) TimerEvent: {}
+[26.878236] (-) TimerEvent: {}
+[26.980582] (-) TimerEvent: {}
+[27.082682] (-) TimerEvent: {}
+[27.185701] (-) TimerEvent: {}
+[27.287631] (-) TimerEvent: {}
+[27.391747] (-) TimerEvent: {}
+[27.493756] (-) TimerEvent: {}
+[27.595780] (-) TimerEvent: {}
+[27.697789] (-) TimerEvent: {}
+[27.799856] (-) TimerEvent: {}
+[27.854742] (lidar_odometry) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/impl/trimmed.cpp.o\x1b[0m\n'}
+[27.900086] (-) TimerEvent: {}
+[28.002266] (-) TimerEvent: {}
+[28.104237] (-) TimerEvent: {}
+[28.206132] (-) TimerEvent: {}
+[28.296161] (lidar_odometry) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/impl/feature_aware.cpp.o\x1b[0m\n'}
+[28.306335] (-) TimerEvent: {}
+[28.408170] (-) TimerEvent: {}
+[28.510887] (-) TimerEvent: {}
+[28.612969] (-) TimerEvent: {}
+[28.715378] (-) TimerEvent: {}
+[28.817605] (-) TimerEvent: {}
+[28.919984] (-) TimerEvent: {}
+[29.022454] (-) TimerEvent: {}
+[29.125284] (-) TimerEvent: {}
+[29.227655] (-) TimerEvent: {}
+[29.330115] (-) TimerEvent: {}
+[29.431217] (-) TimerEvent: {}
+[29.532369] (-) TimerEvent: {}
+[29.633468] (-) TimerEvent: {}
+[29.734566] (-) TimerEvent: {}
+[29.835615] (-) TimerEvent: {}
+[29.936708] (-) TimerEvent: {}
+[30.038008] (-) TimerEvent: {}
+[30.138969] (-) TimerEvent: {}
+[30.240050] (-) TimerEvent: {}
+[30.341296] (-) TimerEvent: {}
+[30.442581] (-) TimerEvent: {}
+[30.453959] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[30.457867] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:9\x1b[m\x1b[K:\n'}
+[30.458937] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.460197] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.461114] (lidar_odometry) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[30.462274] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.463810] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[30.464908] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:9\x1b[m\x1b[K:\n'}
+[30.466155] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[30.467444] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[30.468265] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.470577] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[30.471689] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:9\x1b[m\x1b[K:\n'}
+[30.472608] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.473461] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[30.474362] (lidar_odometry) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[30.475306] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.476081] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[30.477006] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:9\x1b[m\x1b[K:\n'}
+[30.477880] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[30.478766] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[30.479606] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[30.542967] (-) TimerEvent: {}
+[30.646555] (-) TimerEvent: {}
+[30.749014] (-) TimerEvent: {}
+[30.851291] (-) TimerEvent: {}
+[30.953923] (-) TimerEvent: {}
+[31.056605] (-) TimerEvent: {}
+[31.159303] (-) TimerEvent: {}
+[31.261883] (-) TimerEvent: {}
+[31.364168] (-) TimerEvent: {}
+[31.466593] (-) TimerEvent: {}
+[31.567562] (-) TimerEvent: {}
+[31.668614] (-) TimerEvent: {}
+[31.771462] (-) TimerEvent: {}
+[31.872442] (-) TimerEvent: {}
+[31.930661] (lidar_odometry) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable motor_controller\x1b[0m\n'}
+[31.972714] (-) TimerEvent: {}
+[32.073738] (-) TimerEvent: {}
+[32.176024] (-) TimerEvent: {}
+[32.278450] (-) TimerEvent: {}
+[32.384890] (-) TimerEvent: {}
+[32.487076] (-) TimerEvent: {}
+[32.590013] (-) TimerEvent: {}
+[32.692415] (-) TimerEvent: {}
+[32.795419] (-) TimerEvent: {}
+[32.896890] (-) TimerEvent: {}
+[32.975713] (lidar_odometry) StdoutLine: {'line': b'[ 76%] Built target motor_controller\n'}
+[32.997191] (-) TimerEvent: {}
+[33.098384] (-) TimerEvent: {}
+[33.199372] (-) TimerEvent: {}
+[33.300359] (-) TimerEvent: {}
+[33.401506] (-) TimerEvent: {}
+[33.502461] (-) TimerEvent: {}
+[33.584947] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[33.585901] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:8\x1b[m\x1b[K:\n'}
+[33.587161] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.588088] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.588993] (lidar_odometry) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[33.589860] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.591257] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[33.592422] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:8\x1b[m\x1b[K:\n'}
+[33.593531] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[33.594795] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[33.595923] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.598596] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[33.599606] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:8\x1b[m\x1b[K:\n'}
+[33.600504] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[33.601427] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[33.602313] (lidar_odometry) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[33.603316] (-) TimerEvent: {}
+[33.605525] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.606373] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[33.607409] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:8\x1b[m\x1b[K:\n'}
+[33.608249] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[33.609144] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[33.611602] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[33.703565] (-) TimerEvent: {}
+[33.805677] (-) TimerEvent: {}
+[33.907809] (-) TimerEvent: {}
+[34.009941] (-) TimerEvent: {}
+[34.113526] (-) TimerEvent: {}
+[34.216134] (-) TimerEvent: {}
+[34.318679] (-) TimerEvent: {}
+[34.406400] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[34.407428] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:1\x1b[m\x1b[K:\n'}
+[34.408294] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.409276] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[34.410352] (lidar_odometry) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[34.411369] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.413956] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[34.416935] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:1\x1b[m\x1b[K:\n'}
+[34.417646] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[34.418595] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[34.420325] (-) TimerEvent: {}
+[34.422932] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.424094] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[34.425207] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:1\x1b[m\x1b[K:\n'}
+[34.431107] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.433326] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[34.434559] (lidar_odometry) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[34.435429] (lidar_odometry) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.436440] (lidar_odometry) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[34.437400] (lidar_odometry) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:1\x1b[m\x1b[K:\n'}
+[34.438335] (lidar_odometry) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[34.439616] (lidar_odometry) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[34.440402] (lidar_odometry) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.520608] (-) TimerEvent: {}
+[34.622953] (-) TimerEvent: {}
+[34.725508] (-) TimerEvent: {}
+[34.828442] (-) TimerEvent: {}
+[34.931044] (-) TimerEvent: {}
+[35.033242] (-) TimerEvent: {}
+[35.135394] (-) TimerEvent: {}
+[35.236348] (-) TimerEvent: {}
+[35.337173] (-) TimerEvent: {}
+[35.439499] (-) TimerEvent: {}
+[35.542069] (-) TimerEvent: {}
+[35.653589] (-) TimerEvent: {}
+[35.754433] (-) TimerEvent: {}
+[35.855361] (-) TimerEvent: {}
+[35.956267] (-) TimerEvent: {}
+[36.057309] (-) TimerEvent: {}
+[36.158566] (-) TimerEvent: {}
+[36.259973] (-) TimerEvent: {}
+[36.360970] (-) TimerEvent: {}
+[36.462116] (-) TimerEvent: {}
+[36.563481] (-) TimerEvent: {}
+[36.664542] (-) TimerEvent: {}
+[36.765471] (-) TimerEvent: {}
+[36.866621] (-) TimerEvent: {}
+[36.967633] (-) TimerEvent: {}
+[37.068616] (-) TimerEvent: {}
+[37.169627] (-) TimerEvent: {}
+[37.270705] (-) TimerEvent: {}
+[37.371870] (-) TimerEvent: {}
+[37.472953] (-) TimerEvent: {}
+[37.573992] (-) TimerEvent: {}
+[37.674997] (-) TimerEvent: {}
+[37.777198] (-) TimerEvent: {}
+[37.879276] (-) TimerEvent: {}
+[37.980178] (-) TimerEvent: {}
+[38.082600] (-) TimerEvent: {}
+[38.184490] (-) TimerEvent: {}
+[38.286739] (-) TimerEvent: {}
+[38.387775] (-) TimerEvent: {}
+[38.489688] (-) TimerEvent: {}
+[38.591706] (-) TimerEvent: {}
+[38.693723] (-) TimerEvent: {}
+[38.797619] (-) TimerEvent: {}
+[38.899964] (-) TimerEvent: {}
+[39.001107] (-) TimerEvent: {}
+[39.102685] (-) TimerEvent: {}
+[39.217840] (-) TimerEvent: {}
+[39.318911] (-) TimerEvent: {}
+[39.426663] (-) TimerEvent: {}
+[39.530716] (-) TimerEvent: {}
+[39.633854] (-) TimerEvent: {}
+[39.735503] (-) TimerEvent: {}
+[39.836669] (-) TimerEvent: {}
+[39.937752] (-) TimerEvent: {}
+[40.042693] (-) TimerEvent: {}
+[40.149751] (-) TimerEvent: {}
+[40.250879] (-) TimerEvent: {}
+[40.351978] (-) TimerEvent: {}
+[40.454473] (-) TimerEvent: {}
+[40.557143] (-) TimerEvent: {}
+[40.658958] (-) TimerEvent: {}
+[40.760986] (-) TimerEvent: {}
+[40.863709] (-) TimerEvent: {}
+[40.965937] (-) TimerEvent: {}
+[41.066921] (-) TimerEvent: {}
+[41.167802] (-) TimerEvent: {}
+[41.268831] (-) TimerEvent: {}
+[41.369853] (-) TimerEvent: {}
+[41.470786] (-) TimerEvent: {}
+[41.571784] (-) TimerEvent: {}
+[41.672774] (-) TimerEvent: {}
+[41.773780] (-) TimerEvent: {}
+[41.874777] (-) TimerEvent: {}
+[41.977036] (-) TimerEvent: {}
+[42.078233] (-) TimerEvent: {}
+[42.181118] (-) TimerEvent: {}
+[42.282868] (-) TimerEvent: {}
+[42.384730] (-) TimerEvent: {}
+[42.486672] (-) TimerEvent: {}
+[42.589148] (-) TimerEvent: {}
+[42.691265] (-) TimerEvent: {}
+[42.795040] (-) TimerEvent: {}
+[42.895897] (-) TimerEvent: {}
+[42.996924] (-) TimerEvent: {}
+[43.097970] (-) TimerEvent: {}
+[43.198883] (-) TimerEvent: {}
+[43.299779] (-) TimerEvent: {}
+[43.400802] (-) TimerEvent: {}
+[43.501996] (-) TimerEvent: {}
+[43.603081] (-) TimerEvent: {}
+[43.704154] (-) TimerEvent: {}
+[43.805213] (-) TimerEvent: {}
+[43.906140] (-) TimerEvent: {}
+[44.007060] (-) TimerEvent: {}
+[44.107987] (-) TimerEvent: {}
+[44.208962] (-) TimerEvent: {}
+[44.310168] (-) TimerEvent: {}
+[44.411046] (-) TimerEvent: {}
+[44.512105] (-) TimerEvent: {}
+[44.613143] (-) TimerEvent: {}
+[44.714061] (-) TimerEvent: {}
+[44.815264] (-) TimerEvent: {}
+[44.916086] (-) TimerEvent: {}
+[45.016898] (-) TimerEvent: {}
+[45.117727] (-) TimerEvent: {}
+[45.218576] (-) TimerEvent: {}
+[45.319402] (-) TimerEvent: {}
+[45.420211] (-) TimerEvent: {}
+[45.523393] (-) TimerEvent: {}
+[45.625876] (-) TimerEvent: {}
+[45.727338] (-) TimerEvent: {}
+[45.828179] (-) TimerEvent: {}
+[45.929026] (-) TimerEvent: {}
+[46.030278] (-) TimerEvent: {}
+[46.131244] (-) TimerEvent: {}
+[46.232038] (-) TimerEvent: {}
+[46.332843] (-) TimerEvent: {}
+[46.433983] (-) TimerEvent: {}
+[46.534775] (-) TimerEvent: {}
+[46.636836] (-) TimerEvent: {}
+[46.738870] (-) TimerEvent: {}
+[46.840242] (-) TimerEvent: {}
+[46.941034] (-) TimerEvent: {}
+[47.043111] (-) TimerEvent: {}
+[47.143833] (-) TimerEvent: {}
+[47.244556] (-) TimerEvent: {}
+[47.345268] (-) TimerEvent: {}
+[47.446020] (-) TimerEvent: {}
+[47.546735] (-) TimerEvent: {}
+[47.647451] (-) TimerEvent: {}
+[47.748269] (-) TimerEvent: {}
+[47.849133] (-) TimerEvent: {}
+[47.950019] (-) TimerEvent: {}
+[48.050663] (-) TimerEvent: {}
+[48.151414] (-) TimerEvent: {}
+[48.252384] (-) TimerEvent: {}
+[48.353204] (-) TimerEvent: {}
+[48.454033] (-) TimerEvent: {}
+[48.554747] (-) TimerEvent: {}
+[48.655444] (-) TimerEvent: {}
+[48.756203] (-) TimerEvent: {}
+[48.856959] (-) TimerEvent: {}
+[48.957682] (-) TimerEvent: {}
+[49.058407] (-) TimerEvent: {}
+[49.159163] (-) TimerEvent: {}
+[49.259976] (-) TimerEvent: {}
+[49.360747] (-) TimerEvent: {}
+[49.435317] (lidar_odometry) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX static library libcevicp.a\x1b[0m\n'}
+[49.460958] (-) TimerEvent: {}
+[49.562248] (-) TimerEvent: {}
+[49.663702] (-) TimerEvent: {}
+[49.764385] (-) TimerEvent: {}
+[49.865098] (-) TimerEvent: {}
+[49.965872] (-) TimerEvent: {}
+[50.066637] (-) TimerEvent: {}
+[50.167663] (-) TimerEvent: {}
+[50.268752] (-) TimerEvent: {}
+[50.369603] (-) TimerEvent: {}
+[50.470689] (-) TimerEvent: {}
+[50.571653] (-) TimerEvent: {}
+[50.672643] (-) TimerEvent: {}
+[50.773299] (-) TimerEvent: {}
+[50.873978] (-) TimerEvent: {}
+[50.974645] (-) TimerEvent: {}
+[51.075329] (-) TimerEvent: {}
+[51.176238] (-) TimerEvent: {}
+[51.277140] (-) TimerEvent: {}
+[51.377856] (-) TimerEvent: {}
+[51.478644] (-) TimerEvent: {}
+[51.579857] (-) TimerEvent: {}
+[51.680604] (-) TimerEvent: {}
+[51.790661] (-) TimerEvent: {}
+[51.901725] (-) TimerEvent: {}
+[52.002506] (-) TimerEvent: {}
+[52.103255] (-) TimerEvent: {}
+[52.204152] (-) TimerEvent: {}
+[52.305145] (-) TimerEvent: {}
+[52.327979] (lidar_odometry) StdoutLine: {'line': b'[ 84%] Built target cevicp\n'}
+[52.405345] (-) TimerEvent: {}
+[52.412322] (lidar_odometry) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/lidar_odometry.dir/src/lidar_odometry.cpp.o\x1b[0m\n'}
+[52.505637] (-) TimerEvent: {}
+[52.607116] (-) TimerEvent: {}
+[52.708160] (-) TimerEvent: {}
+[52.809934] (-) TimerEvent: {}
+[52.910861] (-) TimerEvent: {}
+[53.011734] (-) TimerEvent: {}
+[53.112409] (-) TimerEvent: {}
+[53.213067] (-) TimerEvent: {}
+[53.313711] (-) TimerEvent: {}
+[53.414348] (-) TimerEvent: {}
+[53.515000] (-) TimerEvent: {}
+[53.615641] (-) TimerEvent: {}
+[53.716284] (-) TimerEvent: {}
+[53.816957] (-) TimerEvent: {}
+[53.917610] (-) TimerEvent: {}
+[54.018289] (-) TimerEvent: {}
+[54.118990] (-) TimerEvent: {}
+[54.219633] (-) TimerEvent: {}
+[54.320281] (-) TimerEvent: {}
+[54.421005] (-) TimerEvent: {}
+[54.521714] (-) TimerEvent: {}
+[54.622370] (-) TimerEvent: {}
+[54.723080] (-) TimerEvent: {}
+[54.823746] (-) TimerEvent: {}
+[54.924413] (-) TimerEvent: {}
+[55.025139] (-) TimerEvent: {}
+[55.125836] (-) TimerEvent: {}
+[55.226712] (-) TimerEvent: {}
+[55.327595] (-) TimerEvent: {}
+[55.428340] (-) TimerEvent: {}
+[55.529073] (-) TimerEvent: {}
+[55.629888] (-) TimerEvent: {}
+[55.730788] (-) TimerEvent: {}
+[55.831455] (-) TimerEvent: {}
+[55.932325] (-) TimerEvent: {}
+[56.033090] (-) TimerEvent: {}
+[56.133822] (-) TimerEvent: {}
+[56.234649] (-) TimerEvent: {}
+[56.335369] (-) TimerEvent: {}
+[56.436116] (-) TimerEvent: {}
+[56.536860] (-) TimerEvent: {}
+[56.637623] (-) TimerEvent: {}
+[56.738597] (-) TimerEvent: {}
+[56.841353] (-) TimerEvent: {}
+[56.942267] (-) TimerEvent: {}
+[57.043063] (-) TimerEvent: {}
+[57.143899] (-) TimerEvent: {}
+[57.244739] (-) TimerEvent: {}
+[57.345461] (-) TimerEvent: {}
+[57.446300] (-) TimerEvent: {}
+[57.547098] (-) TimerEvent: {}
+[57.647820] (-) TimerEvent: {}
+[57.748562] (-) TimerEvent: {}
+[57.849260] (-) TimerEvent: {}
+[57.950060] (-) TimerEvent: {}
+[58.050799] (-) TimerEvent: {}
+[58.151513] (-) TimerEvent: {}
+[58.252241] (-) TimerEvent: {}
+[58.353041] (-) TimerEvent: {}
+[58.453992] (-) TimerEvent: {}
+[58.554859] (-) TimerEvent: {}
+[58.655661] (-) TimerEvent: {}
+[58.756385] (-) TimerEvent: {}
+[58.857103] (-) TimerEvent: {}
+[58.957918] (-) TimerEvent: {}
+[59.058766] (-) TimerEvent: {}
+[59.159472] (-) TimerEvent: {}
+[59.260199] (-) TimerEvent: {}
+[59.360921] (-) TimerEvent: {}
+[59.461673] (-) TimerEvent: {}
+[59.562395] (-) TimerEvent: {}
+[59.663150] (-) TimerEvent: {}
+[59.764140] (-) TimerEvent: {}
+[59.864858] (-) TimerEvent: {}
+[59.965610] (-) TimerEvent: {}
+[60.066349] (-) TimerEvent: {}
+[60.167113] (-) TimerEvent: {}
+[60.267837] (-) TimerEvent: {}
+[60.368571] (-) TimerEvent: {}
+[60.469303] (-) TimerEvent: {}
+[60.570025] (-) TimerEvent: {}
+[60.670755] (-) TimerEvent: {}
+[60.771700] (-) TimerEvent: {}
+[60.872436] (-) TimerEvent: {}
+[60.973182] (-) TimerEvent: {}
+[61.073928] (-) TimerEvent: {}
+[61.174692] (-) TimerEvent: {}
+[61.275455] (-) TimerEvent: {}
+[61.376202] (-) TimerEvent: {}
+[61.476968] (-) TimerEvent: {}
+[61.577677] (-) TimerEvent: {}
+[61.678513] (-) TimerEvent: {}
+[61.779434] (-) TimerEvent: {}
+[61.880152] (-) TimerEvent: {}
+[61.980888] (-) TimerEvent: {}
+[62.081628] (-) TimerEvent: {}
+[62.182356] (-) TimerEvent: {}
+[62.283098] (-) TimerEvent: {}
+[62.383807] (-) TimerEvent: {}
+[62.484530] (-) TimerEvent: {}
+[62.585271] (-) TimerEvent: {}
+[62.686013] (-) TimerEvent: {}
+[62.786816] (-) TimerEvent: {}
+[62.887547] (-) TimerEvent: {}
+[62.988355] (-) TimerEvent: {}
+[63.089099] (-) TimerEvent: {}
+[63.189847] (-) TimerEvent: {}
+[63.290598] (-) TimerEvent: {}
+[63.391318] (-) TimerEvent: {}
+[63.492008] (-) TimerEvent: {}
+[63.592760] (-) TimerEvent: {}
+[63.693487] (-) TimerEvent: {}
+[63.794300] (-) TimerEvent: {}
+[63.895218] (-) TimerEvent: {}
+[63.995958] (-) TimerEvent: {}
+[64.096682] (-) TimerEvent: {}
+[64.197444] (-) TimerEvent: {}
+[64.298179] (-) TimerEvent: {}
+[64.399024] (-) TimerEvent: {}
+[64.499755] (-) TimerEvent: {}
+[64.600470] (-) TimerEvent: {}
+[64.701394] (-) TimerEvent: {}
+[64.802809] (-) TimerEvent: {}
+[64.903534] (-) TimerEvent: {}
+[65.004321] (-) TimerEvent: {}
+[65.105049] (-) TimerEvent: {}
+[65.205804] (-) TimerEvent: {}
+[65.306649] (-) TimerEvent: {}
+[65.407382] (-) TimerEvent: {}
+[65.508435] (-) TimerEvent: {}
+[65.609231] (-) TimerEvent: {}
+[65.710031] (-) TimerEvent: {}
+[65.810902] (-) TimerEvent: {}
+[65.911635] (-) TimerEvent: {}
+[66.012373] (-) TimerEvent: {}
+[66.113101] (-) TimerEvent: {}
+[66.213869] (-) TimerEvent: {}
+[66.314628] (-) TimerEvent: {}
+[66.415361] (-) TimerEvent: {}
+[66.516136] (-) TimerEvent: {}
+[66.616952] (-) TimerEvent: {}
+[66.717958] (-) TimerEvent: {}
+[66.818662] (-) TimerEvent: {}
+[66.919390] (-) TimerEvent: {}
+[67.020105] (-) TimerEvent: {}
+[67.120821] (-) TimerEvent: {}
+[67.221594] (-) TimerEvent: {}
+[67.322328] (-) TimerEvent: {}
+[67.423188] (-) TimerEvent: {}
+[67.523913] (-) TimerEvent: {}
+[67.624659] (-) TimerEvent: {}
+[67.725394] (-) TimerEvent: {}
+[67.826163] (-) TimerEvent: {}
+[67.927043] (-) TimerEvent: {}
+[68.027812] (-) TimerEvent: {}
+[68.128535] (-) TimerEvent: {}
+[68.229323] (-) TimerEvent: {}
+[68.330064] (-) TimerEvent: {}
+[68.430824] (-) TimerEvent: {}
+[68.531572] (-) TimerEvent: {}
+[68.632301] (-) TimerEvent: {}
+[68.733077] (-) TimerEvent: {}
+[68.833824] (-) TimerEvent: {}
+[68.934592] (-) TimerEvent: {}
+[69.035479] (-) TimerEvent: {}
+[69.136202] (-) TimerEvent: {}
+[69.236971] (-) TimerEvent: {}
+[69.337710] (-) TimerEvent: {}
+[69.438468] (-) TimerEvent: {}
+[69.539225] (-) TimerEvent: {}
+[69.639938] (-) TimerEvent: {}
+[69.740656] (-) TimerEvent: {}
+[69.841435] (-) TimerEvent: {}
+[69.942153] (-) TimerEvent: {}
+[70.042875] (-) TimerEvent: {}
+[70.143644] (-) TimerEvent: {}
+[70.244440] (-) TimerEvent: {}
+[70.345185] (-) TimerEvent: {}
+[70.445992] (-) TimerEvent: {}
+[70.546781] (-) TimerEvent: {}
+[70.647489] (-) TimerEvent: {}
+[70.748295] (-) TimerEvent: {}
+[70.849040] (-) TimerEvent: {}
+[70.949926] (-) TimerEvent: {}
+[71.050673] (-) TimerEvent: {}
+[71.151396] (-) TimerEvent: {}
+[71.252163] (-) TimerEvent: {}
+[71.352899] (-) TimerEvent: {}
+[71.453628] (-) TimerEvent: {}
+[71.554410] (-) TimerEvent: {}
+[71.655131] (-) TimerEvent: {}
+[71.755871] (-) TimerEvent: {}
+[71.856651] (-) TimerEvent: {}
+[71.957370] (-) TimerEvent: {}
+[72.058283] (-) TimerEvent: {}
+[72.159063] (-) TimerEvent: {}
+[72.259788] (-) TimerEvent: {}
+[72.360519] (-) TimerEvent: {}
+[72.461259] (-) TimerEvent: {}
+[72.562018] (-) TimerEvent: {}
+[72.662761] (-) TimerEvent: {}
+[72.763482] (-) TimerEvent: {}
+[72.864227] (-) TimerEvent: {}
+[72.965087] (-) TimerEvent: {}
+[73.065813] (-) TimerEvent: {}
+[73.166608] (-) TimerEvent: {}
+[73.267331] (-) TimerEvent: {}
+[73.368049] (-) TimerEvent: {}
+[73.468779] (-) TimerEvent: {}
+[73.569548] (-) TimerEvent: {}
+[73.670272] (-) TimerEvent: {}
+[73.771024] (-) TimerEvent: {}
+[73.871757] (-) TimerEvent: {}
+[73.972527] (-) TimerEvent: {}
+[74.073276] (-) TimerEvent: {}
+[74.174020] (-) TimerEvent: {}
+[74.274763] (-) TimerEvent: {}
+[74.375519] (-) TimerEvent: {}
+[74.476258] (-) TimerEvent: {}
+[74.576989] (-) TimerEvent: {}
+[74.677740] (-) TimerEvent: {}
+[74.778534] (-) TimerEvent: {}
+[74.879233] (-) TimerEvent: {}
+[74.979944] (-) TimerEvent: {}
+[75.080676] (-) TimerEvent: {}
+[75.181397] (-) TimerEvent: {}
+[75.282093] (-) TimerEvent: {}
+[75.382874] (-) TimerEvent: {}
+[75.483599] (-) TimerEvent: {}
+[75.584347] (-) TimerEvent: {}
+[75.685146] (-) TimerEvent: {}
+[75.785879] (-) TimerEvent: {}
+[75.886675] (-) TimerEvent: {}
+[75.987576] (-) TimerEvent: {}
+[76.088368] (-) TimerEvent: {}
+[76.189103] (-) TimerEvent: {}
+[76.289930] (-) TimerEvent: {}
+[76.390659] (-) TimerEvent: {}
+[76.491392] (-) TimerEvent: {}
+[76.592129] (-) TimerEvent: {}
+[76.692863] (-) TimerEvent: {}
+[76.793606] (-) TimerEvent: {}
+[76.894371] (-) TimerEvent: {}
+[76.995168] (-) TimerEvent: {}
+[77.095972] (-) TimerEvent: {}
+[77.196809] (-) TimerEvent: {}
+[77.297577] (-) TimerEvent: {}
+[77.398337] (-) TimerEvent: {}
+[77.499347] (-) TimerEvent: {}
+[77.600087] (-) TimerEvent: {}
+[77.700831] (-) TimerEvent: {}
+[77.801610] (-) TimerEvent: {}
+[77.902556] (-) TimerEvent: {}
+[78.003328] (-) TimerEvent: {}
+[78.104052] (-) TimerEvent: {}
+[78.204793] (-) TimerEvent: {}
+[78.305560] (-) TimerEvent: {}
+[78.406295] (-) TimerEvent: {}
+[78.507063] (-) TimerEvent: {}
+[78.607796] (-) TimerEvent: {}
+[78.708639] (-) TimerEvent: {}
+[78.809396] (-) TimerEvent: {}
+[78.910128] (-) TimerEvent: {}
+[79.011023] (-) TimerEvent: {}
+[79.111764] (-) TimerEvent: {}
+[79.212476] (-) TimerEvent: {}
+[79.313231] (-) TimerEvent: {}
+[79.413978] (-) TimerEvent: {}
+[79.514704] (-) TimerEvent: {}
+[79.615432] (-) TimerEvent: {}
+[79.716193] (-) TimerEvent: {}
+[79.816940] (-) TimerEvent: {}
+[79.917701] (-) TimerEvent: {}
+[80.018450] (-) TimerEvent: {}
+[80.119350] (-) TimerEvent: {}
+[80.220068] (-) TimerEvent: {}
+[80.320809] (-) TimerEvent: {}
+[80.421532] (-) TimerEvent: {}
+[80.522390] (-) TimerEvent: {}
+[80.623165] (-) TimerEvent: {}
+[80.724020] (-) TimerEvent: {}
+[80.824808] (-) TimerEvent: {}
+[80.925522] (-) TimerEvent: {}
+[81.026340] (-) TimerEvent: {}
+[81.127102] (-) TimerEvent: {}
+[81.227852] (-) TimerEvent: {}
+[81.328539] (-) TimerEvent: {}
+[81.429543] (-) TimerEvent: {}
+[81.530279] (-) TimerEvent: {}
+[81.631091] (-) TimerEvent: {}
+[81.731790] (-) TimerEvent: {}
+[81.832561] (-) TimerEvent: {}
+[81.933311] (-) TimerEvent: {}
+[82.034087] (-) TimerEvent: {}
+[82.134898] (-) TimerEvent: {}
+[82.235675] (-) TimerEvent: {}
+[82.336401] (-) TimerEvent: {}
+[82.437122] (-) TimerEvent: {}
+[82.538103] (-) TimerEvent: {}
+[82.638889] (-) TimerEvent: {}
+[82.739594] (-) TimerEvent: {}
+[82.840325] (-) TimerEvent: {}
+[82.941077] (-) TimerEvent: {}
+[83.041832] (-) TimerEvent: {}
+[83.142583] (-) TimerEvent: {}
+[83.243291] (-) TimerEvent: {}
+[83.344005] (-) TimerEvent: {}
+[83.444732] (-) TimerEvent: {}
+[83.545468] (-) TimerEvent: {}
+[83.646240] (-) TimerEvent: {}
+[83.747061] (-) TimerEvent: {}
+[83.847824] (-) TimerEvent: {}
+[83.948679] (-) TimerEvent: {}
+[84.049615] (-) TimerEvent: {}
+[84.150370] (-) TimerEvent: {}
+[84.251123] (-) TimerEvent: {}
+[84.351798] (-) TimerEvent: {}
+[84.452669] (-) TimerEvent: {}
+[84.553427] (-) TimerEvent: {}
+[84.654138] (-) TimerEvent: {}
+[84.754870] (-) TimerEvent: {}
+[84.855572] (-) TimerEvent: {}
+[84.956301] (-) TimerEvent: {}
+[85.057055] (-) TimerEvent: {}
+[85.157743] (-) TimerEvent: {}
+[85.258644] (-) TimerEvent: {}
+[85.359331] (-) TimerEvent: {}
+[85.460083] (-) TimerEvent: {}
+[85.560801] (-) TimerEvent: {}
+[85.661521] (-) TimerEvent: {}
+[85.762272] (-) TimerEvent: {}
+[85.863037] (-) TimerEvent: {}
+[85.963773] (-) TimerEvent: {}
+[86.064458] (-) TimerEvent: {}
+[86.172951] (-) TimerEvent: {}
+[86.273789] (-) TimerEvent: {}
+[86.374611] (-) TimerEvent: {}
+[86.475361] (-) TimerEvent: {}
+[86.576317] (-) TimerEvent: {}
+[86.677141] (-) TimerEvent: {}
+[86.777927] (-) TimerEvent: {}
+[86.878669] (-) TimerEvent: {}
+[86.979407] (-) TimerEvent: {}
+[87.080099] (-) TimerEvent: {}
+[87.180778] (-) TimerEvent: {}
+[87.281449] (-) TimerEvent: {}
+[87.382157] (-) TimerEvent: {}
+[87.482943] (-) TimerEvent: {}
+[87.583675] (-) TimerEvent: {}
+[87.684372] (-) TimerEvent: {}
+[87.785073] (-) TimerEvent: {}
+[87.885908] (-) TimerEvent: {}
+[87.988025] (-) TimerEvent: {}
+[88.088750] (-) TimerEvent: {}
+[88.189485] (-) TimerEvent: {}
+[88.290210] (-) TimerEvent: {}
+[88.390957] (-) TimerEvent: {}
+[88.491641] (-) TimerEvent: {}
+[88.592340] (-) TimerEvent: {}
+[88.693059] (-) TimerEvent: {}
+[88.793809] (-) TimerEvent: {}
+[88.894582] (-) TimerEvent: {}
+[88.995254] (-) TimerEvent: {}
+[89.095962] (-) TimerEvent: {}
+[89.196784] (-) TimerEvent: {}
+[89.297606] (-) TimerEvent: {}
+[89.398338] (-) TimerEvent: {}
+[89.499040] (-) TimerEvent: {}
+[89.599685] (-) TimerEvent: {}
+[89.700331] (-) TimerEvent: {}
+[89.800975] (-) TimerEvent: {}
+[89.901646] (-) TimerEvent: {}
+[90.002326] (-) TimerEvent: {}
+[90.103063] (-) TimerEvent: {}
+[90.203767] (-) TimerEvent: {}
+[90.304493] (-) TimerEvent: {}
+[90.405244] (-) TimerEvent: {}
+[90.506025] (-) TimerEvent: {}
+[90.606768] (-) TimerEvent: {}
+[90.707491] (-) TimerEvent: {}
+[90.808238] (-) TimerEvent: {}
+[90.909011] (-) TimerEvent: {}
+[91.009720] (-) TimerEvent: {}
+[91.110439] (-) TimerEvent: {}
+[91.211205] (-) TimerEvent: {}
+[91.311900] (-) TimerEvent: {}
+[91.412614] (-) TimerEvent: {}
+[91.513378] (-) TimerEvent: {}
+[91.614101] (-) TimerEvent: {}
+[91.714934] (-) TimerEvent: {}
+[91.815996] (-) TimerEvent: {}
+[91.916929] (-) TimerEvent: {}
+[92.018215] (-) TimerEvent: {}
+[92.119189] (-) TimerEvent: {}
+[92.220023] (-) TimerEvent: {}
+[92.320813] (-) TimerEvent: {}
+[92.421591] (-) TimerEvent: {}
+[92.522428] (-) TimerEvent: {}
+[92.623265] (-) TimerEvent: {}
+[92.724071] (-) TimerEvent: {}
+[92.824799] (-) TimerEvent: {}
+[92.925583] (-) TimerEvent: {}
+[93.026349] (-) TimerEvent: {}
+[93.127117] (-) TimerEvent: {}
+[93.227860] (-) TimerEvent: {}
+[93.328592] (-) TimerEvent: {}
+[93.429349] (-) TimerEvent: {}
+[93.530078] (-) TimerEvent: {}
+[93.630869] (-) TimerEvent: {}
+[93.731609] (-) TimerEvent: {}
+[93.832348] (-) TimerEvent: {}
+[93.933097] (-) TimerEvent: {}
+[94.033918] (-) TimerEvent: {}
+[94.134687] (-) TimerEvent: {}
+[94.235432] (-) TimerEvent: {}
+[94.336195] (-) TimerEvent: {}
+[94.437012] (-) TimerEvent: {}
+[94.537794] (-) TimerEvent: {}
+[94.638607] (-) TimerEvent: {}
+[94.739333] (-) TimerEvent: {}
+[94.840156] (-) TimerEvent: {}
+[94.942345] (-) TimerEvent: {}
+[95.044287] (-) TimerEvent: {}
+[95.146249] (-) TimerEvent: {}
+[95.248413] (-) TimerEvent: {}
+[95.350617] (-) TimerEvent: {}
+[95.452869] (-) TimerEvent: {}
+[95.555552] (-) TimerEvent: {}
+[95.657184] (-) TimerEvent: {}
+[95.758386] (-) TimerEvent: {}
+[95.859156] (-) TimerEvent: {}
+[95.959847] (-) TimerEvent: {}
+[96.060621] (-) TimerEvent: {}
+[96.161640] (-) TimerEvent: {}
+[96.262647] (-) TimerEvent: {}
+[96.363692] (-) TimerEvent: {}
+[96.465124] (-) TimerEvent: {}
+[96.573494] (-) TimerEvent: {}
+[96.674714] (-) TimerEvent: {}
+[96.776434] (-) TimerEvent: {}
+[96.881801] (-) TimerEvent: {}
+[96.985463] (-) TimerEvent: {}
+[97.091301] (-) TimerEvent: {}
+[97.195625] (-) TimerEvent: {}
+[97.296380] (-) TimerEvent: {}
+[97.397151] (-) TimerEvent: {}
+[97.497849] (-) TimerEvent: {}
+[97.598637] (-) TimerEvent: {}
+[97.699350] (-) TimerEvent: {}
+[97.800086] (-) TimerEvent: {}
+[97.900873] (-) TimerEvent: {}
+[98.001728] (-) TimerEvent: {}
+[98.102556] (-) TimerEvent: {}
+[98.203258] (-) TimerEvent: {}
+[98.303945] (-) TimerEvent: {}
+[98.404699] (-) TimerEvent: {}
+[98.505412] (-) TimerEvent: {}
+[98.606186] (-) TimerEvent: {}
+[98.706964] (-) TimerEvent: {}
+[98.807701] (-) TimerEvent: {}
+[98.908419] (-) TimerEvent: {}
+[99.009211] (-) TimerEvent: {}
+[99.109963] (-) TimerEvent: {}
+[99.210755] (-) TimerEvent: {}
+[99.311466] (-) TimerEvent: {}
+[99.412199] (-) TimerEvent: {}
+[99.512943] (-) TimerEvent: {}
+[99.613689] (-) TimerEvent: {}
+[99.714460] (-) TimerEvent: {}
+[99.815211] (-) TimerEvent: {}
+[99.915938] (-) TimerEvent: {}
+[100.016671] (-) TimerEvent: {}
+[100.117421] (-) TimerEvent: {}
+[100.218149] (-) TimerEvent: {}
+[100.318890] (-) TimerEvent: {}
+[100.419625] (-) TimerEvent: {}
+[100.520454] (-) TimerEvent: {}
+[100.621205] (-) TimerEvent: {}
+[100.721956] (-) TimerEvent: {}
+[100.822675] (-) TimerEvent: {}
+[100.923375] (-) TimerEvent: {}
+[101.024091] (-) TimerEvent: {}
+[101.124842] (-) TimerEvent: {}
+[101.225578] (-) TimerEvent: {}
+[101.326296] (-) TimerEvent: {}
+[101.427064] (-) TimerEvent: {}
+[101.527751] (-) TimerEvent: {}
+[101.628443] (-) TimerEvent: {}
+[101.729135] (-) TimerEvent: {}
+[101.829894] (-) TimerEvent: {}
+[101.930673] (-) TimerEvent: {}
+[102.031385] (-) TimerEvent: {}
+[102.132134] (-) TimerEvent: {}
+[102.232860] (-) TimerEvent: {}
+[102.333631] (-) TimerEvent: {}
+[102.434419] (-) TimerEvent: {}
+[102.535187] (-) TimerEvent: {}
+[102.635895] (-) TimerEvent: {}
+[102.736592] (-) TimerEvent: {}
+[102.837300] (-) TimerEvent: {}
+[102.938119] (-) TimerEvent: {}
+[103.038906] (-) TimerEvent: {}
+[103.139614] (-) TimerEvent: {}
+[103.240328] (-) TimerEvent: {}
+[103.341082] (-) TimerEvent: {}
+[103.441799] (-) TimerEvent: {}
+[103.542520] (-) TimerEvent: {}
+[103.643203] (-) TimerEvent: {}
+[103.743914] (-) TimerEvent: {}
+[103.844631] (-) TimerEvent: {}
+[103.945323] (-) TimerEvent: {}
+[104.046157] (-) TimerEvent: {}
+[104.146889] (-) TimerEvent: {}
+[104.247587] (-) TimerEvent: {}
+[104.348280] (-) TimerEvent: {}
+[104.449014] (-) TimerEvent: {}
+[104.549737] (-) TimerEvent: {}
+[104.650474] (-) TimerEvent: {}
+[104.751204] (-) TimerEvent: {}
+[104.851910] (-) TimerEvent: {}
+[104.952621] (-) TimerEvent: {}
+[105.053402] (-) TimerEvent: {}
+[105.154101] (-) TimerEvent: {}
+[105.254825] (-) TimerEvent: {}
+[105.355518] (-) TimerEvent: {}
+[105.456192] (-) TimerEvent: {}
+[105.556920] (-) TimerEvent: {}
+[105.657624] (-) TimerEvent: {}
+[105.758353] (-) TimerEvent: {}
+[105.859092] (-) TimerEvent: {}
+[105.959788] (-) TimerEvent: {}
+[106.060452] (-) TimerEvent: {}
+[106.161189] (-) TimerEvent: {}
+[106.261871] (-) TimerEvent: {}
+[106.362643] (-) TimerEvent: {}
+[106.463539] (-) TimerEvent: {}
+[106.564254] (-) TimerEvent: {}
+[106.664952] (-) TimerEvent: {}
+[106.765666] (-) TimerEvent: {}
+[106.866404] (-) TimerEvent: {}
+[106.967137] (-) TimerEvent: {}
+[107.067820] (-) TimerEvent: {}
+[107.168531] (-) TimerEvent: {}
+[107.269275] (-) TimerEvent: {}
+[107.369998] (-) TimerEvent: {}
+[107.470730] (-) TimerEvent: {}
+[107.571433] (-) TimerEvent: {}
+[107.672143] (-) TimerEvent: {}
+[107.772874] (-) TimerEvent: {}
+[107.873613] (-) TimerEvent: {}
+[107.974433] (-) TimerEvent: {}
+[108.075172] (-) TimerEvent: {}
+[108.175892] (-) TimerEvent: {}
+[108.276617] (-) TimerEvent: {}
+[108.377354] (-) TimerEvent: {}
+[108.478055] (-) TimerEvent: {}
+[108.578768] (-) TimerEvent: {}
+[108.679474] (-) TimerEvent: {}
+[108.780157] (-) TimerEvent: {}
+[108.880874] (-) TimerEvent: {}
+[108.981578] (-) TimerEvent: {}
+[109.082320] (-) TimerEvent: {}
+[109.183046] (-) TimerEvent: {}
+[109.283744] (-) TimerEvent: {}
+[109.384450] (-) TimerEvent: {}
+[109.485130] (-) TimerEvent: {}
+[109.585866] (-) TimerEvent: {}
+[109.686575] (-) TimerEvent: {}
+[109.787301] (-) TimerEvent: {}
+[109.888040] (-) TimerEvent: {}
+[109.988790] (-) TimerEvent: {}
+[110.089553] (-) TimerEvent: {}
+[110.190414] (-) TimerEvent: {}
+[110.291140] (-) TimerEvent: {}
+[110.391852] (-) TimerEvent: {}
+[110.492539] (-) TimerEvent: {}
+[110.593218] (-) TimerEvent: {}
+[110.693946] (-) TimerEvent: {}
+[110.794668] (-) TimerEvent: {}
+[110.895380] (-) TimerEvent: {}
+[110.996076] (-) TimerEvent: {}
+[111.096757] (-) TimerEvent: {}
+[111.197460] (-) TimerEvent: {}
+[111.298183] (-) TimerEvent: {}
+[111.398955] (-) TimerEvent: {}
+[111.499650] (-) TimerEvent: {}
+[111.600388] (-) TimerEvent: {}
+[111.701118] (-) TimerEvent: {}
+[111.801823] (-) TimerEvent: {}
+[111.902578] (-) TimerEvent: {}
+[112.003331] (-) TimerEvent: {}
+[112.104032] (-) TimerEvent: {}
+[112.204761] (-) TimerEvent: {}
+[112.305465] (-) TimerEvent: {}
+[112.406206] (-) TimerEvent: {}
+[112.506942] (-) TimerEvent: {}
+[112.607642] (-) TimerEvent: {}
+[112.708306] (-) TimerEvent: {}
+[112.809007] (-) TimerEvent: {}
+[112.909821] (-) TimerEvent: {}
+[113.010591] (-) TimerEvent: {}
+[113.111310] (-) TimerEvent: {}
+[113.212009] (-) TimerEvent: {}
+[113.312721] (-) TimerEvent: {}
+[113.413417] (-) TimerEvent: {}
+[113.514144] (-) TimerEvent: {}
+[113.614876] (-) TimerEvent: {}
+[113.715587] (-) TimerEvent: {}
+[113.816289] (-) TimerEvent: {}
+[113.917044] (-) TimerEvent: {}
+[114.017833] (-) TimerEvent: {}
+[114.118627] (-) TimerEvent: {}
+[114.219337] (-) TimerEvent: {}
+[114.320022] (-) TimerEvent: {}
+[114.420724] (-) TimerEvent: {}
+[114.521445] (-) TimerEvent: {}
+[114.622330] (-) TimerEvent: {}
+[114.723175] (-) TimerEvent: {}
+[114.823852] (-) TimerEvent: {}
+[114.924564] (-) TimerEvent: {}
+[115.025304] (-) TimerEvent: {}
+[115.126109] (-) TimerEvent: {}
+[115.226959] (-) TimerEvent: {}
+[115.327644] (-) TimerEvent: {}
+[115.428352] (-) TimerEvent: {}
+[115.529099] (-) TimerEvent: {}
+[115.629913] (-) TimerEvent: {}
+[115.730653] (-) TimerEvent: {}
+[115.831426] (-) TimerEvent: {}
+[115.932227] (-) TimerEvent: {}
+[116.032988] (-) TimerEvent: {}
+[116.133685] (-) TimerEvent: {}
+[116.234408] (-) TimerEvent: {}
+[116.335227] (-) TimerEvent: {}
+[116.435933] (-) TimerEvent: {}
+[116.536645] (-) TimerEvent: {}
+[116.637412] (-) TimerEvent: {}
+[116.738189] (-) TimerEvent: {}
+[116.838961] (-) TimerEvent: {}
+[116.939681] (-) TimerEvent: {}
+[117.040423] (-) TimerEvent: {}
+[117.141248] (-) TimerEvent: {}
+[117.242151] (-) TimerEvent: {}
+[117.342918] (-) TimerEvent: {}
+[117.443619] (-) TimerEvent: {}
+[117.544431] (-) TimerEvent: {}
+[117.645128] (-) TimerEvent: {}
+[117.745817] (-) TimerEvent: {}
+[117.846537] (-) TimerEvent: {}
+[117.947378] (-) TimerEvent: {}
+[118.048088] (-) TimerEvent: {}
+[118.148784] (-) TimerEvent: {}
+[118.249498] (-) TimerEvent: {}
+[118.350206] (-) TimerEvent: {}
+[118.450955] (-) TimerEvent: {}
+[118.551733] (-) TimerEvent: {}
+[118.652455] (-) TimerEvent: {}
+[118.753150] (-) TimerEvent: {}
+[118.853859] (-) TimerEvent: {}
+[118.954626] (-) TimerEvent: {}
+[119.055367] (-) TimerEvent: {}
+[119.156082] (-) TimerEvent: {}
+[119.256859] (-) TimerEvent: {}
+[119.357699] (-) TimerEvent: {}
+[119.458410] (-) TimerEvent: {}
+[119.559150] (-) TimerEvent: {}
+[119.659792] (-) TimerEvent: {}
+[119.760494] (-) TimerEvent: {}
+[119.861201] (-) TimerEvent: {}
+[119.961924] (-) TimerEvent: {}
+[120.062648] (-) TimerEvent: {}
+[120.163330] (-) TimerEvent: {}
+[120.264042] (-) TimerEvent: {}
+[120.364732] (-) TimerEvent: {}
+[120.465562] (-) TimerEvent: {}
+[120.566259] (-) TimerEvent: {}
+[120.667006] (-) TimerEvent: {}
+[120.767732] (-) TimerEvent: {}
+[120.868446] (-) TimerEvent: {}
+[120.969148] (-) TimerEvent: {}
+[121.069920] (-) TimerEvent: {}
+[121.171101] (-) TimerEvent: {}
+[121.272257] (-) TimerEvent: {}
+[121.373163] (-) TimerEvent: {}
+[121.473805] (-) TimerEvent: {}
+[121.574407] (-) TimerEvent: {}
+[121.675076] (-) TimerEvent: {}
+[121.775956] (-) TimerEvent: {}
+[121.876799] (-) TimerEvent: {}
+[121.977610] (-) TimerEvent: {}
+[122.078286] (-) TimerEvent: {}
+[122.179271] (-) TimerEvent: {}
+[122.280116] (-) TimerEvent: {}
+[122.380798] (-) TimerEvent: {}
+[122.481515] (-) TimerEvent: {}
+[122.582249] (-) TimerEvent: {}
+[122.682989] (-) TimerEvent: {}
+[122.783711] (-) TimerEvent: {}
+[122.884459] (-) TimerEvent: {}
+[122.985147] (-) TimerEvent: {}
+[123.085877] (-) TimerEvent: {}
+[123.186617] (-) TimerEvent: {}
+[123.287310] (-) TimerEvent: {}
+[123.388171] (-) TimerEvent: {}
+[123.489082] (-) TimerEvent: {}
+[123.589830] (-) TimerEvent: {}
+[123.690659] (-) TimerEvent: {}
+[123.791465] (-) TimerEvent: {}
+[123.892241] (-) TimerEvent: {}
+[123.992942] (-) TimerEvent: {}
+[124.093674] (-) TimerEvent: {}
+[124.194378] (-) TimerEvent: {}
+[124.295093] (-) TimerEvent: {}
+[124.395795] (-) TimerEvent: {}
+[124.496482] (-) TimerEvent: {}
+[124.597172] (-) TimerEvent: {}
+[124.697897] (-) TimerEvent: {}
+[124.798621] (-) TimerEvent: {}
+[124.899321] (-) TimerEvent: {}
+[125.000072] (-) TimerEvent: {}
+[125.100792] (-) TimerEvent: {}
+[125.201509] (-) TimerEvent: {}
+[125.302290] (-) TimerEvent: {}
+[125.403103] (-) TimerEvent: {}
+[125.503904] (-) TimerEvent: {}
+[125.604586] (-) TimerEvent: {}
+[125.705297] (-) TimerEvent: {}
+[125.805987] (-) TimerEvent: {}
+[125.906690] (-) TimerEvent: {}
+[126.007394] (-) TimerEvent: {}
+[126.108112] (-) TimerEvent: {}
+[126.208897] (-) TimerEvent: {}
+[126.309581] (-) TimerEvent: {}
+[126.410295] (-) TimerEvent: {}
+[126.511039] (-) TimerEvent: {}
+[126.611755] (-) TimerEvent: {}
+[126.712490] (-) TimerEvent: {}
+[126.813925] (-) TimerEvent: {}
+[126.916085] (-) TimerEvent: {}
+[127.016960] (-) TimerEvent: {}
+[127.117884] (-) TimerEvent: {}
+[127.218648] (-) TimerEvent: {}
+[127.319330] (-) TimerEvent: {}
+[127.420074] (-) TimerEvent: {}
+[127.520842] (-) TimerEvent: {}
+[127.621763] (-) TimerEvent: {}
+[127.722724] (-) TimerEvent: {}
+[127.823770] (-) TimerEvent: {}
+[127.924715] (-) TimerEvent: {}
+[128.026043] (-) TimerEvent: {}
+[128.126792] (-) TimerEvent: {}
+[128.227514] (-) TimerEvent: {}
+[128.328237] (-) TimerEvent: {}
+[128.428958] (-) TimerEvent: {}
+[128.498651] (lidar_odometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lidar_odometry\x1b[0m\n'}
+[128.529216] (-) TimerEvent: {}
+[128.629981] (-) TimerEvent: {}
+[128.730956] (-) TimerEvent: {}
+[128.831724] (-) TimerEvent: {}
+[128.932674] (-) TimerEvent: {}
+[129.034719] (-) TimerEvent: {}
+[129.135429] (-) TimerEvent: {}
+[129.236142] (-) TimerEvent: {}
+[129.337502] (-) TimerEvent: {}
+[129.438661] (-) TimerEvent: {}
+[129.539721] (-) TimerEvent: {}
+[129.640877] (-) TimerEvent: {}
+[129.742008] (-) TimerEvent: {}
+[129.844049] (-) TimerEvent: {}
+[129.947548] (-) TimerEvent: {}
+[130.049103] (-) TimerEvent: {}
+[130.150052] (-) TimerEvent: {}
+[130.251397] (-) TimerEvent: {}
+[130.352573] (-) TimerEvent: {}
+[130.453656] (-) TimerEvent: {}
+[130.554959] (-) TimerEvent: {}
+[130.655735] (-) TimerEvent: {}
+[130.756812] (-) TimerEvent: {}
+[130.858015] (-) TimerEvent: {}
+[130.959376] (-) TimerEvent: {}
+[131.060603] (-) TimerEvent: {}
+[131.161845] (-) TimerEvent: {}
+[131.262885] (-) TimerEvent: {}
+[131.363978] (-) TimerEvent: {}
+[131.464844] (-) TimerEvent: {}
+[131.565656] (-) TimerEvent: {}
+[131.666385] (-) TimerEvent: {}
+[131.767022] (-) TimerEvent: {}
+[131.867646] (-) TimerEvent: {}
+[131.968300] (-) TimerEvent: {}
+[132.068970] (-) TimerEvent: {}
+[132.169684] (-) TimerEvent: {}
+[132.270544] (-) TimerEvent: {}
+[132.371169] (-) TimerEvent: {}
+[132.471804] (-) TimerEvent: {}
+[132.572437] (-) TimerEvent: {}
+[132.673110] (-) TimerEvent: {}
+[132.773760] (-) TimerEvent: {}
+[132.874463] (-) TimerEvent: {}
+[132.975563] (-) TimerEvent: {}
+[133.077006] (-) TimerEvent: {}
+[133.177978] (-) TimerEvent: {}
+[133.278967] (-) TimerEvent: {}
+[133.379617] (-) TimerEvent: {}
+[133.480400] (-) TimerEvent: {}
+[133.581271] (-) TimerEvent: {}
+[133.682002] (-) TimerEvent: {}
+[133.782710] (-) TimerEvent: {}
+[133.883553] (-) TimerEvent: {}
+[133.984729] (-) TimerEvent: {}
+[133.996911] (lidar_odometry) StdoutLine: {'line': b'[100%] Built target lidar_odometry\n'}
+[134.036082] (lidar_odometry) CommandEnded: {'returncode': 0}
+[134.038049] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'install'}
+[134.072087] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cev/SLAMv2/build/lidar_odometry'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 49934 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.111.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ce9a8531-9a6f-4a27-947a-29a95ac2932c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 49934 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[134.084930] (-) TimerEvent: {}
+[134.097713] (lidar_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[134.098460] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/lidar_odometry\n'}
+[134.185122] (-) TimerEvent: {}
+[134.214118] (lidar_odometry) StdoutLine: {'line': b'-- Set runtime path of "/home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/lidar_odometry" to ""\n'}
+[134.214845] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/motor_controller\n'}
+[134.218281] (lidar_odometry) StdoutLine: {'line': b'-- Set runtime path of "/home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/motor_controller" to ""\n'}
+[134.218979] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch\n'}
+[134.219441] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/example.py\n'}
+[134.220313] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/carv2.py\n'}
+[134.222025] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/car.py\n'}
+[134.223657] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry\n'}
+[134.225261] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry\n'}
+[134.226760] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh\n'}
+[134.228067] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv\n'}
+[134.229391] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.sh\n'}
+[134.230771] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.dsv\n'}
+[134.232012] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.bash\n'}
+[134.233241] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.sh\n'}
+[134.234608] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.zsh\n'}
+[134.235850] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.dsv\n'}
+[134.237083] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv\n'}
+[134.238525] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry\n'}
+[134.239873] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake\n'}
+[134.240818] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake\n'}
+[134.241902] (lidar_odometry) StdoutLine: {'line': b'-- Installing: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.xml\n'}
+[134.248177] (lidar_odometry) CommandEnded: {'returncode': 0}
+[134.285379] (-) TimerEvent: {}
+[134.361113] (lidar_odometry) JobEnded: {'identifier': 'lidar_odometry', 'rc': 0}
+[134.366578] (-) EventReactorShutdown: {}

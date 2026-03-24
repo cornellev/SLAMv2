@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcevicp.a CMakeFiles/cevicp.dir/lib/algo/kdtree.cpp.o CMakeFiles/cevicp.dir/lib/algo/quickselect.cpp.o CMakeFiles/cevicp.dir/lib/icp/icp.cpp.o CMakeFiles/cevicp.dir/lib/icp/driver.cpp.o CMakeFiles/cevicp.dir/lib/icp/geo.cpp.o CMakeFiles/cevicp.dir/lib/icp/impl/vanilla.cpp.o CMakeFiles/cevicp.dir/lib/icp/impl/trimmed.cpp.o CMakeFiles/cevicp.dir/lib/icp/impl/feature_aware.cpp.o
+/usr/bin/ranlib libcevicp.a
