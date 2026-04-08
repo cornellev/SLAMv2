@@ -1,0 +1,20 @@
+[01m[K/home/cev/SLAMv2/src/icp/vis/main.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcmdapp/cmdapp.h: No such file or directory
+   11 | #include [01;31m[K<cmdapp/cmdapp.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/vis/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:120: CMakeFiles/main.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/cev/SLAMv2/src/icp/tests/test3d.cpp:14:10:[m[K [01;31m[Kfatal error: [m[Ksimple_test/simple_test.h: No such file or directory
+   14 | #include [01;31m[K<simple_test/simple_test.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_suite_3d.dir/build.make:76: CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/test_suite_3d.dir/all] Error 2
+[01m[K/home/cev/SLAMv2/src/icp/tests/test.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Ksimple_test/simple_test.h: No such file or directory
+   18 | #include [01;31m[K<simple_test/simple_test.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_suite.dir/build.make:76: CMakeFiles/test_suite.dir/tests/test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:146: CMakeFiles/test_suite.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

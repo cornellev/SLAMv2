@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target pgo_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pgo_node.dir/src/SLAM_backend_math.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pgo_node[0m
+[100%] Built target pgo_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/lib/cev_pose_graph_slam/pgo_node
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/package_run_dependencies/cev_pose_graph_slam
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/parent_prefix_path/cev_pose_graph_slam
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.sh
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.dsv
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.sh
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.dsv
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.bash
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.sh
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.zsh
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.dsv
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/packages/cev_pose_graph_slam
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig.cmake
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig-version.cmake
+-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.xml

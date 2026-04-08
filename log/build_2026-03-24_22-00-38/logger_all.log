@@ -1,0 +1,182 @@
+[0.762s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'cev_pose_graph_slam', '--symlink-install']
+[0.763s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['cev_pose_graph_slam'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8a0912d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8a2361d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8a2361d0>>, mixin_verb=('build',))
+[2.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.159s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.160s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cev/SLAMv2'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.247s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.249s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.251s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.253s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.255s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.255s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.258s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.264s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.265s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.273s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extensions ['ignore', 'ignore_ament_install']
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extension 'ignore'
+[2.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extension 'ignore_ament_install'
+[2.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extensions ['colcon_pkg']
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extension 'colcon_pkg'
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extensions ['colcon_meta']
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extension 'colcon_meta'
+[2.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extensions ['ros']
+[2.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_lidar_odometry_ros2) by extension 'ros'
+[2.297s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cev_lidar_odometry_ros2' with type 'ros.ament_cmake' and name 'lidar_odometry'
+[2.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extensions ['ignore', 'ignore_ament_install']
+[2.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extension 'ignore'
+[2.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extension 'ignore_ament_install'
+[2.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extensions ['colcon_pkg']
+[2.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extension 'colcon_pkg'
+[2.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extensions ['colcon_meta']
+[2.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extension 'colcon_meta'
+[2.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extensions ['ros']
+[2.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/cev_pose_graph_slam) by extension 'ros'
+[2.305s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cev_pose_graph_slam' with type 'ros.ament_cmake' and name 'cev_pose_graph_slam'
+[2.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extensions ['ignore', 'ignore_ament_install']
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'ignore'
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'ignore_ament_install'
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extensions ['colcon_pkg']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'colcon_pkg'
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extensions ['colcon_meta']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'colcon_meta'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extensions ['ros']
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'ros'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extensions ['cmake', 'python']
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'cmake'
+[2.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/icp) by extension 'python'
+[2.325s] DEBUG:colcon.colcon_core.package_identification:Package 'src/icp' with type 'cmake' and name 'CevIcp'
+[2.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extensions ['ignore', 'ignore_ament_install']
+[2.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'ignore'
+[2.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'ignore_ament_install'
+[2.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extensions ['colcon_pkg']
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'colcon_pkg'
+[2.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extensions ['colcon_meta']
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'colcon_meta'
+[2.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extensions ['ros']
+[2.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'ros'
+[2.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extensions ['cmake', 'python']
+[2.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'cmake'
+[2.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'python'
+[2.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extensions ['python_setup_py']
+[2.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/script) by extension 'python_setup_py'
+[2.333s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.526s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'CevIcp' in 'src/icp'
+[2.527s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lidar_odometry' in 'src/cev_lidar_odometry_ros2'
+[2.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.541s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/cev/SLAMv2/install
+[2.551s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 276 installed packages in /opt/ros/humble
+[2.558s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'cmake_args' from command line to 'None'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'cmake_target' from command line to 'None'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.816s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[2.817s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'cmake_clean_first' from command line to 'False'
+[2.817s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'cmake_force_configure' from command line to 'False'
+[2.817s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'ament_cmake_args' from command line to 'None'
+[2.817s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[2.817s] Level 5:colcon.colcon_core.verb:set package 'cev_pose_graph_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.817s] DEBUG:colcon.colcon_core.verb:Building package 'cev_pose_graph_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cev/SLAMv2/build/cev_pose_graph_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cev/SLAMv2/install/cev_pose_graph_slam', 'merge_install': False, 'path': '/home/cev/SLAMv2/src/cev_pose_graph_slam', 'symlink_install': True, 'test_result_base': None}
+[2.818s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.822s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.823s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cev/SLAMv2/src/cev_pose_graph_slam' with build type 'ament_cmake'
+[2.823s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cev/SLAMv2/src/cev_pose_graph_slam'
+[2.836s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.837s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.837s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cev/SLAMv2/build/cev_pose_graph_slam -- -j4 -l4
+[63.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cev/SLAMv2/build/cev_pose_graph_slam -- -j4 -l4
+[63.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cev/SLAMv2/build/cev_pose_graph_slam
+[63.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cev_pose_graph_slam)
+[63.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cev/SLAMv2/build/cev_pose_graph_slam
+[63.945s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam' for CMake module files
+[63.951s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam' for CMake config files
+[63.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('cev_pose_graph_slam', 'cmake_prefix_path')
+[63.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.ps1'
+[63.979s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.dsv'
+[63.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.sh'
+[63.986s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/lib'
+[63.987s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/bin'
+[63.988s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/lib/pkgconfig/cev_pose_graph_slam.pc'
+[63.990s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/lib/python3.10/site-packages'
+[63.992s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/bin'
+[63.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.ps1'
+[64.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv'
+[64.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.sh'
+[64.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.bash'
+[64.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.zsh'
+[64.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cev/SLAMv2/install/cev_pose_graph_slam/share/colcon-core/packages/cev_pose_graph_slam)
+[64.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cev_pose_graph_slam)
+[64.018s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam' for CMake module files
+[64.021s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam' for CMake config files
+[64.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('cev_pose_graph_slam', 'cmake_prefix_path')
+[64.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.ps1'
+[64.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.dsv'
+[64.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.sh'
+[64.031s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/lib'
+[64.032s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/bin'
+[64.033s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/lib/pkgconfig/cev_pose_graph_slam.pc'
+[64.034s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/lib/python3.10/site-packages'
+[64.036s] Level 1:colcon.colcon_core.environment:checking '/home/cev/SLAMv2/install/cev_pose_graph_slam/bin'
+[64.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.ps1'
+[64.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv'
+[64.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.sh'
+[64.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.bash'
+[64.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.zsh'
+[64.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cev/SLAMv2/install/cev_pose_graph_slam/share/colcon-core/packages/cev_pose_graph_slam)
+[64.054s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[64.055s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[64.056s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[64.056s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[64.082s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[64.083s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[64.084s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[64.085s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[64.091s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[64.092s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[64.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cev/SLAMv2/install/local_setup.ps1'
+[64.102s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cev/SLAMv2/install/_local_setup_util_ps1.py'
+[64.110s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cev/SLAMv2/install/setup.ps1'
+[64.117s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cev/SLAMv2/install/local_setup.sh'
+[64.121s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cev/SLAMv2/install/_local_setup_util_sh.py'
+[64.125s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cev/SLAMv2/install/setup.sh'
+[64.131s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cev/SLAMv2/install/local_setup.bash'
+[64.134s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cev/SLAMv2/install/setup.bash'
+[64.139s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cev/SLAMv2/install/local_setup.zsh'
+[64.142s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cev/SLAMv2/install/setup.zsh'

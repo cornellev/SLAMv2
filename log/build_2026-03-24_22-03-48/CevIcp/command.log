@@ -1,0 +1,2 @@
+Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake --build /home/cev/SLAMv2/build/CevIcp -- -j4 -l4
+Invoked command in '/home/cev/SLAMv2/build/CevIcp' returned '2': /usr/bin/cmake --build /home/cev/SLAMv2/build/CevIcp -- -j4 -l4

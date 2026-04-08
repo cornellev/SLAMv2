@@ -1,0 +1,114 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cev/SLAMv2/build/cev_pose_graph_slam
+[ 50%] [32mBuilding CXX object CMakeFiles/pgo_node.dir/src/SLAM_backend_math.cpp.o[0m
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:183:24:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  183 | class PgoNode : public [01;31m[Krclcpp[m[K::Node {
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:183:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+  183 | class PgoNode : public rclcpp::[01;31m[KNode[m[K {
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:184:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+  184 | [01;31m[Kpublic[m[K:
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:184:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:183:37:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  183 | class PgoNode : public rclcpp::Node [01;36m[K{[m[K
+      |                                     [01;36m[K^[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:196:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+  196 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:[m[K In function ‘[01m[Kvoid publish_correction(double, double, double)[m[K’:
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:239:32:[m[K [01;31m[Kerror: [m[K‘[01m[KX[m[K’ was not declared in this scope
+  239 |         Pose2 optimized_pose = [01;31m[KX[m[K.back();
+      |                                [01;31m[K^[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:241:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+  241 |         [01;31m[Kgeometry_msgs[m[K::msg::TransformStamped t;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:242:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  242 |         [01;31m[Kt[m[K.header.stamp = this->get_clock()->now();
+      |         [01;31m[K^[m[K
+      |         [32m[Ktm[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:242:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  242 |         t.header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:251:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ has not been declared
+  251 |         [01;31m[Ktf2[m[K::Quaternion q;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:252:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+  252 |         [01;31m[Kq[m[K.setRPY(0, 0, optimized_pose.th - raw_th);
+      |         [01;31m[K^[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:258:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+  258 |         [01;31m[Ktf_broadcaster_[m[K->sendTransform(t);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:[m[K At global scope:
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:261:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+  261 |     [01;31m[Krclcpp[m[K::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:262:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kunique_ptr[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+  262 |     std::[01;31m[Kunique_ptr[m[K<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+      |          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:10:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_ptr[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+    9 | #include <iostream>
+  +++ |+[32m[K#include <memory>[m[K
+   10 | #include <vector>
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:266:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  266 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:269:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  269 |     [01;31m[Krclcpp[m[K::init(argc, argv);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:270:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  270 |     [01;31m[Krclcpp[m[K::spin(std::make_shared<PgoNode>());
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:270:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  270 |     rclcpp::spin(std::[01;31m[Kmake_shared[m[K<PgoNode>());
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:270:23:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::make_shared[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:270:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  270 |     rclcpp::spin(std::make_shared<PgoNode[01;31m[K>[m[K());
+      |                                          [01;31m[K^[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:270:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  270 |     rclcpp::spin(std::make_shared<PgoNode>([01;31m[K)[m[K);
+      |                                            [01;31m[K^[m[K
+[01m[K/home/cev/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:271:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  271 |     [01;31m[Krclcpp[m[K::shutdown();
+      |     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pgo_node.dir/build.make:76: CMakeFiles/pgo_node.dir/src/SLAM_backend_math.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pgo_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

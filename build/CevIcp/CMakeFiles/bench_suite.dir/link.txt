@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/bench_suite.dir/bench/bench.cpp.o CMakeFiles/bench_suite.dir/common/parse_scan.cpp.o -o bench_suite   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib libcevicp.a -lconfig 

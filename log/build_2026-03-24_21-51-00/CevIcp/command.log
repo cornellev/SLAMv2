@@ -1,0 +1,1 @@
+Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake /home/cev/SLAMv2/src/icp -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/CevIcp

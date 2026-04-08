@@ -1,0 +1,38 @@
+[0.239s] Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake --build /home/cev/SLAMv2/build/CevIcp -- -j4 -l4
+[0.701s] [  4%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/algo/kdtree.cpp.o[0m
+[0.715s] [  8%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/icp.cpp.o[0m
+[0.729s] [ 13%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/vanilla.cpp.o[0m
+[0.763s] [ 17%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/algo/quickselect.cpp.o[0m
+[0.997s] [ 21%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/trimmed.cpp.o[0m
+[1.084s] [ 26%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/feature_aware.cpp.o[0m
+[39.998s] [ 30%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/trimmed_3d.cpp.o[0m
+[100.298s] [ 34%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/vanilla_3d.cpp.o[0m
+[158.952s] [ 39%] [32m[1mLinking CXX static library libcevicp.a[0m
+[169.949s] [ 39%] Built target cevicp
+[170.697s] [ 43%] [32mBuilding CXX object CMakeFiles/main.dir/vis/main.cpp.o[0m
+[170.711s] [ 47%] [32mBuilding CXX object CMakeFiles/test_suite.dir/tests/test.cpp.o[0m
+[170.719s] [ 52%] [32mBuilding CXX object CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o[0m
+[170.726s] [ 56%] [32mBuilding CXX object CMakeFiles/test_suite_ply.dir/tests/test_ply.cpp.o[0m
+[171.129s] [01m[K/home/cev/SLAMv2/src/icp/vis/main.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcmdapp/cmdapp.h: No such file or directory
+[171.132s]    11 | #include [01;31m[K<cmdapp/cmdapp.h>[m[K
+[171.133s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[171.134s] compilation terminated.
+[171.140s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/vis/main.cpp.o] Error 1
+[171.140s] gmake[1]: *** [CMakeFiles/Makefile2:120: CMakeFiles/main.dir/all] Error 2
+[171.141s] gmake[1]: *** Waiting for unfinished jobs....
+[171.646s] [01m[K/home/cev/SLAMv2/src/icp/tests/test3d.cpp:14:10:[m[K [01;31m[Kfatal error: [m[Ksimple_test/simple_test.h: No such file or directory
+[171.650s]    14 | #include [01;31m[K<simple_test/simple_test.h>[m[K
+[171.652s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[171.654s] compilation terminated.
+[171.682s] gmake[2]: *** [CMakeFiles/test_suite_3d.dir/build.make:76: CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o] Error 1
+[171.683s] gmake[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/test_suite_3d.dir/all] Error 2
+[171.926s] [01m[K/home/cev/SLAMv2/src/icp/tests/test.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Ksimple_test/simple_test.h: No such file or directory
+[171.926s]    18 | #include [01;31m[K<simple_test/simple_test.h>[m[K
+[171.927s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[171.927s] compilation terminated.
+[171.959s] gmake[2]: *** [CMakeFiles/test_suite.dir/build.make:76: CMakeFiles/test_suite.dir/tests/test.cpp.o] Error 1
+[171.961s] gmake[1]: *** [CMakeFiles/Makefile2:146: CMakeFiles/test_suite.dir/all] Error 2
+[202.550s] [ 60%] [32m[1mLinking CXX executable test_suite_ply[0m
+[208.443s] [ 60%] Built target test_suite_ply
+[208.449s] gmake: *** [Makefile:136: all] Error 2
+[208.460s] Invoked command in '/home/cev/SLAMv2/build/CevIcp' returned '2': /usr/bin/cmake --build /home/cev/SLAMv2/build/CevIcp -- -j4 -l4

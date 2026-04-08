@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/vis/main.cpp.o CMakeFiles/main.dir/vis/lidar_view.cpp.o CMakeFiles/main.dir/vis/view_config.cpp.o CMakeFiles/main.dir/common/parse_scan.cpp.o -o main   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib libcevicp.a /usr/lib/aarch64-linux-gnu/libSDL2.so -lcmdapp -lsdlwrapper -lconfig 

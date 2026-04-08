@@ -1,0 +1,2 @@
+source;share/cev_pose_graph_slam/environment/ament_prefix_path.sh
+source;share/cev_pose_graph_slam/environment/path.sh

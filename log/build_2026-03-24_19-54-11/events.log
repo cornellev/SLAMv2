@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.001672] (-) JobUnselected: {'identifier': 'CevIcp'}
+[0.002262] (lidar_odometry) JobQueued: {'identifier': 'lidar_odometry', 'dependencies': OrderedDict()}
+[0.002773] (lidar_odometry) JobStarted: {'identifier': 'lidar_odometry'}
+[0.039725] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'cmake'}
+[0.044218] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '/home/cev/SLAMv2/src/cev_lidar_odometry_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/lidar_odometry'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 52376 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d6bc9b91-c2aa-4a9a-9e11-43ecb9496841.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-078fcaca71.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/cev/SLAMv2/install/lidar_odometry'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 52376 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/lidar_odometry:/opt/ros/humble')]), 'shell': False}
+[0.099038] (-) TimerEvent: {}
+[0.102003] (lidar_odometry) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199185] (-) TimerEvent: {}
+[0.299934] (-) TimerEvent: {}
+[0.400621] (-) TimerEvent: {}
+[0.501355] (-) TimerEvent: {}
+[0.602213] (-) TimerEvent: {}
+[0.676885] (lidar_odometry) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.702445] (-) TimerEvent: {}
+[0.762592] (lidar_odometry) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.802634] (-) TimerEvent: {}
+[0.903457] (-) TimerEvent: {}
+[0.999747] (lidar_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.003696] (-) TimerEvent: {}
+[1.019138] (lidar_odometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.063624] (lidar_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.103886] (-) TimerEvent: {}
+[1.123747] (lidar_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.199221] (lidar_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.204078] (-) TimerEvent: {}
+[1.304905] (-) TimerEvent: {}
+[1.402297] (lidar_odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.405034] (-) TimerEvent: {}
+[1.415266] (lidar_odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.505278] (-) TimerEvent: {}
+[1.606045] (-) TimerEvent: {}
+[1.706737] (-) TimerEvent: {}
+[1.807515] (-) TimerEvent: {}
+[1.908254] (-) TimerEvent: {}
+[2.008993] (-) TimerEvent: {}
+[2.109815] (-) TimerEvent: {}
+[2.210700] (-) TimerEvent: {}
+[2.301076] (lidar_odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.310901] (-) TimerEvent: {}
+[2.411774] (-) TimerEvent: {}
+[2.512560] (-) TimerEvent: {}
+[2.589737] (lidar_odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.612746] (-) TimerEvent: {}
+[2.713547] (-) TimerEvent: {}
+[2.750912] (lidar_odometry) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.813733] (-) TimerEvent: {}
+[2.838092] (lidar_odometry) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.862642] (lidar_odometry) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.913942] (-) TimerEvent: {}
+[3.014816] (-) TimerEvent: {}
+[3.115590] (-) TimerEvent: {}
+[3.216454] (-) TimerEvent: {}
+[3.300190] (lidar_odometry) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[3.316561] (-) TimerEvent: {}
+[3.330159] (lidar_odometry) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.416713] (-) TimerEvent: {}
+[3.517430] (-) TimerEvent: {}
+[3.618200] (-) TimerEvent: {}
+[3.719195] (-) TimerEvent: {}
+[3.739661] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.740488] (lidar_odometry) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/include>;$<BUILD_INTERFACE:/home/cev/SLAMv2/src/cev_lidar_odometry_ros2/icp/include>\n'}
+[3.741050] (lidar_odometry) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.750645] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.767911] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.777644] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.819366] (-) TimerEvent: {}
+[3.838108] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.838770] (lidar_odometry) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.847768] (lidar_odometry) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.854501] (lidar_odometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.919552] (-) TimerEvent: {}
+[3.962140] (lidar_odometry) StdoutLine: {'line': b'-- Generating done\n'}
+[3.990749] (lidar_odometry) StdoutLine: {'line': b'-- Build files have been written to: /home/cev/SLAMv2/build/lidar_odometry\n'}
+[4.019785] (-) TimerEvent: {}
+[4.025345] (lidar_odometry) CommandEnded: {'returncode': 0}
+[4.027580] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'build'}
+[4.036090] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/lidar_odometry', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 52376 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d6bc9b91-c2aa-4a9a-9e11-43ecb9496841.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-078fcaca71.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/cev/SLAMv2/install/lidar_odometry'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 52376 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/lidar_odometry:/opt/ros/humble')]), 'shell': False}
+[4.120006] (-) TimerEvent: {}
+[4.210857] (lidar_odometry) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motor_controller\x1b[0m\n'}
+[4.215471] (lidar_odometry) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cevicp\x1b[0m\n'}
+[4.220198] (-) TimerEvent: {}
+[4.321811] (-) TimerEvent: {}
+[4.361456] (lidar_odometry) StdoutLine: {'line': b'[ 69%] Built target cevicp\n'}
+[4.375321] (lidar_odometry) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable motor_controller\x1b[0m\n'}
+[4.420169] (lidar_odometry) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lidar_odometry\x1b[0m\n'}
+[4.421996] (-) TimerEvent: {}
+[4.523214] (-) TimerEvent: {}
+[4.623973] (-) TimerEvent: {}
+[4.625609] (lidar_odometry) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable lidar_odometry\x1b[0m\n'}
+[4.724265] (-) TimerEvent: {}
+[4.827119] (-) TimerEvent: {}
+[4.928205] (-) TimerEvent: {}
+[5.031463] (-) TimerEvent: {}
+[5.136076] (-) TimerEvent: {}
+[5.212549] (lidar_odometry) StdoutLine: {'line': b'[ 92%] Built target motor_controller\n'}
+[5.236303] (-) TimerEvent: {}
+[5.337344] (-) TimerEvent: {}
+[5.438454] (-) TimerEvent: {}
+[5.539917] (-) TimerEvent: {}
+[5.640766] (-) TimerEvent: {}
+[5.741586] (-) TimerEvent: {}
+[5.842569] (-) TimerEvent: {}
+[5.943788] (-) TimerEvent: {}
+[6.045169] (-) TimerEvent: {}
+[6.146489] (-) TimerEvent: {}
+[6.247829] (-) TimerEvent: {}
+[6.349028] (-) TimerEvent: {}
+[6.450393] (-) TimerEvent: {}
+[6.551750] (-) TimerEvent: {}
+[6.652607] (-) TimerEvent: {}
+[6.753694] (-) TimerEvent: {}
+[6.855121] (-) TimerEvent: {}
+[6.956340] (-) TimerEvent: {}
+[7.057280] (-) TimerEvent: {}
+[7.158314] (-) TimerEvent: {}
+[7.259501] (-) TimerEvent: {}
+[7.360665] (-) TimerEvent: {}
+[7.461935] (-) TimerEvent: {}
+[7.562769] (-) TimerEvent: {}
+[7.664080] (-) TimerEvent: {}
+[7.765042] (-) TimerEvent: {}
+[7.865975] (-) TimerEvent: {}
+[7.967057] (-) TimerEvent: {}
+[8.067884] (-) TimerEvent: {}
+[8.168953] (-) TimerEvent: {}
+[8.269716] (-) TimerEvent: {}
+[8.370451] (-) TimerEvent: {}
+[8.471191] (-) TimerEvent: {}
+[8.571969] (-) TimerEvent: {}
+[8.673412] (-) TimerEvent: {}
+[8.774588] (-) TimerEvent: {}
+[8.875394] (-) TimerEvent: {}
+[8.976186] (-) TimerEvent: {}
+[9.077124] (-) TimerEvent: {}
+[9.178680] (-) TimerEvent: {}
+[9.280616] (-) TimerEvent: {}
+[9.381767] (-) TimerEvent: {}
+[9.482766] (-) TimerEvent: {}
+[9.583468] (-) TimerEvent: {}
+[9.684639] (-) TimerEvent: {}
+[9.785782] (-) TimerEvent: {}
+[9.887201] (-) TimerEvent: {}
+[9.988227] (-) TimerEvent: {}
+[10.089214] (-) TimerEvent: {}
+[10.190252] (-) TimerEvent: {}
+[10.265687] (lidar_odometry) StdoutLine: {'line': b'[100%] Built target lidar_odometry\n'}
+[10.290385] (-) TimerEvent: {}
+[10.306757] (lidar_odometry) CommandEnded: {'returncode': 0}
+[10.309371] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'install'}
+[10.344990] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cev/SLAMv2/build/lidar_odometry'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 52376 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.112.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-d6bc9b91-c2aa-4a9a-9e11-43ecb9496841.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/cev/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-078fcaca71.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/cev/SLAMv2/install/lidar_odometry'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 52376 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/lidar_odometry:/opt/ros/humble')]), 'shell': False}
+[10.379128] (lidar_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.380750] (lidar_odometry) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[10.382122] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/lidar_odometry\n'}
+[10.390563] (-) TimerEvent: {}
+[10.416551] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/motor_controller\n'}
+[10.449320] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/car.py\n'}
+[10.481800] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/carv2.py\n'}
+[10.490839] (-) TimerEvent: {}
+[10.513954] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/example.py\n'}
+[10.545801] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry\n'}
+[10.580169] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry\n'}
+[10.591032] (-) TimerEvent: {}
+[10.612677] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh\n'}
+[10.644887] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv\n'}
+[10.676178] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.sh\n'}
+[10.691337] (-) TimerEvent: {}
+[10.711743] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.dsv\n'}
+[10.743264] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.bash\n'}
+[10.775681] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.sh\n'}
+[10.791557] (-) TimerEvent: {}
+[10.808453] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.zsh\n'}
+[10.840663] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.dsv\n'}
+[10.875249] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv\n'}
+[10.891759] (-) TimerEvent: {}
+[10.907407] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry\n'}
+[10.940182] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake\n'}
+[10.973954] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake\n'}
+[10.991961] (-) TimerEvent: {}
+[11.006552] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.xml\n'}
+[11.045533] (lidar_odometry) CommandEnded: {'returncode': 0}
+[11.092328] (-) TimerEvent: {}
+[11.129824] (lidar_odometry) JobEnded: {'identifier': 'lidar_odometry', 'rc': 0}
+[11.132842] (-) EventReactorShutdown: {}

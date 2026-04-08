@@ -1,0 +1,16 @@
+[  4%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/algo/kdtree.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/icp.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/vanilla.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/algo/quickselect.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/trimmed.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/feature_aware.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/trimmed_3d.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/vanilla_3d.cpp.o[0m
+[ 39%] [32m[1mLinking CXX static library libcevicp.a[0m
+[ 39%] Built target cevicp
+[ 43%] [32mBuilding CXX object CMakeFiles/main.dir/vis/main.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/test_suite.dir/tests/test.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/test_suite_ply.dir/tests/test_ply.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable test_suite_ply[0m
+[ 60%] Built target test_suite_ply
