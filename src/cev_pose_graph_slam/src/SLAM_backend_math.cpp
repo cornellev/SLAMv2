@@ -6,7 +6,6 @@
 #include <vector>
 #include <memory>
 
-// ROS 2 Headers
 #include "rclcpp/rclcpp.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
@@ -120,51 +119,109 @@ bool gaussNewtonStep(std::vector<Pose2>& X, const std::vector<Edge2>& edges, dou
 class PgoNode : public rclcpp::Node {
 public:
     PgoNode() : Node("pgo_backend") {
+        // STEP 1: Change subscription from "/odom" to "/odometry/filtered"
         odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-            "/odom", 10, std::bind(&PgoNode::odom_callback, this, std::placeholders::_1));
+            "/odometry/filtered", 10, std::bind(&PgoNode::odom_callback, this, std::placeholders::_1));
         
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
         
-        X.push_back({0.0, 0.0, 0.0}); // First keyframe
-        RCLCPP_INFO(this->get_logger(), "PGO Backend Initialized.");
+        // Initialize the first pose at the origin
+        if (X.empty()) {
+            X.push_back({0.0, 0.0, 0.0}); 
+        }
+        
+        RCLCPP_INFO(this->get_logger(), "PGO Backend Initialized. Listening to Fused EKF Odometry.");
     }
 
 private:
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
+        // Extract fused position
         double cur_x = msg->pose.pose.position.x;
         double cur_y = msg->pose.pose.position.y;
+        
+        // Extract fused orientation (Yaw) from Quaternion
         double qz = msg->pose.pose.orientation.z;
         double qw = msg->pose.pose.orientation.w;
         double cur_th = std::atan2(2.0 * qw * qz, 1.0 - 2.0 * qz * qz);
 
         Pose2 last = X.back();
-        if (std::hypot(cur_x - last.x, cur_y - last.y) > 0.3) {
+        
+        // Keyframe Trigger: Add a node if we've moved > 0.3m OR rotated > 15 degrees
+        double travel_dist = std::hypot(cur_x - last.x, cur_y - last.y);
+        double rotation_dist = std::abs(wrapAngle(cur_th - last.th));
+
+        if (travel_dist > 0.3 || rotation_dist > 0.26) { // ~15 degrees
+            // Calculate the relative transform (The "Edge")
             Eigen::Vector3d z(cur_x - last.x, cur_y - last.y, wrapAngle(cur_th - last.th));
             X.push_back({cur_x, cur_y, cur_th});
             
-            Eigen::Matrix3d info = Eigen::Matrix3d::Identity(); // Simplified info matrix
-            info(0,0) = 400.0; info(1,1) = 400.0; info(2,2) = 2500.0; 
+            // Information Matrix (Weights): We trust rotation (IMU) more than translation (LiDAR)
+            Eigen::Matrix3d info = Eigen::Matrix3d::Identity();
+            info(0,0) = 500.0;  // X weight
+            info(1,1) = 500.0;  // Y weight
+            info(2,2) = 3000.0; // Yaw weight (Higher because of IMU stability)
 
             edges.push_back({(int)X.size()-2, (int)X.size()-1, z, info});
             
-            for (int it = 0; it < 5; ++it) gaussNewtonStep(X, edges, 1e-6);
-            publish_correction(cur_x, cur_y, cur_th);
+            // Run 5 iterations of Gauss-Newton to smooth the graph
+            for (int it = 0; it < 5; ++it) {
+                gaussNewtonStep(X, edges, 1e-6);
+            }
+
+            RCLCPP_INFO(this->get_logger(), "Added Keyframe %ld. Optimization complete.", X.size());
+
+            // --- RADIUS SEARCH FOR LOOP CLOSURE ---
+            // Ensure we have enough history to actually "loop"
+            if (X.size() > 20) {
+                int current_idx = (int)X.size() - 1;
+                Pose2 current_pose = X[current_idx];
+
+                // Search backwards, skipping the last 10 nodes (don't match with immediate past)
+                for (int i = 0; i < current_idx - 10; ++i) {
+                    double dist = std::hypot(current_pose.x - X[i].x, current_pose.y - X[i].y);
+                    
+                    // If an old node is within a 1.0 meter radius
+                    if (dist < 1.0) {
+                        RCLCPP_INFO(this->get_logger(), 
+                            "\n====================================\n"
+                            "LOOP CLOSURE CANDIDATE FOUND!\n"
+                            "Current Node: %d is near Old Node: %d\n"
+                            "Distance: %.2f meters\n"
+                            "====================================\n", 
+                            current_idx, i, dist);
+                        
+                        // NOTE: We only log it right now. To actually close the loop, 
+                        // we must send a request to the ICP node to see if the current 
+                        // LiDAR scan matches Node i's LiDAR scan.
+                        
+                        break; // Stop searching once we find one good candidate per keyframe
+                    }
+                }
+            }
+            // -------------------------------------------
         }
+
+        // Always publish the map->odom transform to keep the TF tree linked
+        publish_correction(cur_x, cur_y, cur_th);
     }
 
-    void publish_correction(double raw_x, double raw_y, double raw_th) {
+    void publish_correction(double fused_x, double fused_y, double fused_th) {
+        // The correction is the difference between our Optimized map pose 
+        // and the EKF's current fused odometry pose.
         Pose2 opt = X.back();
+        
         geometry_msgs::msg::TransformStamped t;
         t.header.stamp = this->get_clock()->now();
         t.header.frame_id = "map";
         t.child_frame_id = "odom";
 
-        t.transform.translation.x = opt.x - raw_x;
-        t.transform.translation.y = opt.y - raw_y;
+        // Math: T_map_to_odom = T_map_to_base * inv(T_odom_to_base)
+        t.transform.translation.x = opt.x - fused_x;
+        t.transform.translation.y = opt.y - fused_y;
         t.transform.translation.z = 0.0;
 
         tf2::Quaternion q;
-        q.setRPY(0, 0, wrapAngle(opt.th - raw_th));
+        q.setRPY(0, 0, wrapAngle(opt.th - fused_th));
         t.transform.rotation.x = q.x();
         t.transform.rotation.y = q.y();
         t.transform.rotation.z = q.z();
@@ -178,6 +235,7 @@ private:
     std::vector<Pose2> X;
     std::vector<Edge2> edges;
 };
+
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);

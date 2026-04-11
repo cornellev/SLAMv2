@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.001217] (-) JobUnselected: {'identifier': 'CevIcp'}
+[0.001446] (-) JobUnselected: {'identifier': 'cev_pose_graph_slam'}
+[0.001884] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.002410] (-) EventReactorShutdown: {}

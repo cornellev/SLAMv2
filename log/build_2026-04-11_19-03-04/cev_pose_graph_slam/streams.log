@@ -1,0 +1,21 @@
+[0.092s] Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': /usr/bin/cmake /home/cev/SLAMv2/src/cev_pose_graph_slam -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/cev_pose_graph_slam
+[0.267s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.216s] Traceback (most recent call last):
+[1.216s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[1.217s]     from ament_package.templates import get_environment_hook_template_path
+[1.219s] ModuleNotFoundError: No module named 'ament_package'
+[1.362s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[1.363s]   execute_process(/usr/bin/python3
+[1.363s]   /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[1.363s]   /home/cev/SLAMv2/build/cev_pose_graph_slam/ament_cmake_package_templates/templates.cmake)
+[1.364s]   returned error code 1
+[1.364s] Call Stack (most recent call first):
+[1.365s]   /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.365s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.365s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.366s]   CMakeLists.txt:4 (find_package)
+[1.367s] 
+[1.367s] [0m
+[1.368s] -- Configuring incomplete, errors occurred!
+[1.368s] See also "/home/cev/SLAMv2/build/cev_pose_graph_slam/CMakeFiles/CMakeOutput.log".
+[1.385s] Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '1': /usr/bin/cmake /home/cev/SLAMv2/src/cev_pose_graph_slam -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/cev_pose_graph_slam

@@ -1,0 +1,175 @@
+[0.000000] (-) TimerEvent: {}
+[0.001755] (-) JobUnselected: {'identifier': 'CevIcp'}
+[0.002334] (-) JobUnselected: {'identifier': 'cev_pose_graph_slam'}
+[0.002820] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.003018] (witmotion_ros2) JobQueued: {'identifier': 'witmotion_ros2', 'dependencies': OrderedDict()}
+[0.003316] (witmotion_ros2) JobStarted: {'identifier': 'witmotion_ros2'}
+[0.041566] (witmotion_ros2) JobProgress: {'identifier': 'witmotion_ros2', 'progress': 'cmake'}
+[0.043678] (witmotion_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/cev/SLAMv2/src/witmotion_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/witmotion_ros2'], 'cwd': '/home/cev/SLAMv2/build/witmotion_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 56839 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.114.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-91736851-17c5-4989-978a-99972998a6eb.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-078fcaca71.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cev/SLAMv2/build/witmotion_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 56839 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[0.099178] (-) TimerEvent: {}
+[0.199894] (-) TimerEvent: {}
+[0.300728] (-) TimerEvent: {}
+[0.317199] (witmotion_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400974] (-) TimerEvent: {}
+[0.502299] (-) TimerEvent: {}
+[0.578739] (witmotion_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.602496] (-) TimerEvent: {}
+[0.611439] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.702818] (-) TimerEvent: {}
+[0.803663] (-) TimerEvent: {}
+[0.904532] (-) TimerEvent: {}
+[0.935504] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.963210] (witmotion_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.964059] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.965559] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.977030] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.004731] (-) TimerEvent: {}
+[1.105450] (-) TimerEvent: {}
+[1.206176] (-) TimerEvent: {}
+[1.306973] (-) TimerEvent: {}
+[1.328716] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.355679] (witmotion_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.356751] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.358394] (witmotion_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.384393] (witmotion_ros2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[1.407152] (-) TimerEvent: {}
+[1.507846] (-) TimerEvent: {}
+[1.608671] (-) TimerEvent: {}
+[1.709385] (-) TimerEvent: {}
+[1.810073] (-) TimerEvent: {}
+[1.910816] (-) TimerEvent: {}
+[2.011571] (-) TimerEvent: {}
+[2.112333] (-) TimerEvent: {}
+[2.183701] (witmotion_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.212566] (-) TimerEvent: {}
+[2.313543] (-) TimerEvent: {}
+[2.414198] (-) TimerEvent: {}
+[2.497227] (witmotion_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.514457] (-) TimerEvent: {}
+[2.615269] (-) TimerEvent: {}
+[2.716118] (-) TimerEvent: {}
+[2.816962] (-) TimerEvent: {}
+[2.890941] (witmotion_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.917237] (-) TimerEvent: {}
+[3.018226] (-) TimerEvent: {}
+[3.119217] (-) TimerEvent: {}
+[3.220632] (-) TimerEvent: {}
+[3.321478] (-) TimerEvent: {}
+[3.407676] (witmotion_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.421692] (-) TimerEvent: {}
+[3.475687] (witmotion_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.521912] (-) TimerEvent: {}
+[3.563576] (witmotion_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.622121] (-) TimerEvent: {}
+[3.682843] (witmotion_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.722338] (-) TimerEvent: {}
+[3.823169] (-) TimerEvent: {}
+[3.845417] (witmotion_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.923423] (-) TimerEvent: {}
+[4.025023] (-) TimerEvent: {}
+[4.127098] (-) TimerEvent: {}
+[4.228137] (-) TimerEvent: {}
+[4.268783] (witmotion_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.303589] (witmotion_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.328357] (-) TimerEvent: {}
+[4.429088] (-) TimerEvent: {}
+[4.529873] (-) TimerEvent: {}
+[4.630694] (-) TimerEvent: {}
+[4.731725] (-) TimerEvent: {}
+[4.832473] (-) TimerEvent: {}
+[4.933255] (-) TimerEvent: {}
+[4.946010] (witmotion_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.034408] (-) TimerEvent: {}
+[5.135390] (-) TimerEvent: {}
+[5.199620] (witmotion_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.235577] (-) TimerEvent: {}
+[5.336579] (-) TimerEvent: {}
+[5.437599] (-) TimerEvent: {}
+[5.538543] (-) TimerEvent: {}
+[5.583632] (witmotion_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.638844] (-) TimerEvent: {}
+[5.695373] (witmotion_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.739040] (-) TimerEvent: {}
+[5.839826] (-) TimerEvent: {}
+[5.940801] (-) TimerEvent: {}
+[6.042330] (-) TimerEvent: {}
+[6.108017] (witmotion_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.109770] (witmotion_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.142403] (-) TimerEvent: {}
+[6.243255] (-) TimerEvent: {}
+[6.344861] (-) TimerEvent: {}
+[6.446857] (-) TimerEvent: {}
+[6.476435] (witmotion_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.481740] (witmotion_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.547043] (-) TimerEvent: {}
+[6.648236] (-) TimerEvent: {}
+[6.749104] (-) TimerEvent: {}
+[6.849864] (-) TimerEvent: {}
+[6.855827] (witmotion_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.950037] (-) TimerEvent: {}
+[7.050808] (-) TimerEvent: {}
+[7.072039] (witmotion_ros2) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[7.150998] (-) TimerEvent: {}
+[7.251697] (-) TimerEvent: {}
+[7.311473] (witmotion_ros2) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system \n'}
+[7.351886] (-) TimerEvent: {}
+[7.452648] (-) TimerEvent: {}
+[7.553410] (-) TimerEvent: {}
+[7.649900] (witmotion_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.653574] (-) TimerEvent: {}
+[7.719305] (witmotion_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[7.736562] (witmotion_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/cev/SLAMv2/build/witmotion_ros2\n'}
+[7.753920] (-) TimerEvent: {}
+[7.777268] (witmotion_ros2) CommandEnded: {'returncode': 0}
+[7.779315] (witmotion_ros2) JobProgress: {'identifier': 'witmotion_ros2', 'progress': 'build'}
+[7.781853] (witmotion_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/witmotion_ros2', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/witmotion_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 56839 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.114.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-91736851-17c5-4989-978a-99972998a6eb.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/cev/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/cev/.vscode-server/cli/servers/Stable-e7fb5e96c0730b9deb70b33781f98e2f35975036/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-078fcaca71.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cev/SLAMv2/build/witmotion_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 56839 192.168.8.246 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[7.854087] (-) TimerEvent: {}
+[7.955045] (-) TimerEvent: {}
+[7.997354] (witmotion_ros2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/witmotion_ros2.dir/src/witmotion_node.cpp.o\x1b[0m\n'}
+[8.000805] (witmotion_ros2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/witmotion_ros2.dir/src/witmotion_handler.cpp.o\x1b[0m\n'}
+[8.055258] (-) TimerEvent: {}
+[8.156759] (-) TimerEvent: {}
+[8.258431] (-) TimerEvent: {}
+[8.359173] (-) TimerEvent: {}
+[8.460091] (-) TimerEvent: {}
+[8.561189] (-) TimerEvent: {}
+[8.661952] (-) TimerEvent: {}
+[8.762748] (-) TimerEvent: {}
+[8.863585] (-) TimerEvent: {}
+[8.965456] (-) TimerEvent: {}
+[9.066887] (-) TimerEvent: {}
+[9.171498] (-) TimerEvent: {}
+[9.273054] (-) TimerEvent: {}
+[9.374576] (-) TimerEvent: {}
+[9.475883] (-) TimerEvent: {}
+[9.577276] (-) TimerEvent: {}
+[9.678539] (-) TimerEvent: {}
+[9.780005] (-) TimerEvent: {}
+[9.881318] (-) TimerEvent: {}
+[9.982036] (-) TimerEvent: {}
+[10.082800] (-) TimerEvent: {}
+[10.183612] (-) TimerEvent: {}
+[10.284580] (-) TimerEvent: {}
+[10.385502] (-) TimerEvent: {}
+[10.486317] (-) TimerEvent: {}
+[10.584445] (witmotion_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cev/SLAMv2/src/witmotion_ros2/src/witmotion_handler.cpp:1\x1b[m\x1b[K:\n'}
+[10.585568] (witmotion_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cev/SLAMv2/src/witmotion_ros2/include/witmotion_ros2/witmotion_handler.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kasio.hpp: No such file or directory\n'}
+[10.586365] (-) TimerEvent: {}
+[10.587030] (witmotion_ros2) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K<asio.hpp>\x1b[m\x1b[K\n'}
+[10.588159] (witmotion_ros2) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.589245] (witmotion_ros2) StderrLine: {'line': b'compilation terminated.\n'}
+[10.596512] (witmotion_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/witmotion_ros2.dir/build.make:90: CMakeFiles/witmotion_ros2.dir/src/witmotion_handler.cpp.o] Error 1\n'}
+[10.597169] (witmotion_ros2) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[10.686566] (-) TimerEvent: {}
+[10.716567] (witmotion_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cev/SLAMv2/src/witmotion_ros2/src/witmotion_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.717355] (witmotion_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cev/SLAMv2/src/witmotion_ros2/include/witmotion_ros2/witmotion_node.hpp:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kasio.hpp: No such file or directory\n'}
+[10.718130] (witmotion_ros2) StderrLine: {'line': b'   19 | #include \x1b[01;31m\x1b[K<asio.hpp>\x1b[m\x1b[K\n'}
+[10.718967] (witmotion_ros2) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.719716] (witmotion_ros2) StderrLine: {'line': b'compilation terminated.\n'}
+[10.729135] (witmotion_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/witmotion_ros2.dir/build.make:76: CMakeFiles/witmotion_ros2.dir/src/witmotion_node.cpp.o] Error 1\n'}
+[10.730129] (witmotion_ros2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/witmotion_ros2.dir/all] Error 2\n'}
+[10.731178] (witmotion_ros2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.738486] (witmotion_ros2) CommandEnded: {'returncode': 2}
+[10.780403] (witmotion_ros2) JobEnded: {'identifier': 'witmotion_ros2', 'rc': 2}
+[10.786688] (-) TimerEvent: {}
+[10.791927] (-) EventReactorShutdown: {}

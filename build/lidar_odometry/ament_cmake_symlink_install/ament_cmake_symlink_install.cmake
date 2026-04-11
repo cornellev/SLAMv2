@@ -313,8 +313,8 @@ message(STATUS "Execute custom install script")
 # install("TARGETS" "lidar_odometry" "motor_controller" "DESTINATION" "lib/lidar_odometry")
 include("/home/cev/SLAMv2/build/lidar_odometry/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "launch" "DESTINATION" "share/lidar_odometry")
-ament_cmake_symlink_install_directory("/home/cev/SLAMv2/src/cev_lidar_odometry_ros2" DIRECTORY "launch" "DESTINATION" "share/lidar_odometry")
+# install(DIRECTORY "launch" "config" "DESTINATION" "share/lidar_odometry")
+ament_cmake_symlink_install_directory("/home/cev/SLAMv2/src/cev_lidar_odometry_ros2" DIRECTORY "launch" "config" "DESTINATION" "share/lidar_odometry")
 
 # install(FILES "/home/cev/SLAMv2/build/lidar_odometry/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lidar_odometry" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/cev/SLAMv2/src/cev_lidar_odometry_ros2" FILES "/home/cev/SLAMv2/build/lidar_odometry/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lidar_odometry" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

@@ -1,0 +1,6 @@
+Invoking command in '/home/cev/SLAMv2/build/witmotion_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cev/SLAMv2/src/witmotion_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/witmotion_ros2
+Invoked command in '/home/cev/SLAMv2/build/witmotion_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cev/SLAMv2/src/witmotion_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/witmotion_ros2
+Invoking command in '/home/cev/SLAMv2/build/witmotion_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cev/SLAMv2/build/witmotion_ros2 -- -j4 -l4
+Invoked command in '/home/cev/SLAMv2/build/witmotion_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cev/SLAMv2/build/witmotion_ros2 -- -j4 -l4
+Invoking command in '/home/cev/SLAMv2/build/witmotion_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cev/SLAMv2/build/witmotion_ros2
+Invoked command in '/home/cev/SLAMv2/build/witmotion_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cev/SLAMv2/build/witmotion_ros2

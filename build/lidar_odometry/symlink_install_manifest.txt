@@ -3,6 +3,7 @@
 /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/car.py
 /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/carv2.py
 /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/example.py
+/home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/config/ekf.yaml
 /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry
 /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry
 /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh

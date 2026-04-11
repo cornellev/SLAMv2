@@ -1,0 +1,33 @@
+[0.044s] Invoking command in '/home/cev/SLAMv2/build/witmotion_ros2': /usr/bin/cmake /home/cev/SLAMv2/src/witmotion_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/witmotion_ros2
+[0.891s] -- The C compiler identification is GNU 11.4.0
+[1.618s] -- The CXX compiler identification is GNU 11.4.0
+[1.669s] -- Detecting C compiler ABI info
+[2.019s] -- Detecting C compiler ABI info - done
+[2.046s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.048s] -- Detecting C compile features
+[2.051s] -- Detecting C compile features - done
+[2.065s] -- Detecting CXX compiler ABI info
+[2.420s] -- Detecting CXX compiler ABI info - done
+[2.448s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.449s] -- Detecting CXX compile features
+[2.451s] -- Detecting CXX compile features - done
+[2.594s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[2.594s]   By not providing "Findament_cmake_auto.cmake" in CMAKE_MODULE_PATH this
+[2.595s]   project has asked CMake to find a package configuration file provided by
+[2.595s]   "ament_cmake_auto", but CMake did not find one.
+[2.595s] 
+[2.596s]   Could not find a package configuration file provided by "ament_cmake_auto"
+[2.596s]   with any of the following names:
+[2.597s] 
+[2.597s]     ament_cmake_autoConfig.cmake
+[2.598s]     ament_cmake_auto-config.cmake
+[2.600s] 
+[2.601s]   Add the installation prefix of "ament_cmake_auto" to CMAKE_PREFIX_PATH or
+[2.602s]   set "ament_cmake_auto_DIR" to a directory containing one of the above
+[2.603s]   files.  If "ament_cmake_auto" provides a separate development package or
+[2.603s]   SDK, be sure it has been installed.
+[2.604s] 
+[2.604s] [0m
+[2.605s] -- Configuring incomplete, errors occurred!
+[2.606s] See also "/home/cev/SLAMv2/build/witmotion_ros2/CMakeFiles/CMakeOutput.log".
+[2.609s] Invoked command in '/home/cev/SLAMv2/build/witmotion_ros2' returned '1': /usr/bin/cmake /home/cev/SLAMv2/src/witmotion_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/witmotion_ros2
