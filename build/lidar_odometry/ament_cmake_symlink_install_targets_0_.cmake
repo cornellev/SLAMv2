@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/cev/SLAMv2/build/lidar_odometry/lidar_odometry" "/home/cev/SLAMv2/build/lidar_odometry/motor_controller" "TARGETS" "lidar_odometry" "motor_controller" "DESTINATION" "lib/lidar_odometry")

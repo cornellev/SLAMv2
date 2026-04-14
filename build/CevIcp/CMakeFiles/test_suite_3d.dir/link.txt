@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o -o test_suite_3d   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib libcevicp.a 

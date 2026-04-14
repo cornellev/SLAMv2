@@ -1,1 +1,0 @@
-/home/cev/SLAMv2/build/cev_pose_graph_slam/ament_cmake_environment_hooks/local_setup.bash

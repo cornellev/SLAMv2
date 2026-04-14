@@ -1,1 +1,0 @@
-/home/cev/SLAMv2/src/witmotion_ros2/launch/witmotion.launch.py
