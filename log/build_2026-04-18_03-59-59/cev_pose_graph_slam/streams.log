@@ -1,0 +1,23 @@
+[0.087s] Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cev/SLAMv2/build/cev_pose_graph_slam -- -j4 -l4
+[0.360s] [100%] Built target pgo_node
+[0.410s] Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cev/SLAMv2/build/cev_pose_graph_slam -- -j4 -l4
+[0.457s] Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cev/SLAMv2/build/cev_pose_graph_slam
+[0.493s] -- Install configuration: ""
+[0.494s] -- Execute custom install script
+[0.494s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/lib/cev_pose_graph_slam/pgo_node
+[0.495s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/package_run_dependencies/cev_pose_graph_slam
+[0.495s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/parent_prefix_path/cev_pose_graph_slam
+[0.499s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.sh
+[0.502s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.dsv
+[0.504s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.sh
+[0.505s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.dsv
+[0.506s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.bash
+[0.506s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.sh
+[0.507s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.zsh
+[0.508s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.dsv
+[0.511s] -- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv
+[0.562s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/packages/cev_pose_graph_slam
+[0.569s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig.cmake
+[0.571s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig-version.cmake
+[0.573s] -- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.xml
+[0.574s] Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cev/SLAMv2/build/cev_pose_graph_slam

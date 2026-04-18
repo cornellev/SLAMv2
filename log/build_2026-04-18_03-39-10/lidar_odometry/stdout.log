@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_controller[0m
+[35m[1mConsolidate compiler generated dependencies of target cevicp[0m
+[ 15%] Built target motor_controller
+[ 84%] Built target cevicp
+[35m[1mConsolidate compiler generated dependencies of target lidar_odometry[0m
+[100%] Built target lidar_odometry
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/lidar_odometry
+-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/motor_controller
+-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/car.py
+-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/carv2.py
+-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/example.py
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/config/ekf.yaml
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/imu_covariance_injector.py
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.sh
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.dsv
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.bash
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.sh
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.zsh
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.dsv
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake
+-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.xml

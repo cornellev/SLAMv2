@@ -1,0 +1,289 @@
+[0.000000] (-) TimerEvent: {}
+[0.001064] (CevIcp) JobQueued: {'identifier': 'CevIcp', 'dependencies': OrderedDict()}
+[0.002045] (cev_pose_graph_slam) JobQueued: {'identifier': 'cev_pose_graph_slam', 'dependencies': OrderedDict()}
+[0.002575] (lidar_odometry) JobQueued: {'identifier': 'lidar_odometry', 'dependencies': OrderedDict()}
+[0.002771] (witmotion_ros2) JobQueued: {'identifier': 'witmotion_ros2', 'dependencies': OrderedDict()}
+[0.003139] (CevIcp) JobStarted: {'identifier': 'CevIcp'}
+[0.032294] (cev_pose_graph_slam) JobStarted: {'identifier': 'cev_pose_graph_slam'}
+[0.054753] (lidar_odometry) JobStarted: {'identifier': 'lidar_odometry'}
+[0.077135] (witmotion_ros2) JobStarted: {'identifier': 'witmotion_ros2'}
+[0.099237] (-) TimerEvent: {}
+[0.108060] (CevIcp) JobProgress: {'identifier': 'CevIcp', 'progress': 'cmake'}
+[0.115274] (CevIcp) JobProgress: {'identifier': 'CevIcp', 'progress': 'build'}
+[0.118924] (CevIcp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/CevIcp', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/CevIcp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/CevIcp'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam')]), 'shell': False}
+[0.132680] (cev_pose_graph_slam) JobProgress: {'identifier': 'cev_pose_graph_slam', 'progress': 'cmake'}
+[0.137275] (cev_pose_graph_slam) JobProgress: {'identifier': 'cev_pose_graph_slam', 'progress': 'build'}
+[0.138579] (cev_pose_graph_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/cev_pose_graph_slam', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/cev_pose_graph_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/cev_pose_graph_slam'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[0.162150] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'cmake'}
+[0.162914] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'build'}
+[0.163498] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/lidar_odometry', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[0.190525] (witmotion_ros2) JobProgress: {'identifier': 'witmotion_ros2', 'progress': 'cmake'}
+[0.202455] (witmotion_ros2) JobProgress: {'identifier': 'witmotion_ros2', 'progress': 'build'}
+[0.202811] (-) TimerEvent: {}
+[0.203474] (witmotion_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cev/SLAMv2/build/witmotion_ros2', '--', '-j4', '-l4'], 'cwd': '/home/cev/SLAMv2/build/witmotion_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/witmotion_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[0.303050] (-) TimerEvent: {}
+[0.352107] (cev_pose_graph_slam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pgo_node\x1b[0m\n'}
+[0.359998] (CevIcp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cevicp\x1b[0m\n'}
+[0.403507] (-) TimerEvent: {}
+[0.470286] (witmotion_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target witmotion_ros2\x1b[0m\n'}
+[0.480663] (lidar_odometry) StdoutLine: {'line': b'[ 69%] Built target cevicp\n'}
+[0.503762] (-) TimerEvent: {}
+[0.509953] (lidar_odometry) StdoutLine: {'line': b'[ 84%] Built target motor_controller\n'}
+[0.517327] (cev_pose_graph_slam) StdoutLine: {'line': b'[100%] Built target pgo_node\n'}
+[0.552472] (CevIcp) StdoutLine: {'line': b'[ 39%] Built target cevicp\n'}
+[0.604263] (-) TimerEvent: {}
+[0.632439] (cev_pose_graph_slam) CommandEnded: {'returncode': 0}
+[0.634103] (cev_pose_graph_slam) JobProgress: {'identifier': 'cev_pose_graph_slam', 'progress': 'install'}
+[0.634808] (CevIcp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_suite_ply\x1b[0m\n'}
+[0.703031] (CevIcp) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/test_suite.dir/tests/test.cpp.o\x1b[0m\n'}
+[0.704439] (-) TimerEvent: {}
+[0.714301] (CevIcp) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o\x1b[0m\n'}
+[0.723442] (cev_pose_graph_slam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cev/SLAMv2/build/cev_pose_graph_slam'], 'cwd': '/home/cev/SLAMv2/build/cev_pose_graph_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/cev_pose_graph_slam'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[0.740348] (CevIcp) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/main.dir/vis/main.cpp.o\x1b[0m\n'}
+[0.752835] (lidar_odometry) StdoutLine: {'line': b'[100%] Built target lidar_odometry\n'}
+[0.768152] (witmotion_ros2) StdoutLine: {'line': b'[100%] Built target witmotion_ros2\n'}
+[0.772844] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.775046] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.778783] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/lib/cev_pose_graph_slam/pgo_node\n'}
+[0.780458] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/package_run_dependencies/cev_pose_graph_slam\n'}
+[0.781959] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/parent_prefix_path/cev_pose_graph_slam\n'}
+[0.783349] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.sh\n'}
+[0.786410] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.dsv\n'}
+[0.788164] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.sh\n'}
+[0.790696] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.dsv\n'}
+[0.793642] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.bash\n'}
+[0.796280] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.sh\n'}
+[0.801542] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.zsh\n'}
+[0.805215] (-) TimerEvent: {}
+[0.808881] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.dsv\n'}
+[0.811712] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv\n'}
+[0.846644] (lidar_odometry) CommandEnded: {'returncode': 0}
+[0.866527] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'install'}
+[0.866802] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cev/SLAMv2/build/lidar_odometry'], 'cwd': '/home/cev/SLAMv2/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[0.869652] (CevIcp) StdoutLine: {'line': b'[ 60%] Built target test_suite_ply\n'}
+[0.886961] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/packages/cev_pose_graph_slam\n'}
+[0.888681] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig.cmake\n'}
+[0.890031] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig-version.cmake\n'}
+[0.891588] (cev_pose_graph_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.xml\n'}
+[0.899989] (lidar_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.900664] (lidar_odometry) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.908716] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/lidar_odometry\n'}
+[0.909332] (-) TimerEvent: {}
+[0.910738] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/motor_controller\n'}
+[0.911528] (cev_pose_graph_slam) CommandEnded: {'returncode': 0}
+[0.915284] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/car.py\n'}
+[0.917755] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/carv2.py\n'}
+[0.921154] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/example.py\n'}
+[0.932185] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/config/ekf.yaml\n'}
+[0.946776] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/lib/lidar_odometry/imu_covariance_injector.py\n'}
+[0.949644] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry\n'}
+[0.951781] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry\n'}
+[0.953562] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh\n'}
+[0.955209] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv\n'}
+[0.958281] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.sh\n'}
+[0.961910] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.dsv\n'}
+[0.969256] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.bash\n'}
+[0.971622] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.sh\n'}
+[0.973872] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.zsh\n'}
+[0.978280] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.dsv\n'}
+[0.979765] (lidar_odometry) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv\n'}
+[0.981388] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry\n'}
+[0.985041] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake\n'}
+[0.990469] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake\n'}
+[0.992216] (lidar_odometry) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.xml\n'}
+[1.009658] (-) TimerEvent: {}
+[1.102331] (cev_pose_graph_slam) JobEnded: {'identifier': 'cev_pose_graph_slam', 'rc': 0}
+[1.104447] (witmotion_ros2) CommandEnded: {'returncode': 0}
+[1.112266] (witmotion_ros2) JobProgress: {'identifier': 'witmotion_ros2', 'progress': 'install'}
+[1.112575] (-) TimerEvent: {}
+[1.113630] (CevIcp) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/bench_suite.dir/bench/bench.cpp.o\x1b[0m\n'}
+[1.117019] (witmotion_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cev/SLAMv2/build/witmotion_ros2'], 'cwd': '/home/cev/SLAMv2/build/witmotion_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cev'), ('SSH_CLIENT', '192.168.8.219 59933 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cev'), ('OLDPWD', '/home/cev/SLAMv2'), ('TERM_PROGRAM_VERSION', '1.116.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3017873e-676c-4771-8cf3-2a30eda77ab6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/cev/SLAMv2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cev'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/cev/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cev/SLAMv2/build/witmotion_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.8.219 59933 192.168.8.246 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cev/SLAMv2/install/witmotion_ros2:/home/cev/SLAMv2/install/lidar_odometry:/home/cev/SLAMv2/install/cev_pose_graph_slam:/opt/ros/humble')]), 'shell': False}
+[1.144701] (lidar_odometry) CommandEnded: {'returncode': 0}
+[1.185560] (CevIcp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cev/SLAMv2/src/icp/vis/main.cpp:11:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcmdapp/cmdapp.h: No such file or directory\n'}
+[1.186414] (CevIcp) StderrLine: {'line': b'   11 | #include \x1b[01;31m\x1b[K<cmdapp/cmdapp.h>\x1b[m\x1b[K\n'}
+[1.187088] (CevIcp) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.187793] (CevIcp) StderrLine: {'line': b'compilation terminated.\n'}
+[1.194448] (CevIcp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/vis/main.cpp.o] Error 1\n'}
+[1.195864] (CevIcp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:120: CMakeFiles/main.dir/all] Error 2\n'}
+[1.196611] (CevIcp) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.199287] (witmotion_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.201157] (witmotion_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.202929] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/lib/witmotion_ros2/witmotion_ros2\n'}
+[1.205120] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/launch/witmotion.launch.py\n'}
+[1.207940] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/config/witmotion.yaml\n'}
+[1.213596] (-) TimerEvent: {}
+[1.215222] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/ament_index/resource_index/package_run_dependencies/witmotion_ros2\n'}
+[1.222344] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/ament_index/resource_index/parent_prefix_path/witmotion_ros2\n'}
+[1.224672] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/environment/ament_prefix_path.sh\n'}
+[1.229622] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/environment/ament_prefix_path.dsv\n'}
+[1.231614] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/environment/path.sh\n'}
+[1.237082] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/environment/path.dsv\n'}
+[1.239607] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/local_setup.bash\n'}
+[1.246172] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/local_setup.sh\n'}
+[1.248329] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/local_setup.zsh\n'}
+[1.251095] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/local_setup.dsv\n'}
+[1.256792] (witmotion_ros2) StdoutLine: {'line': b'-- Symlinking: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/package.dsv\n'}
+[1.258235] (CevIcp) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/bench_suite.dir/common/parse_scan.cpp.o\x1b[0m\n'}
+[1.314307] (-) TimerEvent: {}
+[1.328536] (lidar_odometry) JobEnded: {'identifier': 'lidar_odometry', 'rc': 0}
+[1.339714] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/ament_index/resource_index/packages/witmotion_ros2\n'}
+[1.340905] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/cmake/witmotion_ros2Config.cmake\n'}
+[1.341698] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/cmake/witmotion_ros2Config-version.cmake\n'}
+[1.342714] (witmotion_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cev/SLAMv2/install/witmotion_ros2/share/witmotion_ros2/package.xml\n'}
+[1.361134] (witmotion_ros2) CommandEnded: {'returncode': 0}
+[1.414531] (-) TimerEvent: {}
+[1.448254] (witmotion_ros2) JobEnded: {'identifier': 'witmotion_ros2', 'rc': 0}
+[1.514863] (-) TimerEvent: {}
+[1.615825] (-) TimerEvent: {}
+[1.716863] (-) TimerEvent: {}
+[1.720501] (CevIcp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cev/SLAMv2/src/icp/tests/test3d.cpp:14:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksimple_test/simple_test.h: No such file or directory\n'}
+[1.721295] (CevIcp) StderrLine: {'line': b'   14 | #include \x1b[01;31m\x1b[K<simple_test/simple_test.h>\x1b[m\x1b[K\n'}
+[1.721965] (CevIcp) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.722589] (CevIcp) StderrLine: {'line': b'compilation terminated.\n'}
+[1.743041] (CevIcp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_suite_3d.dir/build.make:76: CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o] Error 1\n'}
+[1.746453] (CevIcp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/test_suite_3d.dir/all] Error 2\n'}
+[1.817176] (-) TimerEvent: {}
+[1.902902] (CevIcp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cev/SLAMv2/src/icp/tests/test.cpp:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksimple_test/simple_test.h: No such file or directory\n'}
+[1.903737] (CevIcp) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K<simple_test/simple_test.h>\x1b[m\x1b[K\n'}
+[1.906481] (CevIcp) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.909539] (CevIcp) StderrLine: {'line': b'compilation terminated.\n'}
+[1.917349] (-) TimerEvent: {}
+[1.922092] (CevIcp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_suite.dir/build.make:76: CMakeFiles/test_suite.dir/tests/test.cpp.o] Error 1\n'}
+[1.923077] (CevIcp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:146: CMakeFiles/test_suite.dir/all] Error 2\n'}
+[2.017580] (-) TimerEvent: {}
+[2.118530] (-) TimerEvent: {}
+[2.219471] (-) TimerEvent: {}
+[2.320494] (-) TimerEvent: {}
+[2.421410] (-) TimerEvent: {}
+[2.522431] (-) TimerEvent: {}
+[2.623467] (-) TimerEvent: {}
+[2.724530] (-) TimerEvent: {}
+[2.825664] (-) TimerEvent: {}
+[2.926714] (-) TimerEvent: {}
+[3.027700] (-) TimerEvent: {}
+[3.128838] (-) TimerEvent: {}
+[3.229956] (-) TimerEvent: {}
+[3.330973] (-) TimerEvent: {}
+[3.432093] (-) TimerEvent: {}
+[3.533079] (-) TimerEvent: {}
+[3.634122] (-) TimerEvent: {}
+[3.735090] (-) TimerEvent: {}
+[3.836072] (-) TimerEvent: {}
+[3.937015] (-) TimerEvent: {}
+[4.038081] (-) TimerEvent: {}
+[4.139229] (-) TimerEvent: {}
+[4.240281] (-) TimerEvent: {}
+[4.341413] (-) TimerEvent: {}
+[4.442787] (-) TimerEvent: {}
+[4.547045] (-) TimerEvent: {}
+[4.648046] (-) TimerEvent: {}
+[4.749048] (-) TimerEvent: {}
+[4.850059] (-) TimerEvent: {}
+[4.951101] (-) TimerEvent: {}
+[5.052444] (-) TimerEvent: {}
+[5.154192] (-) TimerEvent: {}
+[5.255585] (-) TimerEvent: {}
+[5.357235] (-) TimerEvent: {}
+[5.458730] (-) TimerEvent: {}
+[5.560251] (-) TimerEvent: {}
+[5.661603] (-) TimerEvent: {}
+[5.763469] (-) TimerEvent: {}
+[5.864383] (-) TimerEvent: {}
+[5.966381] (-) TimerEvent: {}
+[6.068304] (-) TimerEvent: {}
+[6.170243] (-) TimerEvent: {}
+[6.272152] (-) TimerEvent: {}
+[6.373968] (-) TimerEvent: {}
+[6.476004] (-) TimerEvent: {}
+[6.577794] (-) TimerEvent: {}
+[6.679701] (-) TimerEvent: {}
+[6.781455] (-) TimerEvent: {}
+[6.882679] (-) TimerEvent: {}
+[6.984890] (-) TimerEvent: {}
+[7.086782] (-) TimerEvent: {}
+[7.188833] (-) TimerEvent: {}
+[7.289791] (-) TimerEvent: {}
+[7.391177] (-) TimerEvent: {}
+[7.492096] (-) TimerEvent: {}
+[7.593038] (-) TimerEvent: {}
+[7.694108] (-) TimerEvent: {}
+[7.795131] (-) TimerEvent: {}
+[7.896260] (-) TimerEvent: {}
+[7.997251] (-) TimerEvent: {}
+[8.098347] (-) TimerEvent: {}
+[8.199709] (-) TimerEvent: {}
+[8.300733] (-) TimerEvent: {}
+[8.401721] (-) TimerEvent: {}
+[8.502738] (-) TimerEvent: {}
+[8.604933] (-) TimerEvent: {}
+[8.706757] (-) TimerEvent: {}
+[8.807585] (-) TimerEvent: {}
+[8.908363] (-) TimerEvent: {}
+[9.009148] (-) TimerEvent: {}
+[9.109942] (-) TimerEvent: {}
+[9.210733] (-) TimerEvent: {}
+[9.311501] (-) TimerEvent: {}
+[9.412331] (-) TimerEvent: {}
+[9.513133] (-) TimerEvent: {}
+[9.613950] (-) TimerEvent: {}
+[9.714813] (-) TimerEvent: {}
+[9.816088] (-) TimerEvent: {}
+[9.916897] (-) TimerEvent: {}
+[10.017667] (-) TimerEvent: {}
+[10.118435] (-) TimerEvent: {}
+[10.219249] (-) TimerEvent: {}
+[10.320050] (-) TimerEvent: {}
+[10.420819] (-) TimerEvent: {}
+[10.521647] (-) TimerEvent: {}
+[10.622435] (-) TimerEvent: {}
+[10.723263] (-) TimerEvent: {}
+[10.824069] (-) TimerEvent: {}
+[10.924882] (-) TimerEvent: {}
+[11.025659] (-) TimerEvent: {}
+[11.126476] (-) TimerEvent: {}
+[11.227244] (-) TimerEvent: {}
+[11.328051] (-) TimerEvent: {}
+[11.428823] (-) TimerEvent: {}
+[11.529590] (-) TimerEvent: {}
+[11.630387] (-) TimerEvent: {}
+[11.731163] (-) TimerEvent: {}
+[11.832011] (-) TimerEvent: {}
+[11.932766] (-) TimerEvent: {}
+[12.033537] (-) TimerEvent: {}
+[12.134403] (-) TimerEvent: {}
+[12.235471] (-) TimerEvent: {}
+[12.336369] (-) TimerEvent: {}
+[12.437497] (-) TimerEvent: {}
+[12.538415] (-) TimerEvent: {}
+[12.639237] (-) TimerEvent: {}
+[12.740030] (-) TimerEvent: {}
+[12.840809] (-) TimerEvent: {}
+[12.941734] (-) TimerEvent: {}
+[13.043020] (-) TimerEvent: {}
+[13.143881] (-) TimerEvent: {}
+[13.244919] (-) TimerEvent: {}
+[13.346103] (-) TimerEvent: {}
+[13.447258] (-) TimerEvent: {}
+[13.548111] (-) TimerEvent: {}
+[13.649216] (-) TimerEvent: {}
+[13.750023] (-) TimerEvent: {}
+[13.851210] (-) TimerEvent: {}
+[13.952608] (-) TimerEvent: {}
+[14.053901] (-) TimerEvent: {}
+[14.155084] (-) TimerEvent: {}
+[14.166007] (CevIcp) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable bench_suite\x1b[0m\n'}
+[14.255362] (-) TimerEvent: {}
+[14.356360] (-) TimerEvent: {}
+[14.457162] (-) TimerEvent: {}
+[14.558026] (-) TimerEvent: {}
+[14.658910] (-) TimerEvent: {}
+[14.760170] (-) TimerEvent: {}
+[14.818684] (CevIcp) StderrLine: {'line': b'/usr/bin/ld: cannot find -lconfig: No such file or directory\n'}
+[14.860336] (-) TimerEvent: {}
+[14.934910] (CevIcp) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[14.939682] (CevIcp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/bench_suite.dir/build.make:114: bench_suite] Error 1\n'}
+[14.940503] (CevIcp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:224: CMakeFiles/bench_suite.dir/all] Error 2\n'}
+[14.941083] (CevIcp) StderrLine: {'line': b'gmake: *** [Makefile:136: all] Error 2\n'}
+[14.948093] (CevIcp) CommandEnded: {'returncode': 2}
+[14.949609] (CevIcp) JobEnded: {'identifier': 'CevIcp', 'rc': 2}
+[14.960546] (-) EventReactorShutdown: {}

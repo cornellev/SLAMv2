@@ -1,4 +1,0 @@
-Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': /usr/bin/cmake --build /home/cev/SLAMv2/build/cev_pose_graph_slam -- -j4 -l4
-Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '0': /usr/bin/cmake --build /home/cev/SLAMv2/build/cev_pose_graph_slam -- -j4 -l4
-Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': /usr/bin/cmake --install /home/cev/SLAMv2/build/cev_pose_graph_slam
-Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '0': /usr/bin/cmake --install /home/cev/SLAMv2/build/cev_pose_graph_slam

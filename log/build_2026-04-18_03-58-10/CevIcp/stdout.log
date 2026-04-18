@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target cevicp[0m
+[ 39%] Built target cevicp
+[35m[1mConsolidate compiler generated dependencies of target test_suite_ply[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/test_suite.dir/tests/test.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/main.dir/vis/main.cpp.o[0m
+[ 60%] Built target test_suite_ply
+[ 65%] [32mBuilding CXX object CMakeFiles/bench_suite.dir/bench/bench.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/bench_suite.dir/common/parse_scan.cpp.o[0m
+[ 73%] [32m[1mLinking CXX executable bench_suite[0m

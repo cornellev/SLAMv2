@@ -4,3 +4,6 @@
 [submodule "src/icp"]
 	path = src/icp
 	url = https://github.com/cornellev/icp.git
+[submodule "src/witmotion_ros2"]
+	path = src/witmotion_ros2
+	url = https://github.com/ioio2995/witmotion_ros2.git

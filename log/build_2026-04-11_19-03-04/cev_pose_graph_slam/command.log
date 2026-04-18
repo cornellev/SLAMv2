@@ -1,2 +1,0 @@
-Invoking command in '/home/cev/SLAMv2/build/cev_pose_graph_slam': /usr/bin/cmake /home/cev/SLAMv2/src/cev_pose_graph_slam -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/cev_pose_graph_slam
-Invoked command in '/home/cev/SLAMv2/build/cev_pose_graph_slam' returned '1': /usr/bin/cmake /home/cev/SLAMv2/src/cev_pose_graph_slam -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/cev_pose_graph_slam

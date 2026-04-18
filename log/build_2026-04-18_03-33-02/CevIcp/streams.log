@@ -1,0 +1,175 @@
+[0.118s] Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake /home/cev/SLAMv2/src/icp -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/CevIcp
+[1.425s] -- The C compiler identification is GNU 11.4.0
+[2.246s] -- The CXX compiler identification is GNU 11.4.0
+[2.295s] -- Detecting C compiler ABI info
+[3.356s] -- Detecting C compiler ABI info - done
+[3.377s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.785s] -- Detecting C compile features
+[4.715s] -- Detecting C compile features - done
+[5.353s] -- Detecting CXX compiler ABI info
+[5.888s] -- Detecting CXX compiler ABI info - done
+[5.914s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.916s] -- Detecting CXX compile features
+[5.917s] -- Detecting CXX compile features - done
+[6.152s] -- Checking for module 'eigen3'
+[6.242s] --   Found eigen3, version 3.4.0
+[6.418s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[6.419s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.596s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[6.787s] -- Checking for module 'flann'
+[6.879s] --   Found flann, version 1.9.1
+[7.191s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[7.192s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[7.402s] -- Looking for pthread.h
+[7.832s] -- Looking for pthread.h - found
+[7.834s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.208s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.212s] -- Found Threads: TRUE  
+[8.226s] -- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  
+[8.274s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[9.102s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") 
+[9.104s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[9.123s] -- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[9.151s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[9.209s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") 
+[9.328s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[9.744s] -- Found X11: /usr/include   
+[9.748s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[10.126s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[10.128s] -- Looking for gethostbyname
+[10.468s] -- Looking for gethostbyname - found
+[10.471s] -- Looking for connect
+[10.900s] -- Looking for connect - found
+[10.906s] -- Looking for remove
+[11.364s] -- Looking for remove - found
+[11.365s] -- Looking for shmat
+[11.738s] -- Looking for shmat - found
+[11.738s] -- Looking for IceConnectionNumber in ICE
+[12.105s] -- Looking for IceConnectionNumber in ICE - found
+[12.462s] -- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") 
+[12.476s] -- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  
+[12.486s] -- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") 
+[12.501s] -- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") 
+[12.887s] -- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") 
+[12.906s] -- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  
+[12.920s] -- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[12.949s] -- Found utf8cpp: /usr/include/utf8cpp  
+[13.504s] -- Checking for module 'libusb-1.0'
+[13.559s] --   Found libusb-1.0, version 1.0.25
+[13.716s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[13.723s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[13.724s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.015s] -- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[14.016s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[14.016s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[15.241s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[15.310s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.372s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[16.447s] -- Found Qhull version 8.0.2
+[18.270s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[19.827s] -- looking for PCL_COMMON
+[19.831s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[19.834s] -- looking for PCL_KDTREE
+[19.843s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[19.852s] -- looking for PCL_OCTREE
+[19.860s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[19.867s] -- looking for PCL_SEARCH
+[19.879s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[19.880s] -- looking for PCL_SAMPLE_CONSENSUS
+[19.884s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[19.897s] -- looking for PCL_FILTERS
+[19.900s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[19.901s] -- looking for PCL_2D
+[19.903s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[19.905s] -- looking for PCL_GEOMETRY
+[19.918s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[19.919s] -- looking for PCL_IO
+[19.923s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[19.924s] -- looking for PCL_FEATURES
+[19.933s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[19.946s] -- looking for PCL_ML
+[19.951s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[19.953s] -- looking for PCL_SEGMENTATION
+[19.960s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[19.963s] -- looking for PCL_VISUALIZATION
+[19.976s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[19.979s] -- looking for PCL_SURFACE
+[19.984s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[19.986s] -- looking for PCL_REGISTRATION
+[19.992s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[19.995s] -- looking for PCL_KEYPOINTS
+[20.000s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[20.003s] -- looking for PCL_TRACKING
+[20.008s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[20.010s] -- looking for PCL_RECOGNITION
+[20.015s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[20.018s] -- looking for PCL_STEREO
+[20.023s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[20.025s] -- looking for PCL_APPS
+[20.032s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[20.039s] -- looking for PCL_IN_HAND_SCANNER
+[20.042s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[20.045s] -- looking for PCL_MODELER
+[20.049s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[20.052s] -- looking for PCL_POINT_CLOUD_EDITOR
+[20.057s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[20.073s] -- looking for PCL_OUTOFCORE
+[20.077s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[20.078s] -- looking for PCL_PEOPLE
+[20.099s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[20.103s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[20.125s] -- SDL2 found.
+[20.125s] -- PCL found. PCL-dependent targets can be built.
+[20.126s] [33mCMake Warning at CMakeLists.txt:65 (message):
+[20.145s]   libconfig not found.
+[20.146s] 
+[20.147s] [0m
+[20.148s] [33mCMake Warning at CMakeLists.txt:72 (message):
+[20.149s]   libcmdapp not found.
+[20.151s] 
+[20.152s] [0m
+[20.154s] [33mCMake Warning at CMakeLists.txt:79 (message):
+[20.159s]   libsdlwrapper not found.
+[20.160s] 
+[20.165s] [0m
+[20.220s] -- Configuring done
+[21.214s] -- Generating done
+[21.388s] -- Build files have been written to: /home/cev/SLAMv2/build/CevIcp
+[21.638s] Invoked command in '/home/cev/SLAMv2/build/CevIcp' returned '0': /usr/bin/cmake /home/cev/SLAMv2/src/icp -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/CevIcp
+[21.640s] Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake --build /home/cev/SLAMv2/build/CevIcp -- -j4 -l4
+[22.171s] [  4%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/algo/quickselect.cpp.o[0m
+[22.214s] [  8%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/algo/kdtree.cpp.o[0m
+[22.273s] [ 13%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/vanilla.cpp.o[0m
+[22.396s] [ 17%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/icp.cpp.o[0m
+[22.510s] [ 21%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/trimmed.cpp.o[0m
+[22.653s] [ 26%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/feature_aware.cpp.o[0m
+[93.837s] [ 30%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/trimmed_3d.cpp.o[0m
+[169.267s] [ 34%] [32mBuilding CXX object CMakeFiles/cevicp.dir/lib/icp/impl/vanilla_3d.cpp.o[0m
+[225.443s] [ 39%] [32m[1mLinking CXX static library libcevicp.a[0m
+[236.230s] [ 39%] Built target cevicp
+[236.949s] [ 43%] [32mBuilding CXX object CMakeFiles/main.dir/vis/main.cpp.o[0m
+[236.970s] [ 52%] [32mBuilding CXX object CMakeFiles/test_suite_ply.dir/tests/test_ply.cpp.o[0m
+[236.972s] [ 52%] [32mBuilding CXX object CMakeFiles/test_suite.dir/tests/test.cpp.o[0m
+[236.977s] [ 56%] [32mBuilding CXX object CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o[0m
+[237.266s] [01m[K/home/cev/SLAMv2/src/icp/vis/main.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcmdapp/cmdapp.h: No such file or directory
+[237.267s]    11 | #include [01;31m[K<cmdapp/cmdapp.h>[m[K
+[237.268s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[237.269s] compilation terminated.
+[237.288s] gmake[2]: *** [CMakeFiles/main.dir/build.make:76: CMakeFiles/main.dir/vis/main.cpp.o] Error 1
+[237.290s] gmake[1]: *** [CMakeFiles/Makefile2:120: CMakeFiles/main.dir/all] Error 2
+[237.292s] gmake[1]: *** Waiting for unfinished jobs....
+[237.895s] [01m[K/home/cev/SLAMv2/src/icp/tests/test3d.cpp:14:10:[m[K [01;31m[Kfatal error: [m[Ksimple_test/simple_test.h: No such file or directory
+[237.896s]    14 | #include [01;31m[K<simple_test/simple_test.h>[m[K
+[237.897s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[237.897s] compilation terminated.
+[237.913s] [01m[K/home/cev/SLAMv2/src/icp/tests/test.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Ksimple_test/simple_test.h: No such file or directory
+[237.914s]    18 | #include [01;31m[K<simple_test/simple_test.h>[m[K
+[237.915s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[237.915s] compilation terminated.
+[237.917s] gmake[2]: *** [CMakeFiles/test_suite_3d.dir/build.make:76: CMakeFiles/test_suite_3d.dir/tests/test3d.cpp.o] Error 1
+[237.918s] gmake[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/test_suite_3d.dir/all] Error 2
+[237.934s] gmake[2]: *** [CMakeFiles/test_suite.dir/build.make:76: CMakeFiles/test_suite.dir/tests/test.cpp.o] Error 1
+[237.934s] gmake[1]: *** [CMakeFiles/Makefile2:146: CMakeFiles/test_suite.dir/all] Error 2
+[265.803s] [ 60%] [32m[1mLinking CXX executable test_suite_ply[0m
+[271.722s] [ 60%] Built target test_suite_ply
+[271.726s] gmake: *** [Makefile:136: all] Error 2
