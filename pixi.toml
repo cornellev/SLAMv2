@@ -15,6 +15,12 @@ ros-humble-tf2 = "*"
 ros-humble-tf2-ros = "*"
 ros-humble-tf2-eigen = "*"
 ros-humble-message-filters = "*"
+# Converts Robosense PointCloud2 (/rslidar_points) → LaserScan (/scan)
+ros-humble-pointcloud-to-laserscan = "*"
+# Sensor fusion — EKF/UKF fusing ICP odometry + IMU
+ros-humble-robot-localization = "*"
+# Foxglove live visualization bridge (port 8765)
+ros-humble-foxglove-bridge = "*"
 # ROS2 build infrastructure
 ros-humble-ament-cmake = "*"
 ros-humble-ament-lint-auto = "*"
@@ -23,6 +29,8 @@ ros-humble-launch = "*"
 ros-humble-launch-ros = "*"
 # ros2 CLI (needed for `ros2 launch`, `ros2 pkg executables`, etc.)
 ros-humble-ros2cli-common-extensions = "*"
+# rosbag2 — needed for `ros2 bag play/record` and .db3 file support
+ros-humble-rosbag2 = "*"
 # C++ build tools
 cmake = ">=3.15"
 make = "*"
@@ -41,7 +49,10 @@ build = { cmd = "colcon build --symlink-install --cmake-args -DUSE_SUBMODULE=ON 
 # Wipe build artefacts so the next build starts clean.
 clean = { cmd = "rm -rf build install log" }
 
-# Source the install overlay then launch the odometry node.
+# Launch the full car system (RPLIDAR + IMU + EKF + ICP odometry + PGO + Foxglove).
+launch = { cmd = "bash -c 'source install/setup.bash && ros2 launch lidar_odometry carv2.py'" }
+
+# Launch ICP odometry only (no hardware drivers, useful for testing with a bag).
 launch-odom = { cmd = "bash -c 'source install/setup.bash && ros2 launch lidar_odometry lidar_odometry.launch.py'" }
 
 # Check that the node executables were installed correctly.
