@@ -1,0 +1,119 @@
+[0.039s] Invoking command in '/home/ishpar10/SLAMv2/build/lidar_odometry': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2 -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/lidar_odometry
+[0.602s] -- The C compiler identification is GNU 14.3.0
+[2.783s] -- The CXX compiler identification is GNU 14.3.0
+[4.207s] -- Detecting C compiler ABI info
+[4.526s] -- Detecting C compiler ABI info - done
+[4.569s] -- Check for working C compiler: /home/ishpar10/SLAMv2/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.570s] -- Detecting C compile features
+[4.572s] -- Detecting C compile features - done
+[4.606s] -- Detecting CXX compiler ABI info
+[4.865s] -- Detecting CXX compiler ABI info - done
+[4.902s] -- Check for working CXX compiler: /home/ishpar10/SLAMv2/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.903s] -- Detecting CXX compile features
+[4.904s] -- Detecting CXX compile features - done
+[4.941s] -- Found ament_cmake: 1.3.13 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/ament_cmake/cmake)
+[5.205s] -- Found Python3: /home/ishpar10/SLAMv2/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[5.393s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.524s] -- Found rclcpp: 16.0.18 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rclcpp/cmake)
+[5.793s] -- Found rosidl_generator_c: 3.1.8 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rosidl_generator_c/cmake)
+[5.811s] -- Found rosidl_adapter: 3.1.8 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rosidl_adapter/cmake)
+[5.859s] -- Found rosidl_generator_cpp: 3.1.8 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+[5.929s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.997s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.930s] -- Checking for module 'yaml-0.1'
+[8.140s] --   Found yaml-0.1, version 0.2.5
+[8.720s] -- Found rmw_implementation_cmake: 6.1.2 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+[8.732s] -- Found rmw_fastrtps_cpp: 6.2.10 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)
+[10.316s] -- Found OpenSSL: /home/ishpar10/SLAMv2/.pixi/envs/default/lib/libcrypto.so (found version "3.6.2")
+[11.021s] -- Found FastRTPS: /home/ishpar10/SLAMv2/.pixi/envs/default/include
+[11.392s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.433s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.713s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[11.713s] -- Looking for pthread_create in pthreads
+[11.912s] -- Looking for pthread_create in pthreads - not found
+[11.912s] -- Looking for pthread_create in pthread
+[12.137s] -- Looking for pthread_create in pthread - found
+[12.138s] -- Found Threads: TRUE
+[12.320s] -- Found sensor_msgs: 4.9.1 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/sensor_msgs/cmake)
+[12.518s] -- Found nav_msgs: 4.9.1 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/nav_msgs/cmake)
+[12.569s] -- Found tf2: 0.25.19 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/tf2/cmake)
+[12.583s] -- Found tf2_ros: 0.25.19 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/tf2_ros/cmake)
+[12.936s] -- Found tf2_eigen: 0.25.19 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/tf2_eigen/cmake)
+[12.959s] -- Found ament_lint_auto: 0.12.15 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/ament_lint_auto/cmake)
+[13.254s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.254s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/include>
+[13.255s] -- Configured cppcheck exclude dirs and/or files: 
+[13.261s] -- Added test 'flake8' to check Python code syntax and style conventions
+[13.268s] -- Added test 'lint_cmake' to check CMake code style
+[13.272s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[13.293s] -- Added test 'uncrustify' to check C / C++ code style
+[13.293s] -- Configured uncrustify additional arguments: 
+[13.299s] -- Added test 'xmllint' to check XML markup files
+[13.306s] -- Configuring done (13.2s)
+[13.368s] -- Generating done (0.1s)
+[13.479s] -- Build files have been written to: /home/ishpar10/SLAMv2/build/lidar_odometry
+[13.505s] Invoked command in '/home/ishpar10/SLAMv2/build/lidar_odometry' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2 -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/lidar_odometry
+[13.507s] Invoking command in '/home/ishpar10/SLAMv2/build/lidar_odometry': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/lidar_odometry -- -j16 -l16
+[13.601s] [  9%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/algo/kdtree.cpp.o[0m
+[13.604s] [ 27%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/geo.cpp.o[0m
+[13.604s] [ 27%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/driver.cpp.o[0m
+[13.605s] [ 36%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/icp.cpp.o[0m
+[13.605s] [ 45%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/impl/feature_aware.cpp.o[0m
+[13.618s] [ 54%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/impl/trimmed.cpp.o[0m
+[13.618s] [ 63%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/icp/impl/vanilla.cpp.o[0m
+[13.618s] [ 72%] [32mBuilding CXX object icp/CMakeFiles/cevicp.dir/lib/algo/quickselect.cpp.o[0m
+[17.372s] [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:[m[K In member function '[01m[Kvirtual void icp::Trimmed::[01;32m[Kiterate[m[K()[m[K':
+[17.372s] [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:81:31:[m[K [01;35m[Kwarning: [m[K'[01m[KEigen::JacobiSVD<typename Eigen::DenseBase<Derived>::PlainObject, Options> Eigen::MatrixBase<Derived>::[01;32m[KjacobiSvd[m[K(unsigned int) const [35m[K[with int Options = 0; Derived = Eigen::Matrix<double, 2, 2>; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<double, 2, 2>][m[K[m[K' is deprecated: Options should be specified using method's template parameter. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[17.373s]    81 |         auto svd = [01;35m[KN.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV)[m[K;
+[17.373s]       |                    [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.374s] In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/SVD:39[m[K,
+[17.374s]                  from [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:9[m[K:
+[17.374s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/SVD/JacobiSVD.h:839:63:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.374s]   839 | JacobiSVD<typename MatrixBase<Derived>::PlainObject, Options> [01;36m[KMatrixBase<Derived>[m[K::jacobiSvd(
+[17.375s]       |                                                               [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[17.428s] [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:[m[K In member function '[01m[Kvirtual void icp::Vanilla::[01;32m[Kiterate[m[K()[m[K':
+[17.428s] [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:78:31:[m[K [01;35m[Kwarning: [m[K'[01m[KEigen::JacobiSVD<typename Eigen::DenseBase<Derived>::PlainObject, Options> Eigen::MatrixBase<Derived>::[01;32m[KjacobiSvd[m[K(unsigned int) const [35m[K[with int Options = 0; Derived = Eigen::Matrix<double, 2, 2>; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<double, 2, 2>][m[K[m[K' is deprecated: Options should be specified using method's template parameter. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[17.428s]    78 |         auto svd = [01;35m[KN.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV)[m[K;
+[17.428s]       |                    [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.429s] In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/SVD:39[m[K,
+[17.429s]                  from [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:10[m[K:
+[17.429s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/SVD/JacobiSVD.h:839:63:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.429s]   839 | JacobiSVD<typename MatrixBase<Derived>::PlainObject, Options> [01;36m[KMatrixBase<Derived>[m[K::jacobiSvd(
+[17.429s]       |                                                               [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[17.549s] [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:[m[K In member function '[01m[Kvirtual void icp::FeatureAware::[01;32m[Kiterate[m[K()[m[K':
+[17.549s] [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:101:31:[m[K [01;35m[Kwarning: [m[K'[01m[KEigen::JacobiSVD<typename Eigen::DenseBase<Derived>::PlainObject, Options> Eigen::MatrixBase<Derived>::[01;32m[KjacobiSvd[m[K(unsigned int) const [35m[K[with int Options = 0; Derived = Eigen::Matrix<double, 2, 2>; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<double, 2, 2>][m[K[m[K' is deprecated: Options should be specified using method's template parameter. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[17.549s]   101 |         auto svd = [01;35m[KN.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV)[m[K;
+[17.550s]       |                    [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.550s] In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/SVD:39[m[K,
+[17.550s]                  from [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:2[m[K:
+[17.550s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/SVD/JacobiSVD.h:839:63:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.551s]   839 | JacobiSVD<typename MatrixBase<Derived>::PlainObject, Options> [01;36m[KMatrixBase<Derived>[m[K::jacobiSvd(
+[17.551s]       |                                                               [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[23.373s] [ 81%] [1m[32mLinking CXX static library libcevicp.a[0m
+[23.582s] [ 81%] Built target cevicp
+[23.622s] [ 90%] [32mBuilding CXX object CMakeFiles/lidar_odometry.dir/src/lidar_odometry.cpp.o[0m
+[73.258s] [100%] [1m[32mLinking CXX executable lidar_odometry[0m
+[73.992s] [100%] Built target lidar_odometry
+[74.015s] Invoked command in '/home/ishpar10/SLAMv2/build/lidar_odometry' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/lidar_odometry -- -j16 -l16
+[74.018s] Invoking command in '/home/ishpar10/SLAMv2/build/lidar_odometry': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/lidar_odometry
+[74.031s] -- Install configuration: ""
+[74.031s] -- Execute custom install script
+[74.035s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/lib/lidar_odometry/lidar_odometry
+[74.053s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/car.py
+[74.070s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/launch/example.py
+[74.092s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry
+[74.110s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry
+[74.130s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh
+[74.145s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv
+[74.161s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.sh
+[74.176s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/environment/path.dsv
+[74.190s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.bash
+[74.208s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.sh
+[74.223s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.zsh
+[74.239s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/local_setup.dsv
+[74.254s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv
+[74.270s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry
+[74.285s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake
+[74.302s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake
+[74.318s] -- Symlinking: /home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.xml
+[74.339s] Invoked command in '/home/ishpar10/SLAMv2/build/lidar_odometry' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/lidar_odometry

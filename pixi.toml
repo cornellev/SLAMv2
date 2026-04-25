@@ -1,15 +1,16 @@
-[project]
+[workspace]
 name = "slamv2"
 version = "0.1.0"
 description = "CEV SLAMv2 - Lidar odometry and pose graph SLAM"
 channels = ["robostack-staging", "conda-forge"]
-platforms = ["linux-aarch64"]
+platforms = ["linux-aarch64", "linux-64"]
 
 [dependencies]
-# ROS2 Humble — the packages cev_lidar_odometry_ros2 needs
+# ROS2 Humble — packages required by both ROS2 nodes
 ros-humble-rclcpp = "*"
 ros-humble-sensor-msgs = "*"
 ros-humble-nav-msgs = "*"
+ros-humble-geometry-msgs = "*"
 ros-humble-tf2 = "*"
 ros-humble-tf2-ros = "*"
 ros-humble-tf2-eigen = "*"
@@ -20,6 +21,8 @@ ros-humble-ament-lint-auto = "*"
 ros-humble-ament-lint-common = "*"
 ros-humble-launch = "*"
 ros-humble-launch-ros = "*"
+# ros2 CLI (needed for `ros2 launch`, `ros2 pkg executables`, etc.)
+ros-humble-ros2cli-common-extensions = "*"
 # C++ build tools
 cmake = ">=3.15"
 make = "*"
@@ -33,14 +36,13 @@ colcon-common-extensions = "*"
 [tasks]
 # Build the whole workspace; USE_SUBMODULE=ON tells the CMake to build
 # the bundled icp/ library instead of looking for a system-installed one.
-build = { cmd = "colcon build --symlink-install --cmake-args -DUSE_SUBMODULE=ON" }
+build = { cmd = "colcon build --symlink-install --cmake-args -DUSE_SUBMODULE=ON \"-DCMAKE_PREFIX_PATH=$CONDA_PREFIX\"" }
 
 # Wipe build artefacts so the next build starts clean.
 clean = { cmd = "rm -rf build install log" }
 
 # Source the install overlay then launch the odometry node.
-# Adjust the launch file name to match what you want to run.
 launch-odom = { cmd = "bash -c 'source install/setup.bash && ros2 launch lidar_odometry lidar_odometry.launch.py'" }
 
-# Check that the node executable was installed correctly.
-check = { cmd = "bash -c 'source install/setup.bash && ros2 pkg executables lidar_odometry'" }
+# Check that the node executables were installed correctly.
+check = { cmd = "bash -c 'source install/setup.bash && ros2 pkg executables lidar_odometry && ros2 pkg executables cev_pose_graph_slam'" }

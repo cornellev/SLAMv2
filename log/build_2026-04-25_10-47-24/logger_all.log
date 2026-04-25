@@ -1,0 +1,232 @@
+[0.815s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/home/ishpar10/SLAMv2/.pixi/envs/default/bin/colcon', 'build', '--symlink-install', '--cmake-args', '-DUSE_SUBMODULE=ON', '-DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default'][0m
+[0.815s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DUSE_SUBMODULE=ON', '-DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a18fcad51f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a18fca09430>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a18fca09430>>)[0m
+[0.931s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.931s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.931s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.931s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.931s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.932s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.932s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/ishpar10/SLAMv2'
+[0.932s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.932s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.932s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.932s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.933s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.933s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.933s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.933s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.933s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[1.014s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[1.014s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[1.014s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[1.014s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[1.015s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[1.015s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.015s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[1.015s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[1.016s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.016s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[1.016s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[1.016s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.016s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[1.016s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[1.017s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.017s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[1.017s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[1.017s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[1.017s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[1.018s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[1.018s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[1.018s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[1.018s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[1.018s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[1.018s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[1.019s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[1.019s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[1.019s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[1.019s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.019s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extension 'ignore'
+[1.019s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extension 'ignore_ament_install'
+[1.020s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extensions ['colcon_pkg']
+[1.020s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extension 'colcon_pkg'
+[1.020s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extensions ['colcon_meta']
+[1.020s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extension 'colcon_meta'
+[1.020s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extensions ['ros']
+[1.020s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_lidar_odometry_ros2) by extension 'ros'
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cev_lidar_odometry_ros2' with type 'ros.ament_cmake' and name 'lidar_odometry'[0m
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extensions ['ignore', 'ignore_ament_install']
+[1.027s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extension 'ignore'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extension 'ignore_ament_install'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extensions ['colcon_pkg']
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extension 'colcon_pkg'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extensions ['colcon_meta']
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extension 'colcon_meta'
+[1.028s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extensions ['ros']
+[1.029s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cev_pose_graph_slam) by extension 'ros'
+[1.030s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cev_pose_graph_slam' with type 'ros.ament_cmake' and name 'cev_pose_graph_slam'[0m
+[1.031s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/icp) by extensions ['ignore', 'ignore_ament_install']
+[1.031s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/icp) by extension 'ignore'
+[1.031s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/icp) ignored
+[1.031s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extensions ['ignore', 'ignore_ament_install']
+[1.031s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'ignore'
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'ignore_ament_install'
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extensions ['colcon_pkg']
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'colcon_pkg'
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extensions ['colcon_meta']
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'colcon_meta'
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extensions ['ros']
+[1.032s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'ros'
+[1.033s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extensions ['cmake', 'python']
+[1.033s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'cmake'
+[1.033s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'python'
+[1.033s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extensions ['python_setup_py']
+[1.033s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/script) by extension 'python_setup_py'
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'ignore'
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'ignore_ament_install'
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extensions ['colcon_pkg']
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'colcon_pkg'
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extensions ['colcon_meta']
+[1.034s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'colcon_meta'
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extensions ['ros']
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'ros'
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extensions ['cmake', 'python']
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'cmake'
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'python'
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extensions ['python_setup_py']
+[1.035s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/witmotion_ros2) by extension 'python_setup_py'
+[1.036s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[1.036s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[1.036s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[1.036s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[1.036s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'cmake_args' from command line to '['-DUSE_SUBMODULE=ON', '-DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default']'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'cmake_target' from command line to 'None'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'cmake_clean_first' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'cmake_force_configure' from command line to 'False'
+[1.079s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'ament_cmake_args' from command line to 'None'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cev_pose_graph_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cev_pose_graph_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DUSE_SUBMODULE=ON', '-DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam', 'merge_install': False, 'path': '/home/ishpar10/SLAMv2/src/cev_pose_graph_slam', 'symlink_install': True, 'test_result_base': None}[0m
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'cmake_args' from command line to '['-DUSE_SUBMODULE=ON', '-DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default']'
+[1.080s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'cmake_target' from command line to 'None'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'lidar_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.081s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'lidar_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ishpar10/SLAMv2/build/lidar_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DUSE_SUBMODULE=ON', '-DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ishpar10/SLAMv2/install/lidar_odometry', 'merge_install': False, 'path': '/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2', 'symlink_install': True, 'test_result_base': None}[0m
+[1.082s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[1.084s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[1.085s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/ishpar10/SLAMv2/src/cev_pose_graph_slam' with build type 'ament_cmake'
+[1.085s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/ishpar10/SLAMv2/src/cev_pose_graph_slam'
+[1.091s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.092s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.092s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.104s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2' with build type 'ament_cmake'
+[1.104s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2'
+[1.105s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.105s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.126s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_pose_graph_slam -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/cev_pose_graph_slam[0m
+[1.144s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ishpar10/SLAMv2/build/lidar_odometry': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2 -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/lidar_odometry[0m
+[14.450s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_pose_graph_slam -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/cev_pose_graph_slam[0m
+[14.453s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/cev_pose_graph_slam -- -j16 -l16[0m
+[14.609s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ishpar10/SLAMv2/build/lidar_odometry' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2 -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/lidar_odometry[0m
+[14.611s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ishpar10/SLAMv2/build/lidar_odometry': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/lidar_odometry -- -j16 -l16[0m
+[46.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/cev_pose_graph_slam -- -j16 -l16[0m
+[46.017s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/cev_pose_graph_slam[0m
+[46.274s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cev_pose_graph_slam)
+[46.275s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/cev_pose_graph_slam[0m
+[46.284s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam' for CMake module files
+[46.285s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam' for CMake config files
+[46.286s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cev_pose_graph_slam', 'cmake_prefix_path')
+[46.286s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.ps1'
+[46.291s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.dsv'
+[46.293s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.sh'
+[46.295s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib'
+[46.295s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/bin'
+[46.296s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib/pkgconfig/cev_pose_graph_slam.pc'
+[46.298s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib/python3.12/site-packages'
+[46.298s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/bin'
+[46.299s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.ps1'
+[46.300s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv'
+[46.302s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.sh'
+[46.306s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.bash'
+[46.308s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.zsh'
+[46.311s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/colcon-core/packages/cev_pose_graph_slam)
+[46.314s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cev_pose_graph_slam)
+[46.314s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam' for CMake module files
+[46.315s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam' for CMake config files
+[46.316s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cev_pose_graph_slam', 'cmake_prefix_path')
+[46.316s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.ps1'
+[46.317s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.dsv'
+[46.318s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/hook/cmake_prefix_path.sh'
+[46.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib'
+[46.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/bin'
+[46.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib/pkgconfig/cev_pose_graph_slam.pc'
+[46.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib/python3.12/site-packages'
+[46.320s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/bin'
+[46.320s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.ps1'
+[46.321s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv'
+[46.322s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.sh'
+[46.323s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.bash'
+[46.324s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.zsh'
+[46.325s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/colcon-core/packages/cev_pose_graph_slam)
+[73.856s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ishpar10/SLAMv2/build/lidar_odometry' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/lidar_odometry -- -j16 -l16[0m
+[73.860s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ishpar10/SLAMv2/build/lidar_odometry': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/lidar_odometry[0m
+[74.178s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lidar_odometry)
+[74.178s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry' for CMake module files
+[74.180s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ishpar10/SLAMv2/build/lidar_odometry' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/lidar_odometry[0m
+[74.181s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry' for CMake config files
+[74.182s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lidar_odometry', 'cmake_prefix_path')
+[74.182s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.ps1'
+[74.184s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.dsv'
+[74.184s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.sh'
+[74.185s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/lib'
+[74.186s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/bin'
+[74.186s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/lib/pkgconfig/lidar_odometry.pc'
+[74.186s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/lib/python3.12/site-packages'
+[74.187s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/bin'
+[74.187s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.ps1'
+[74.188s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv'
+[74.189s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.sh'
+[74.190s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.bash'
+[74.191s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.zsh'
+[74.191s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ishpar10/SLAMv2/install/lidar_odometry/share/colcon-core/packages/lidar_odometry)
+[74.195s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(lidar_odometry)
+[74.195s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry' for CMake module files
+[74.196s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry' for CMake config files
+[74.197s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('lidar_odometry', 'cmake_prefix_path')
+[74.197s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.ps1'
+[74.198s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.dsv'
+[74.199s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.sh'
+[74.200s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/lib'
+[74.200s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/bin'
+[74.200s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/lib/pkgconfig/lidar_odometry.pc'
+[74.201s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/lib/python3.12/site-packages'
+[74.201s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ishpar10/SLAMv2/install/lidar_odometry/bin'
+[74.202s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.ps1'
+[74.203s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.dsv'
+[74.203s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.sh'
+[74.204s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.bash'
+[74.205s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ishpar10/SLAMv2/install/lidar_odometry/share/lidar_odometry/package.zsh'
+[74.206s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ishpar10/SLAMv2/install/lidar_odometry/share/colcon-core/packages/lidar_odometry)
+[74.206s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[74.207s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[74.207s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[74.208s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[74.209s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[74.209s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ishpar10/SLAMv2/install/local_setup.ps1'
+[74.211s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/ishpar10/SLAMv2/install/_local_setup_util_ps1.py'
+[74.213s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ishpar10/SLAMv2/install/setup.ps1'
+[74.215s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ishpar10/SLAMv2/install/local_setup.sh'
+[74.217s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/ishpar10/SLAMv2/install/_local_setup_util_sh.py'
+[74.218s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ishpar10/SLAMv2/install/setup.sh'
+[74.220s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ishpar10/SLAMv2/install/local_setup.bash'
+[74.221s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ishpar10/SLAMv2/install/setup.bash'
+[74.224s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ishpar10/SLAMv2/install/local_setup.zsh'
+[74.226s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ishpar10/SLAMv2/install/setup.zsh'

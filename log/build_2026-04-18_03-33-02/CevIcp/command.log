@@ -1,3 +1,0 @@
-Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake /home/cev/SLAMv2/src/icp -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/CevIcp
-Invoked command in '/home/cev/SLAMv2/build/CevIcp' returned '0': /usr/bin/cmake /home/cev/SLAMv2/src/icp -DCMAKE_INSTALL_PREFIX=/home/cev/SLAMv2/install/CevIcp
-Invoking command in '/home/cev/SLAMv2/build/CevIcp': /usr/bin/cmake --build /home/cev/SLAMv2/build/CevIcp -- -j4 -l4

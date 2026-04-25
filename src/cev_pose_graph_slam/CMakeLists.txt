@@ -11,11 +11,9 @@ find_package(Eigen3 REQUIRED)
 
 add_executable(pgo_node src/SLAM_backend_math.cpp)
 
-target_include_directories(pgo_node PUBLIC
-  ${EIGEN3_INCLUDE_DIRS}
-)
+target_link_libraries(pgo_node Eigen3::Eigen)
 
-ament_target_dependencies(pgo_node 
+ament_target_dependencies(pgo_node
   rclcpp nav_msgs geometry_msgs tf2 tf2_ros)
 
 install(TARGETS pgo_node

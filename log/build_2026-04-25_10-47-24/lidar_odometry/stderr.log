@@ -1,0 +1,27 @@
+[01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:[m[K In member function '[01m[Kvirtual void icp::Trimmed::[01;32m[Kiterate[m[K()[m[K':
+[01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:81:31:[m[K [01;35m[Kwarning: [m[K'[01m[KEigen::JacobiSVD<typename Eigen::DenseBase<Derived>::PlainObject, Options> Eigen::MatrixBase<Derived>::[01;32m[KjacobiSvd[m[K(unsigned int) const [35m[K[with int Options = 0; Derived = Eigen::Matrix<double, 2, 2>; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<double, 2, 2>][m[K[m[K' is deprecated: Options should be specified using method's template parameter. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   81 |         auto svd = [01;35m[KN.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV)[m[K;
+      |                    [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/SVD:39[m[K,
+                 from [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/trimmed.cpp:9[m[K:
+[01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/SVD/JacobiSVD.h:839:63:[m[K [01;36m[Knote: [m[Kdeclared here
+  839 | JacobiSVD<typename MatrixBase<Derived>::PlainObject, Options> [01;36m[KMatrixBase<Derived>[m[K::jacobiSvd(
+      |                                                               [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:[m[K In member function '[01m[Kvirtual void icp::Vanilla::[01;32m[Kiterate[m[K()[m[K':
+[01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:78:31:[m[K [01;35m[Kwarning: [m[K'[01m[KEigen::JacobiSVD<typename Eigen::DenseBase<Derived>::PlainObject, Options> Eigen::MatrixBase<Derived>::[01;32m[KjacobiSvd[m[K(unsigned int) const [35m[K[with int Options = 0; Derived = Eigen::Matrix<double, 2, 2>; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<double, 2, 2>][m[K[m[K' is deprecated: Options should be specified using method's template parameter. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   78 |         auto svd = [01;35m[KN.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV)[m[K;
+      |                    [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/SVD:39[m[K,
+                 from [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/vanilla.cpp:10[m[K:
+[01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/SVD/JacobiSVD.h:839:63:[m[K [01;36m[Knote: [m[Kdeclared here
+  839 | JacobiSVD<typename MatrixBase<Derived>::PlainObject, Options> [01;36m[KMatrixBase<Derived>[m[K::jacobiSvd(
+      |                                                               [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:[m[K In member function '[01m[Kvirtual void icp::FeatureAware::[01;32m[Kiterate[m[K()[m[K':
+[01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:101:31:[m[K [01;35m[Kwarning: [m[K'[01m[KEigen::JacobiSVD<typename Eigen::DenseBase<Derived>::PlainObject, Options> Eigen::MatrixBase<Derived>::[01;32m[KjacobiSvd[m[K(unsigned int) const [35m[K[with int Options = 0; Derived = Eigen::Matrix<double, 2, 2>; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<double, 2, 2>][m[K[m[K' is deprecated: Options should be specified using method's template parameter. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  101 |         auto svd = [01;35m[KN.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV)[m[K;
+      |                    [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/SVD:39[m[K,
+                 from [01m[K/home/ishpar10/SLAMv2/src/cev_lidar_odometry_ros2/icp/lib/icp/impl/feature_aware.cpp:2[m[K:
+[01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/SVD/JacobiSVD.h:839:63:[m[K [01;36m[Knote: [m[Kdeclared here
+  839 | JacobiSVD<typename MatrixBase<Derived>::PlainObject, Options> [01;36m[KMatrixBase<Derived>[m[K::jacobiSvd(
+      |                                                               [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K

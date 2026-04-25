@@ -1,0 +1,147 @@
+[0.041s] Invoking command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_pose_graph_slam -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/cev_pose_graph_slam
+[0.150s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.151s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.151s]   CMake.
+[0.151s] 
+[0.152s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.152s]   to tell CMake that the project requires at least <min> but has been updated
+[0.152s]   to work with policies introduced by <max> or earlier.
+[0.153s] 
+[0.153s] [0m
+[0.621s] -- The C compiler identification is GNU 14.3.0
+[2.802s] -- The CXX compiler identification is GNU 14.3.0
+[4.227s] -- Detecting C compiler ABI info
+[4.547s] -- Detecting C compiler ABI info - done
+[4.589s] -- Check for working C compiler: /home/ishpar10/SLAMv2/.pixi/envs/default/bin/x86_64-conda-linux-gnu-cc - skipped
+[4.590s] -- Detecting C compile features
+[4.591s] -- Detecting C compile features - done
+[4.625s] -- Detecting CXX compiler ABI info
+[4.884s] -- Detecting CXX compiler ABI info - done
+[4.920s] -- Check for working CXX compiler: /home/ishpar10/SLAMv2/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ - skipped
+[4.921s] -- Detecting CXX compile features
+[4.921s] -- Detecting CXX compile features - done
+[4.961s] -- Found ament_cmake: 1.3.13 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/ament_cmake/cmake)
+[5.226s] -- Found Python3: /home/ishpar10/SLAMv2/.pixi/envs/default/bin/python3 (found version "3.12.13") found components: Interpreter
+[5.412s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.538s] -- Found rclcpp: 16.0.18 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rclcpp/cmake)
+[5.812s] -- Found rosidl_generator_c: 3.1.8 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rosidl_generator_c/cmake)
+[5.830s] -- Found rosidl_adapter: 3.1.8 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rosidl_adapter/cmake)
+[5.878s] -- Found rosidl_generator_cpp: 3.1.8 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+[5.949s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.016s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.949s] -- Checking for module 'yaml-0.1'
+[8.159s] --   Found yaml-0.1, version 0.2.5
+[8.739s] -- Found rmw_implementation_cmake: 6.1.2 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+[8.751s] -- Found rmw_fastrtps_cpp: 6.2.10 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)
+[10.343s] -- Found OpenSSL: /home/ishpar10/SLAMv2/.pixi/envs/default/lib/libcrypto.so (found version "3.6.2")
+[11.041s] -- Found FastRTPS: /home/ishpar10/SLAMv2/.pixi/envs/default/include
+[11.411s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.453s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.733s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[11.733s] -- Looking for pthread_create in pthreads
+[11.931s] -- Looking for pthread_create in pthreads - not found
+[11.932s] -- Looking for pthread_create in pthread
+[12.156s] -- Looking for pthread_create in pthread - found
+[12.158s] -- Found Threads: TRUE
+[12.339s] -- Found nav_msgs: 4.9.1 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/nav_msgs/cmake)
+[12.545s] -- Found tf2: 0.25.19 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/tf2/cmake)
+[12.574s] -- Found tf2_ros: 0.25.19 (/home/ishpar10/SLAMv2/.pixi/envs/default/share/tf2_ros/cmake)
+[13.195s] -- Configuring done (13.1s)
+[13.243s] -- Generating done (0.0s)
+[13.244s] [33mCMake Warning:
+[13.244s]   Manually-specified variables were not used by the project:
+[13.244s] 
+[13.245s]     USE_SUBMODULE
+[13.245s] 
+[13.245s] [0m
+[13.344s] -- Build files have been written to: /home/ishpar10/SLAMv2/build/cev_pose_graph_slam
+[13.365s] Invoked command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake /home/ishpar10/SLAMv2/src/cev_pose_graph_slam -DUSE_SUBMODULE=ON -DCMAKE_PREFIX_PATH=/home/ishpar10/SLAMv2/.pixi/envs/default -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ishpar10/SLAMv2/install/cev_pose_graph_slam
+[13.367s] Invoking command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/cev_pose_graph_slam -- -j16 -l16
+[13.451s] [ 50%] [32mBuilding CXX object CMakeFiles/pgo_node.dir/src/SLAM_backend_math.cpp.o[0m
+[41.060s] In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/specfun.h:43[m[K,
+[41.060s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/cmath:3906[m[K,
+[41.060s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/src/Core/util/Macros.h:754[m[K,
+[41.060s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/Core:22[m[K,
+[41.061s]                  from [01m[K/home/ishpar10/SLAMv2/src/cev_pose_graph_slam/src/SLAM_backend_math.cpp:1[m[K:
+[41.061s] In static member function '[01m[Kstatic _Up* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::[01;32m[K__copy_m[m[K(_Tp*, _Tp*, _Up*) [35m[K[with _Tp = const long unsigned int; _Up = long unsigned int; bool _IsMove = false][m[K[m[K',
+[41.062s]     inlined from '[01m[K_OI std::[01;32m[K__copy_move_a2[m[K(_II, _II, _OI) [35m[K[with bool _IsMove = false; _II = const long unsigned int*; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:521:30[m[K,
+[41.063s]     inlined from '[01m[K_OI std::[01;32m[K__copy_move_a1[m[K(_II, _II, _OI) [35m[K[with bool _IsMove = false; _II = const long unsigned int*; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:548:42[m[K,
+[41.063s]     inlined from '[01m[K_OI std::[01;32m[K__copy_move_a[m[K(_II, _II, _OI) [35m[K[with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:555:31[m[K,
+[41.063s]     inlined from '[01m[K_OI std::[01;32m[Kcopy[m[K(_II, _II, _OI) [35m[K[with _II = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:651:7[m[K,
+[41.063s]     inlined from '[01m[Kstatic _ForwardIterator std::__uninitialized_copy<true>::[01;32m[K__uninit_copy[m[K(_InputIterator, _InputIterator, _ForwardIterator) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, std::vector<long unsigned int> >; _ForwardIterator = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:147:27[m[K,
+[41.064s]     inlined from '[01m[K_ForwardIterator std::[01;32m[Kuninitialized_copy[m[K(_InputIterator, _InputIterator, _ForwardIterator) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _ForwardIterator = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:185:15[m[K,
+[41.064s]     inlined from '[01m[K_ForwardIterator std::[01;32m[K__uninitialized_copy_a[m[K(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _ForwardIterator = long unsigned int*; _Tp = long unsigned int][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:373:37[m[K,
+[41.064s]     inlined from '[01m[Kstd::vector<_Tp, _Alloc>::[01;32m[Kvector[m[K(const std::vector<_Tp, _Alloc>&) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:609:31[m[K,
+[41.065s]     inlined from '[01m[Kvoid rclcpp::experimental::IntraProcessManager::[01;32m[Kdo_intra_process_publish[m[K(uint64_t, std::unique_ptr<MessageT, Deleter>, typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type&) [35m[K[with MessageT = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; ROSMessageType = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; Alloc = std::allocator<void>; Deleter = std::default_delete<statistics_msgs::msg::MetricsMessage_<std::allocator<void> > >][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:217:29[m[K:
+[41.065s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:452:30:[m[K [01;35m[Kwarning: [m[K'[01m[Kvoid*[01;32m[K __builtin_memmove[m[K(void*, const void*, long unsigned int)[m[K' writing between 9 and 9223372036854775807 bytes into a region of size 8 overflows the destination [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-stringop-overflow-Wstringop-overflow=]8;;[m[K]
+[41.066s]   452 |             [01;35m[K__builtin_memmove(__result, __first, sizeof(_Tp) * _Num)[m[K;
+[41.066s]       |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[41.066s] In file included from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu/bits/c++allocator.h:33[m[K,
+[41.066s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/allocator.h:46[m[K,
+[41.067s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/string:43[m[K,
+[41.067s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/locale_classes.h:40[m[K,
+[41.067s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/ios_base.h:41[m[K,
+[41.067s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/ios:44[m[K,
+[41.068s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/istream:40[m[K,
+[41.068s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/sstream:40[m[K,
+[41.068s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/complex:45[m[K,
+[41.069s]                  from [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/eigen3/Eigen/Core:51[m[K:
+[41.069s] In member function '[01m[K_Tp* std::__new_allocator<_Tp>::[01;32m[Kallocate[m[K(size_type, const void*) [35m[K[with _Tp = long unsigned int][m[K[m[K',
+[41.070s]     inlined from '[01m[Kstatic _Tp* std::allocator_traits<std::allocator<_CharT> >::[01;32m[Kallocate[m[K(allocator_type&, size_type) [35m[K[with _Tp = long unsigned int][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/alloc_traits.h:515:28[m[K,
+[41.070s]     inlined from '[01m[Kstd::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::[01;32m[K_M_allocate[m[K(std::size_t) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:383:33[m[K,
+[41.070s]     inlined from '[01m[Kvoid std::_Vector_base<_Tp, _Alloc>::[01;32m[K_M_create_storage[m[K(std::size_t) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:401:44[m[K,
+[41.071s]     inlined from '[01m[Kstd::_Vector_base<_Tp, _Alloc>::[01;32m[K_Vector_base[m[K(std::size_t, const allocator_type&) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:337:26[m[K,
+[41.071s]     inlined from '[01m[Kstd::vector<_Tp, _Alloc>::[01;32m[Kvector[m[K(const std::vector<_Tp, _Alloc>&) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:606:61[m[K,
+[41.071s]     inlined from '[01m[Kvoid rclcpp::experimental::IntraProcessManager::[01;32m[Kdo_intra_process_publish[m[K(uint64_t, std::unique_ptr<MessageT, Deleter>, typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type&) [35m[K[with MessageT = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; ROSMessageType = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; Alloc = std::allocator<void>; Deleter = std::default_delete<statistics_msgs::msg::MetricsMessage_<std::allocator<void> > >][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:217:29[m[K:
+[41.072s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/new_allocator.h:151:55:[m[K [01;36m[Knote: [m[Kdestination object of size 8 allocated by '[01m[Koperator new[m[K'
+[41.072s]   151 |         return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW[01;36m[K([m[K__n * sizeof(_Tp)));
+[41.072s]       |                                                       [01;36m[K^[m[K
+[41.072s] In static member function '[01m[Kstatic _Up* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::[01;32m[K__copy_m[m[K(_Tp*, _Tp*, _Up*) [35m[K[with _Tp = const long unsigned int; _Up = long unsigned int; bool _IsMove = false][m[K[m[K',
+[41.073s]     inlined from '[01m[K_OI std::[01;32m[K__copy_move_a2[m[K(_II, _II, _OI) [35m[K[with bool _IsMove = false; _II = const long unsigned int*; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:521:30[m[K,
+[41.073s]     inlined from '[01m[K_OI std::[01;32m[K__copy_move_a1[m[K(_II, _II, _OI) [35m[K[with bool _IsMove = false; _II = const long unsigned int*; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:548:42[m[K,
+[41.073s]     inlined from '[01m[K_OI std::[01;32m[K__copy_move_a[m[K(_II, _II, _OI) [35m[K[with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:555:31[m[K,
+[41.073s]     inlined from '[01m[K_OI std::[01;32m[Kcopy[m[K(_II, _II, _OI) [35m[K[with _II = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _OI = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:651:7[m[K,
+[41.073s]     inlined from '[01m[Kstatic _ForwardIterator std::__uninitialized_copy<true>::[01;32m[K__uninit_copy[m[K(_InputIterator, _InputIterator, _ForwardIterator) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, std::vector<long unsigned int> >; _ForwardIterator = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:147:27[m[K,
+[41.074s]     inlined from '[01m[K_ForwardIterator std::[01;32m[Kuninitialized_copy[m[K(_InputIterator, _InputIterator, _ForwardIterator) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _ForwardIterator = long unsigned int*][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:185:15[m[K,
+[41.074s]     inlined from '[01m[K_ForwardIterator std::[01;32m[K__uninitialized_copy_a[m[K(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, vector<long unsigned int> >; _ForwardIterator = long unsigned int*; _Tp = long unsigned int][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_uninitialized.h:373:37[m[K,
+[41.074s]     inlined from '[01m[Kvoid std::vector<_Tp, _Alloc>::[01;32m[K_M_range_insert[m[K(iterator, _ForwardIterator, _ForwardIterator, std::forward_iterator_tag) [35m[K[with _ForwardIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, std::vector<long unsigned int> >; _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/vector.tcc:987:34[m[K,
+[41.074s]     inlined from '[01m[Kstd::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::[01;32m[Kinsert[m[K(const_iterator, _InputIterator, _InputIterator) [35m[K[with _InputIterator = __gnu_cxx::__normal_iterator<const long unsigned int*, std::vector<long unsigned int> >; <template-parameter-2-2> = void; _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:1501:19[m[K,
+[41.075s]     inlined from '[01m[Kvoid rclcpp::experimental::IntraProcessManager::[01;32m[Kdo_intra_process_publish[m[K(uint64_t, std::unique_ptr<MessageT, Deleter>, typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type&) [35m[K[with MessageT = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; ROSMessageType = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; Alloc = std::allocator<void>; Deleter = std::default_delete<statistics_msgs::msg::MetricsMessage_<std::allocator<void> > >][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:218:33[m[K:
+[41.075s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_algobase.h:452:30:[m[K [01;35m[Kwarning: [m[K'[01m[Kvoid*[01;32m[K __builtin_memmove[m[K(void*, const void*, long unsigned int)[m[K' writing between 9 and 9223372036854775807 bytes into a region of size 8 overflows the destination [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-14.3.0/gcc/Warning-Options.html#index-Wno-stringop-overflow-Wstringop-overflow=]8;;[m[K]
+[41.075s]   452 |             [01;35m[K__builtin_memmove(__result, __first, sizeof(_Tp) * _Num)[m[K;
+[41.076s]       |             [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[41.076s] In member function '[01m[K_Tp* std::__new_allocator<_Tp>::[01;32m[Kallocate[m[K(size_type, const void*) [35m[K[with _Tp = long unsigned int][m[K[m[K',
+[41.076s]     inlined from '[01m[Kstatic _Tp* std::allocator_traits<std::allocator<_CharT> >::[01;32m[Kallocate[m[K(allocator_type&, size_type) [35m[K[with _Tp = long unsigned int][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/alloc_traits.h:515:28[m[K,
+[41.076s]     inlined from '[01m[Kstd::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::[01;32m[K_M_allocate[m[K(std::size_t) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:383:33[m[K,
+[41.077s]     inlined from '[01m[Kvoid std::_Vector_base<_Tp, _Alloc>::[01;32m[K_M_create_storage[m[K(std::size_t) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:401:44[m[K,
+[41.077s]     inlined from '[01m[Kstd::_Vector_base<_Tp, _Alloc>::[01;32m[K_Vector_base[m[K(std::size_t, const allocator_type&) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:337:26[m[K,
+[41.077s]     inlined from '[01m[Kstd::vector<_Tp, _Alloc>::[01;32m[Kvector[m[K(const std::vector<_Tp, _Alloc>&) [35m[K[with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/stl_vector.h:606:61[m[K,
+[41.078s]     inlined from '[01m[Kvoid rclcpp::experimental::IntraProcessManager::[01;32m[Kdo_intra_process_publish[m[K(uint64_t, std::unique_ptr<MessageT, Deleter>, typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type&) [35m[K[with MessageT = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; ROSMessageType = statistics_msgs::msg::MetricsMessage_<std::allocator<void> >; Alloc = std::allocator<void>; Deleter = std::default_delete<statistics_msgs::msg::MetricsMessage_<std::allocator<void> > >][m[K[m[K' at [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:217:29[m[K:
+[41.078s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/new_allocator.h:151:55:[m[K [01;36m[Knote: [m[Kdestination object of size 8 allocated by '[01m[Koperator new[m[K'
+[41.078s]   151 |         return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW[01;36m[K([m[K__n * sizeof(_Tp)));
+[41.079s]       |                                                       [01;36m[K^[m[K
+[41.079s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/new_allocator.h:151:55:[m[K [01;36m[Knote: [m[Kat offset 8 into destination object of size 8 allocated by '[01m[Koperator new[m[K'
+[41.079s] [01m[K/home/ishpar10/SLAMv2/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/bits/new_allocator.h:151:55:[m[K [01;36m[Knote: [m[Kat offset 9 into destination object of size 8 allocated by '[01m[Koperator new[m[K'
+[44.792s] [100%] [1m[32mLinking CXX executable pgo_node[0m
+[45.518s] [100%] Built target pgo_node
+[45.535s] Invoked command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --build /home/ishpar10/SLAMv2/build/cev_pose_graph_slam -- -j16 -l16
+[45.551s] Invoking command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/cev_pose_graph_slam
+[45.563s] -- Install configuration: ""
+[45.564s] -- Execute custom install script
+[45.567s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/lib/cev_pose_graph_slam/pgo_node
+[45.585s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/package_run_dependencies/cev_pose_graph_slam
+[45.600s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/parent_prefix_path/cev_pose_graph_slam
+[45.614s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.sh
+[45.628s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/ament_prefix_path.dsv
+[45.642s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.sh
+[45.662s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/environment/path.dsv
+[45.676s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.bash
+[45.690s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.sh
+[45.706s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.zsh
+[45.720s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/local_setup.dsv
+[45.734s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.dsv
+[45.749s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/ament_index/resource_index/packages/cev_pose_graph_slam
+[45.764s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig.cmake
+[45.778s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/cmake/cev_pose_graph_slamConfig-version.cmake
+[45.793s] -- Symlinking: /home/ishpar10/SLAMv2/install/cev_pose_graph_slam/share/cev_pose_graph_slam/package.xml
+[45.810s] Invoked command in '/home/ishpar10/SLAMv2/build/cev_pose_graph_slam' returned '0': PIXI_PROMPT=(slamv2) /home/ishpar10/SLAMv2/.pixi/envs/default/bin/cmake --install /home/ishpar10/SLAMv2/build/cev_pose_graph_slam
