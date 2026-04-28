@@ -8,9 +8,12 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+#include "sensor_msgs/msg/laser_scan.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2_ros/transform_broadcaster.h"
 #include "tf2/LinearMath/Quaternion.h"
+#include "cev_icp/icp/icp.h"
+#include "cev_icp/icp/driver.h"
 
 // --- Math Helpers ---
 
@@ -26,7 +29,7 @@ struct Pose2 {
 
 struct Edge2 {
     int i = 0, j = 0;
-    Eigen::Vector3d z;      
+    Eigen::Vector3d z;
     Eigen::Matrix3d Omega;
 };
 
@@ -104,7 +107,7 @@ bool gaussNewtonStep(std::vector<Pose2>& X, const std::vector<Edge2>& edges, dou
     if (damping > 0.0) {
         for (int k = 0; k < D; ++k) H.coeffRef(k,k) += damping;
     }
-    // Fix first pose
+    // Fix first pose (gauge freedom)
     for (int k = 0; k < 3; ++k) { H.coeffRef(k, k) += 1e12; b[k] = 0.0; }
 
     Eigen::SimplicialLDLT<Eigen::SparseMatrix<double>> solver(H);
@@ -114,108 +117,155 @@ bool gaussNewtonStep(std::vector<Pose2>& X, const std::vector<Edge2>& edges, dou
     return true;
 }
 
+// --- Scan helpers ---
+
+using PointList = std::vector<icp::Vector>;
+
+static PointList scanToPoints(const sensor_msgs::msg::LaserScan& scan) {
+    PointList pts;
+    for (size_t i = 0; i < scan.ranges.size(); ++i) {
+        float r = scan.ranges[i];
+        if (!std::isfinite(r) || r < scan.range_min || r > scan.range_max) continue;
+        float angle = scan.angle_min + i * scan.angle_increment;
+        pts.emplace_back(r * std::cos(angle), r * std::sin(angle));
+    }
+    return pts;
+}
+
 // --- ROS 2 Node ---
 
 class PgoNode : public rclcpp::Node {
 public:
     PgoNode() : Node("pgo_backend") {
-        // STEP 1: Change subscription from "/odom" to "/odometry/filtered"
         odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-            "/odometry/filtered", 10, std::bind(&PgoNode::odom_callback, this, std::placeholders::_1));
-        
+            "/odometry/filtered", 10,
+            std::bind(&PgoNode::odom_callback, this, std::placeholders::_1));
+
+        scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+            "/scan", 10,
+            std::bind(&PgoNode::scan_callback, this, std::placeholders::_1));
+
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
-        
-        // Initialize the first pose at the origin
-        if (X.empty()) {
-            X.push_back({0.0, 0.0, 0.0}); 
-        }
-        
-        RCLCPP_INFO(this->get_logger(), "PGO Backend Initialized. Listening to Fused EKF Odometry.");
+
+        // ICP driver for loop closure scan verification
+        icp::ICP::Config lc_cfg;
+        lc_cfg.set("overlap_rate", 0.7);
+        lc_driver_ = std::make_unique<icp::ICPDriver>(
+            icp::ICP::from_method("trimmed", lc_cfg).value());
+        lc_driver_->set_max_iterations(100);
+        lc_driver_->set_transform_tolerance(0.01 * M_PI / 180, 0.005);
+
+        // Initialize first pose at origin
+        X.push_back({0.0, 0.0, 0.0});
+        scan_archive_.push_back({});  // no scan for origin pose
+
+        RCLCPP_INFO(this->get_logger(), "PGO Backend (Full SLAM) initialized.");
     }
 
 private:
+    void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+        current_scan_pts_ = scanToPoints(*msg);
+    }
+
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
-        // Extract fused position
         double cur_x = msg->pose.pose.position.x;
         double cur_y = msg->pose.pose.position.y;
-        
-        // Extract fused orientation (Yaw) from Quaternion
+
         double qz = msg->pose.pose.orientation.z;
         double qw = msg->pose.pose.orientation.w;
         double cur_th = std::atan2(2.0 * qw * qz, 1.0 - 2.0 * qz * qz);
 
         Pose2 last = X.back();
-        
-        // Keyframe Trigger: Add a node if we've moved > 0.3m OR rotated > 15 degrees
-        double travel_dist = std::hypot(cur_x - last.x, cur_y - last.y);
+
+        double travel_dist   = std::hypot(cur_x - last.x, cur_y - last.y);
         double rotation_dist = std::abs(wrapAngle(cur_th - last.th));
 
-        if (travel_dist > 0.3 || rotation_dist > 0.26) { // ~15 degrees
-            // Calculate the relative transform (The "Edge")
-            Eigen::Vector3d z(cur_x - last.x, cur_y - last.y, wrapAngle(cur_th - last.th));
+        if (travel_dist > 0.3 || rotation_dist > 0.26) {
+            // Body-frame relative transform (correct pose graph measurement)
+            double c = std::cos(last.th), s = std::sin(last.th);
+            double dx = cur_x - last.x, dy = cur_y - last.y;
+            Eigen::Vector3d z(c*dx + s*dy, -s*dx + c*dy, wrapAngle(cur_th - last.th));
+
             X.push_back({cur_x, cur_y, cur_th});
-            
-            // Information Matrix (Weights): We trust rotation (IMU) more than translation (LiDAR)
+            scan_archive_.push_back(current_scan_pts_);  // archive scan at this keyframe
+
             Eigen::Matrix3d info = Eigen::Matrix3d::Identity();
-            info(0,0) = 500.0;  // X weight
-            info(1,1) = 500.0;  // Y weight
-            info(2,2) = 3000.0; // Yaw weight (Higher because of IMU stability)
+            info(0,0) = 500.0;
+            info(1,1) = 500.0;
+            info(2,2) = 3000.0;
 
             edges.push_back({(int)X.size()-2, (int)X.size()-1, z, info});
-            
-            // Run 5 iterations of Gauss-Newton to smooth the graph
+
             for (int it = 0; it < 5; ++it) {
                 gaussNewtonStep(X, edges, 1e-6);
             }
 
-            RCLCPP_INFO(this->get_logger(), "Added Keyframe %ld. Optimization complete.", X.size());
+            RCLCPP_INFO(this->get_logger(), "Keyframe %zu added.", X.size());
 
-            // --- RADIUS SEARCH FOR LOOP CLOSURE ---
-            // Ensure we have enough history to actually "loop"
-            if (X.size() > 20) {
-                int current_idx = (int)X.size() - 1;
-                Pose2 current_pose = X[current_idx];
+            // --- LOOP CLOSURE ---
+            if (X.size() > 20 && !current_scan_pts_.empty()) {
+                int cur_idx = (int)X.size() - 1;
 
-                // Search backwards, skipping the last 10 nodes (don't match with immediate past)
-                for (int i = 0; i < current_idx - 10; ++i) {
-                    double dist = std::hypot(current_pose.x - X[i].x, current_pose.y - X[i].y);
-                    
-                    // If an old node is within a 1.0 meter radius
+                for (int i = 0; i < cur_idx - 10; ++i) {
+                    double dist = std::hypot(X[cur_idx].x - X[i].x,
+                                            X[cur_idx].y - X[i].y);
+
                     if (dist < 1.0) {
-                        RCLCPP_INFO(this->get_logger(), 
-                            "\n====================================\n"
-                            "LOOP CLOSURE CANDIDATE FOUND!\n"
-                            "Current Node: %d is near Old Node: %d\n"
-                            "Distance: %.2f meters\n"
-                            "====================================\n", 
-                            current_idx, i, dist);
-                        
-                        // NOTE: We only log it right now. To actually close the loop, 
-                        // we must send a request to the ICP node to see if the current 
-                        // LiDAR scan matches Node i's LiDAR scan.
-                        
-                        break; // Stop searching once we find one good candidate per keyframe
+                        if (!scan_archive_[i].empty()) {
+                            // ICP: does the scan at pose i match the current scan?
+                            auto result = lc_driver_->converge(
+                                scan_archive_[i], current_scan_pts_, icp::RBTransform{});
+
+                            if (result.cost < 0.15) {
+                                // T maps scan_i → scan_j; loop closure measurement = T⁻¹
+                                // (body-frame relative pose of j w.r.t. i, in frame i)
+                                icp::RBTransform T_inv = result.transform.inverse();
+                                double lc_dth = std::atan2(
+                                    T_inv.rotation(1, 0), T_inv.rotation(0, 0));
+                                Eigen::Vector3d z_lc(
+                                    T_inv.translation.x(),
+                                    T_inv.translation.y(),
+                                    wrapAngle(lc_dth));
+
+                                Eigen::Matrix3d lc_info = Eigen::Matrix3d::Identity();
+                                lc_info(0,0) = 100.0;
+                                lc_info(1,1) = 100.0;
+                                lc_info(2,2) = 500.0;
+
+                                edges.push_back({i, cur_idx, z_lc, lc_info});
+
+                                // More iterations to absorb the loop constraint
+                                for (int it = 0; it < 20; ++it) {
+                                    gaussNewtonStep(X, edges, 1e-6);
+                                }
+
+                                RCLCPP_INFO(this->get_logger(),
+                                    "LOOP CLOSED: node %d → %d | ICP cost: %.3f m",
+                                    i, cur_idx, result.cost);
+                            } else {
+                                RCLCPP_DEBUG(this->get_logger(),
+                                    "Loop candidate rejected: node %d → %d | cost: %.3f m",
+                                    i, cur_idx, result.cost);
+                            }
+                        }
+                        break;  // one candidate per keyframe
                     }
                 }
             }
-            // -------------------------------------------
+            // -------------------
         }
 
-        // Always publish the map->odom transform to keep the TF tree linked
         publish_correction(cur_x, cur_y, cur_th);
     }
 
     void publish_correction(double fused_x, double fused_y, double fused_th) {
-        // The correction is the difference between our Optimized map pose 
-        // and the EKF's current fused odometry pose.
         Pose2 opt = X.back();
-        
+
         geometry_msgs::msg::TransformStamped t;
         t.header.stamp = this->get_clock()->now();
         t.header.frame_id = "map";
         t.child_frame_id = "odom";
 
-        // Math: T_map_to_odom = T_map_to_base * inv(T_odom_to_base)
         t.transform.translation.x = opt.x - fused_x;
         t.transform.translation.y = opt.y - fused_y;
         t.transform.translation.z = 0.0;
@@ -231,9 +281,14 @@ private:
     }
 
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-    std::vector<Pose2> X;
-    std::vector<Edge2> edges;
+    std::unique_ptr<icp::ICPDriver> lc_driver_;
+
+    std::vector<Pose2>     X;
+    std::vector<Edge2>     edges;
+    PointList              current_scan_pts_;
+    std::vector<PointList> scan_archive_;   // scan_archive_[i] corresponds to X[i]
 };
 
 
