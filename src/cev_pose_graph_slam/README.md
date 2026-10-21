@@ -11,11 +11,16 @@ correction as the TF `map -> odom`.
 /scan ──────────────┘   (sliding window)  └─> /slam/path (all keyframes, map frame)
 ```
 
-This document covers three things:
+Sensor fusion (ICP lidar odometry + IMU) happens upstream in the EKF (`robot_localization`).
+This package does not fuse sensors. It corrects the drift left in the fused odometry by
+matching scans against earlier keyframes.
+
+This document covers four things:
 1. **Where the previous version went wrong**: each bug, why it matters, and the fix.
 2. **How the sliding window works**: what it is, why marginalization rather than deletion, and
    how loop closure fits in.
 3. **Evidence**: tests and numbers, plus how to build and run it.
+4. **Status and open work**: what still needs doing.
 
 ---
 
@@ -257,7 +262,7 @@ scale error plus a +0.25°/m heading bias. It runs the real `cevicp` ICP.
   new, marginalization     0.121  377  1122   200        1.8            2.5
 ```
 
-Error drops from 3.1 m to 0.12 m (25× less), and per-keyframe time stays flat.
+Error drops from 3.1 m to 0.12 m (about 26× less), and per-keyframe time stays flat.
 `docs/sim_result.svg` plots the trajectories.
 
 ROS smoke test (perfect odometry, 20 Hz; scans 10 Hz, stamped between odometry samples):
@@ -269,6 +274,23 @@ That 0.35° is the sampling bias of point-to-point ICP in a bare square room. It
 same 0.3° measured without ROS.
 
 ---
+
+## 4. Status and open work
+
+| Item | Status |
+|---|---|
+| Constraints that can disagree with odometry (scan matching, loop closure) | Done |
+| Schur-complement marginalization | Done |
+| Robust kernel (Huber) on scan and loop edges | Done |
+| Correct `map -> odom` composition | Done |
+| ATE with vs. without the backend, simulation | Done: 3.09 m → 0.12 m |
+| End-point drift % / ATE on a real closed-loop bag from the car | Open: the number that matters most |
+| Information matrices from data instead of constants | Open. Use the covariance of each relative step between keyframes, or the ICP fit quality. The EKF's absolute pose covariance grows over time, so it can't be used directly. |
+| GPS factors for the IGVC course | Open. GPS fits as a unary constraint on a pose, like the loop-closure map edges. |
+| Benchmark against GTSAM iSAM2 on the same bag | Open |
+| Merge `SLAM-sliding-window` and `SLAMv2` into one repo | Open |
+| Point `carv2.py` at `pgo.launch.py` | Open |
+| Upstream the icp build fixes (`<cassert>`, Eigen target) to `cornellev/icp` | Open |
 
 ## Build, test, run
 
